@@ -9,3 +9,5 @@ reportlab
 Pillow
 folium
 streamlit-folium
+tensorflow
+streamlit-autorefresh
