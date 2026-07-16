@@ -1,0 +1,11 @@
+City,latitude,longitude,Disaster,GridStatus
+Chennai,13.0827,80.2707,Flood,Normal
+Coimbatore,11.0168,76.9558,Safe,Normal
+Madurai,9.9252,78.1198,Heatwave,Normal
+Salem,11.6643,78.1460,Heavy Rain,Normal
+Tiruchirappalli,10.7905,78.7047,Safe,Normal
+Tiruppur,11.1085,77.3411,Safe,Normal
+Erode,11.3410,77.7172,Safe,Normal
+Thanjavur,10.7867,79.1378,Flood,Normal
+Tirunelveli,8.7139,77.7567,Cyclone,Normal
+Kanyakumari,8.0883,77.5385,Cyclone,Normal

@@ -1,0 +1,39 @@
+/* Background */
+.stApp {
+    background-color: #08192d;
+}
+
+/* Metric Cards */
+div[data-testid="metric-container"] {
+    background: linear-gradient(145deg, #102944, #0d2238);
+    border: 1px solid #00d4ff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 12px rgba(0,212,255,0.35);
+    transition: 0.3s ease;
+}
+
+div[data-testid="metric-container"]:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0,212,255,0.6);
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #061320;
+}
+
+/* Buttons */
+.stButton>button {
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+    background: #00bcd4;
+    color: white;
+    font-weight: bold;
+}
+
+/* Titles */
+h1, h2, h3 {
+    color: #00e5ff;
+}

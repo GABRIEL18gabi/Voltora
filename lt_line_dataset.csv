@@ -1,0 +1,5001 @@
+Voltage,Current,Frequency,Temperature,Fault,Shutdown
+256,18.0,50.17,48,Overload,Yes
+12,0.0,0.0,21,Line Break,Yes
+248,12.85,49.9,45,Overload,Yes
+223,4.75,49.82,29,Normal,No
+242,12.86,49.84,40,Overload,Yes
+293,6.6,50.53,30,Overvoltage,Yes
+225,4.41,49.97,25,Normal,No
+269,5.21,50.92,44,Overvoltage,Yes
+289,5.41,50.55,45,Overvoltage,Yes
+172,3.1,49.17,26,Undervoltage,Yes
+229,5.64,49.8,25,Normal,No
+232,4.51,49.93,28,Normal,No
+130,5.08,49.87,32,Undervoltage,Yes
+238,7.23,49.92,32,Normal,No
+270,9.73,50.7,44,Overvoltage,Yes
+242,11.89,50.18,45,Overload,Yes
+246,11.13,50.0,41,Overload,Yes
+239,5.7,50.03,26,Normal,No
+239,6.45,50.04,33,Normal,No
+161,4.33,49.11,33,Undervoltage,Yes
+18,0.0,0.0,24,Line Break,Yes
+250,19.01,50.12,53,Overload,Yes
+251,10.22,49.95,52,Overload,Yes
+256,12.99,50.16,41,Overload,Yes
+223,4.47,49.87,27,Normal,No
+287,9.66,50.12,31,Overvoltage,Yes
+233,7.05,49.9,30,Normal,No
+258,10.48,49.95,53,Overload,Yes
+241,16.5,50.09,50,Overload,Yes
+0,0.0,0.0,29,Line Break,Yes
+224,3.47,49.82,28,Normal,No
+258,18.24,50.08,55,Overload,Yes
+121,3.4,49.03,34,Undervoltage,Yes
+295,9.42,50.02,44,Overvoltage,Yes
+178,3.62,49.73,30,Undervoltage,Yes
+247,10.74,49.9,45,Overload,Yes
+1,0.0,0.0,27,Line Break,Yes
+243,13.9,50.07,45,Overload,Yes
+237,7.3,50.13,33,Normal,No
+241,12.56,49.93,43,Overload,Yes
+257,17.52,49.94,50,Overload,Yes
+220,3.59,50.04,32,Normal,No
+248,16.89,49.89,40,Overload,Yes
+17,0.0,0.0,28,Line Break,Yes
+237,4.28,50.02,31,Normal,No
+146,2.83,49.29,28,Undervoltage,Yes
+257,10.59,49.91,53,Overload,Yes
+246,14.59,49.8,43,Overload,Yes
+16,0.0,0.0,26,Line Break,Yes
+284,7.9,50.58,41,Overvoltage,Yes
+225,4.68,50.15,33,Normal,No
+227,7.12,50.01,25,Normal,No
+263,9.9,50.91,37,Overvoltage,Yes
+167,4.55,49.52,27,Undervoltage,Yes
+220,4.05,50.01,25,Normal,No
+114,3.07,49.39,30,Undervoltage,Yes
+258,11.37,50.11,44,Overload,Yes
+2,0.0,0.0,30,Line Break,Yes
+251,17.48,50.03,53,Overload,Yes
+256,18.64,49.89,43,Overload,Yes
+19,0.0,0.0,27,Line Break,Yes
+239,7.52,49.95,32,Normal,No
+7,0.0,0.0,27,Line Break,Yes
+227,3.15,50.16,30,Normal,No
+236,4.83,50.14,28,Normal,No
+295,9.04,50.54,33,Overvoltage,Yes
+11,0.0,0.0,30,Line Break,Yes
+133,5.44,49.24,26,Undervoltage,Yes
+6,0.0,0.0,28,Line Break,Yes
+298,8.48,50.1,43,Overvoltage,Yes
+6,0.0,0.0,22,Line Break,Yes
+15,0.0,0.0,24,Line Break,Yes
+287,5.29,50.7,40,Overvoltage,Yes
+258,13.42,49.96,51,Overload,Yes
+277,6.16,50.43,31,Overvoltage,Yes
+277,9.41,50.15,35,Overvoltage,Yes
+284,7.79,50.07,38,Overvoltage,Yes
+8,0.0,0.0,27,Line Break,Yes
+226,6.16,49.9,35,Normal,No
+240,7.58,49.91,25,Normal,No
+250,16.76,50.08,42,Overload,Yes
+7,0.0,0.0,22,Line Break,Yes
+277,7.41,50.74,42,Overvoltage,Yes
+153,3.73,49.96,30,Undervoltage,Yes
+259,15.71,49.83,48,Overload,Yes
+0,0.0,0.0,20,Line Break,Yes
+7,0.0,0.0,30,Line Break,Yes
+13,0.0,0.0,20,Line Break,Yes
+243,16.5,50.19,47,Overload,Yes
+229,6.53,50.11,34,Normal,No
+284,8.17,50.5,37,Overvoltage,Yes
+288,6.98,50.2,44,Overvoltage,Yes
+238,6.07,49.95,28,Normal,No
+220,6.83,49.96,30,Normal,No
+223,7.62,50.0,27,Normal,No
+10,0.0,0.0,22,Line Break,Yes
+105,5.29,49.02,33,Undervoltage,Yes
+240,3.53,50.1,28,Normal,No
+256,11.66,50.15,49,Overload,Yes
+257,13.21,50.0,48,Overload,Yes
+275,8.64,50.34,34,Overvoltage,Yes
+267,8.17,50.26,43,Overvoltage,Yes
+12,0.0,0.0,20,Line Break,Yes
+235,3.61,49.84,32,Normal,No
+236,7.13,50.03,29,Normal,No
+232,5.35,49.86,29,Normal,No
+235,7.59,50.18,26,Normal,No
+246,12.09,50.02,43,Overload,Yes
+246,10.66,50.16,46,Overload,Yes
+235,5.73,50.01,29,Normal,No
+220,7.17,49.84,28,Normal,No
+225,6.6,49.93,28,Normal,No
+239,4.78,49.9,30,Normal,No
+9,0.0,0.0,28,Line Break,Yes
+237,6.37,49.97,34,Normal,No
+223,5.96,50.18,29,Normal,No
+17,0.0,0.0,24,Line Break,Yes
+101,3.32,49.38,34,Undervoltage,Yes
+157,3.82,49.12,26,Undervoltage,Yes
+257,18.53,50.1,53,Overload,Yes
+228,4.55,50.02,25,Normal,No
+19,0.0,0.0,24,Line Break,Yes
+253,14.6,50.16,40,Overload,Yes
+262,9.98,50.28,35,Overvoltage,Yes
+262,7.88,50.7,30,Overvoltage,Yes
+173,2.28,49.34,35,Undervoltage,Yes
+241,10.05,49.89,53,Overload,Yes
+239,5.58,49.83,31,Normal,No
+237,5.17,50.02,34,Normal,No
+152,2.69,49.28,27,Undervoltage,Yes
+278,9.63,50.95,41,Overvoltage,Yes
+245,17.25,50.18,44,Overload,Yes
+265,6.34,50.51,40,Overvoltage,Yes
+167,2.17,49.94,25,Undervoltage,Yes
+130,5.74,49.53,32,Undervoltage,Yes
+245,10.5,50.15,42,Overload,Yes
+177,3.52,49.73,32,Undervoltage,Yes
+221,6.04,50.13,28,Normal,No
+286,5.96,50.28,45,Overvoltage,Yes
+295,6.13,50.15,45,Overvoltage,Yes
+17,0.0,0.0,24,Line Break,Yes
+240,19.3,50.04,55,Overload,Yes
+8,0.0,0.0,25,Line Break,Yes
+120,3.87,49.14,32,Undervoltage,Yes
+152,4.59,49.38,33,Undervoltage,Yes
+220,7.3,49.94,29,Normal,No
+17,0.0,0.0,22,Line Break,Yes
+4,0.0,0.0,21,Line Break,Yes
+149,4.55,49.38,28,Undervoltage,Yes
+249,12.8,50.05,43,Overload,Yes
+278,8.03,50.04,40,Overvoltage,Yes
+285,5.89,50.98,41,Overvoltage,Yes
+242,10.21,50.16,54,Overload,Yes
+223,5.46,50.04,33,Normal,No
+243,14.04,50.07,52,Overload,Yes
+246,12.32,49.92,42,Overload,Yes
+11,0.0,0.0,27,Line Break,Yes
+10,0.0,0.0,20,Line Break,Yes
+102,5.45,49.23,27,Undervoltage,Yes
+167,5.81,49.5,31,Undervoltage,Yes
+164,4.27,49.62,25,Undervoltage,Yes
+237,7.58,50.19,29,Normal,No
+292,5.02,50.78,31,Overvoltage,Yes
+223,3.33,50.18,29,Normal,No
+286,7.64,50.84,30,Overvoltage,Yes
+242,16.79,50.03,55,Overload,Yes
+270,8.72,50.82,34,Overvoltage,Yes
+3,0.0,0.0,24,Line Break,Yes
+18,0.0,0.0,29,Line Break,Yes
+262,9.66,50.63,40,Overvoltage,Yes
+243,12.73,49.98,54,Overload,Yes
+122,3.42,49.37,35,Undervoltage,Yes
+127,5.13,49.72,27,Undervoltage,Yes
+148,5.72,49.63,27,Undervoltage,Yes
+114,3.11,49.79,25,Undervoltage,Yes
+234,7.34,49.93,30,Normal,No
+258,12.44,50.05,48,Overload,Yes
+243,12.95,50.12,49,Overload,Yes
+279,7.58,50.51,43,Overvoltage,Yes
+10,0.0,0.0,21,Line Break,Yes
+9,0.0,0.0,20,Line Break,Yes
+251,15.78,50.09,46,Overload,Yes
+252,15.9,50.06,54,Overload,Yes
+164,3.62,49.18,35,Undervoltage,Yes
+144,4.93,49.52,29,Undervoltage,Yes
+19,0.0,0.0,22,Line Break,Yes
+258,17.81,50.03,50,Overload,Yes
+13,0.0,0.0,21,Line Break,Yes
+284,9.47,50.62,45,Overvoltage,Yes
+275,7.45,50.39,38,Overvoltage,Yes
+283,7.33,50.81,32,Overvoltage,Yes
+11,0.0,0.0,27,Line Break,Yes
+280,6.04,50.89,36,Overvoltage,Yes
+289,7.65,50.45,36,Overvoltage,Yes
+258,15.83,50.16,50,Overload,Yes
+244,17.85,49.95,54,Overload,Yes
+3,0.0,0.0,22,Line Break,Yes
+249,11.91,50.08,40,Overload,Yes
+226,3.81,49.88,32,Normal,No
+131,3.28,49.34,28,Undervoltage,Yes
+248,16.55,50.07,46,Overload,Yes
+223,3.66,49.95,35,Normal,No
+141,5.01,49.47,35,Undervoltage,Yes
+0,0.0,0.0,20,Line Break,Yes
+13,0.0,0.0,23,Line Break,Yes
+283,6.83,50.82,35,Overvoltage,Yes
+296,5.32,50.86,33,Overvoltage,Yes
+247,13.44,50.09,55,Overload,Yes
+259,10.18,49.9,53,Overload,Yes
+268,5.68,50.62,34,Overvoltage,Yes
+270,5.36,50.2,35,Overvoltage,Yes
+221,7.67,49.99,33,Normal,No
+4,0.0,0.0,27,Line Break,Yes
+150,3.94,49.09,28,Undervoltage,Yes
+267,5.13,50.68,35,Overvoltage,Yes
+265,7.18,50.07,37,Overvoltage,Yes
+291,8.27,50.48,30,Overvoltage,Yes
+226,7.67,49.88,31,Normal,No
+223,4.3,49.81,34,Normal,No
+232,4.24,49.91,28,Normal,No
+20,0.0,0.0,20,Line Break,Yes
+221,7.15,50.12,28,Normal,No
+242,17.66,50.18,41,Overload,Yes
+263,6.75,50.11,43,Overvoltage,Yes
+221,3.39,50.16,34,Normal,No
+288,7.32,50.27,45,Overvoltage,Yes
+138,5.9,49.17,26,Undervoltage,Yes
+253,18.02,50.06,41,Overload,Yes
+278,5.81,50.71,30,Overvoltage,Yes
+277,5.65,50.8,39,Overvoltage,Yes
+243,14.38,50.17,40,Overload,Yes
+292,7.93,50.16,34,Overvoltage,Yes
+139,5.62,49.3,28,Undervoltage,Yes
+260,15.44,49.87,40,Overload,Yes
+0,0.0,0.0,23,Line Break,Yes
+12,0.0,0.0,23,Line Break,Yes
+294,7.39,50.35,45,Overvoltage,Yes
+106,4.64,49.99,27,Undervoltage,Yes
+252,15.29,49.9,55,Overload,Yes
+7,0.0,0.0,26,Line Break,Yes
+239,4.76,49.93,33,Normal,No
+224,4.13,49.88,30,Normal,No
+18,0.0,0.0,20,Line Break,Yes
+18,0.0,0.0,30,Line Break,Yes
+261,6.04,50.51,42,Overvoltage,Yes
+234,4.97,49.95,31,Normal,No
+112,3.83,49.35,25,Undervoltage,Yes
+3,0.0,0.0,21,Line Break,Yes
+20,0.0,0.0,24,Line Break,Yes
+240,3.83,49.89,30,Normal,No
+230,5.04,50.03,25,Normal,No
+257,18.76,49.85,47,Overload,Yes
+18,0.0,0.0,27,Line Break,Yes
+235,7.67,50.08,30,Normal,No
+234,6.76,50.12,31,Normal,No
+9,0.0,0.0,28,Line Break,Yes
+175,3.89,49.77,35,Undervoltage,Yes
+143,3.38,49.23,27,Undervoltage,Yes
+106,2.33,49.19,33,Undervoltage,Yes
+230,3.02,49.99,31,Normal,No
+228,3.19,49.82,31,Normal,No
+255,13.21,50.04,55,Overload,Yes
+103,4.7,49.04,35,Undervoltage,Yes
+239,3.51,49.89,26,Normal,No
+11,0.0,0.0,21,Line Break,Yes
+294,5.89,50.34,30,Overvoltage,Yes
+16,0.0,0.0,27,Line Break,Yes
+15,0.0,0.0,29,Line Break,Yes
+158,2.93,49.06,31,Undervoltage,Yes
+238,6.46,50.19,29,Normal,No
+254,13.77,50.13,51,Overload,Yes
+5,0.0,0.0,26,Line Break,Yes
+106,3.54,49.01,35,Undervoltage,Yes
+225,3.08,49.9,26,Normal,No
+236,4.94,50.12,31,Normal,No
+115,5.68,49.04,34,Undervoltage,Yes
+275,9.19,50.55,31,Overvoltage,Yes
+273,5.02,50.25,42,Overvoltage,Yes
+223,3.59,49.89,34,Normal,No
+245,18.7,50.15,52,Overload,Yes
+257,11.13,49.94,54,Overload,Yes
+123,2.33,49.13,27,Undervoltage,Yes
+173,2.45,49.87,27,Undervoltage,Yes
+242,15.65,49.85,48,Overload,Yes
+228,7.28,49.89,30,Normal,No
+18,0.0,0.0,28,Line Break,Yes
+101,4.48,49.82,35,Undervoltage,Yes
+14,0.0,0.0,20,Line Break,Yes
+235,5.37,49.84,28,Normal,No
+240,10.19,49.87,49,Overload,Yes
+1,0.0,0.0,29,Line Break,Yes
+270,9.41,50.52,34,Overvoltage,Yes
+250,11.87,50.19,46,Overload,Yes
+238,4.93,49.85,34,Normal,No
+120,3.22,49.26,35,Undervoltage,Yes
+292,8.63,50.81,39,Overvoltage,Yes
+20,0.0,0.0,21,Line Break,Yes
+238,5.7,49.84,26,Normal,No
+277,5.68,50.14,40,Overvoltage,Yes
+240,7.84,49.91,27,Normal,No
+294,5.13,50.52,39,Overvoltage,Yes
+131,4.29,49.1,26,Undervoltage,Yes
+257,11.52,50.07,45,Overload,Yes
+10,0.0,0.0,20,Line Break,Yes
+264,6.91,50.44,40,Overvoltage,Yes
+252,17.76,49.95,53,Overload,Yes
+292,8.86,50.04,44,Overvoltage,Yes
+255,13.26,50.16,40,Overload,Yes
+168,4.13,49.25,25,Undervoltage,Yes
+287,8.11,50.66,40,Overvoltage,Yes
+110,3.5,49.95,31,Undervoltage,Yes
+284,9.55,50.6,37,Overvoltage,Yes
+127,4.51,49.36,29,Undervoltage,Yes
+130,4.03,49.66,27,Undervoltage,Yes
+259,15.61,49.88,40,Overload,Yes
+240,15.09,49.99,54,Overload,Yes
+245,19.25,50.14,55,Overload,Yes
+231,7.13,50.07,28,Normal,No
+267,7.96,50.91,30,Overvoltage,Yes
+168,5.12,49.65,26,Undervoltage,Yes
+261,9.42,50.06,41,Overvoltage,Yes
+232,5.4,50.07,30,Normal,No
+249,13.17,50.08,50,Overload,Yes
+107,2.35,49.04,32,Undervoltage,Yes
+275,5.4,50.09,38,Overvoltage,Yes
+258,11.25,49.98,41,Overload,Yes
+248,17.85,50.2,51,Overload,Yes
+235,6.69,49.95,33,Normal,No
+149,5.28,49.37,32,Undervoltage,Yes
+295,8.55,50.06,37,Overvoltage,Yes
+230,7.51,50.06,28,Normal,No
+242,15.13,50.16,54,Overload,Yes
+239,7.06,49.9,27,Normal,No
+262,9.79,50.45,35,Overvoltage,Yes
+221,5.48,50.04,29,Normal,No
+291,7.83,50.02,45,Overvoltage,Yes
+7,0.0,0.0,27,Line Break,Yes
+234,4.01,49.95,32,Normal,No
+153,3.37,49.07,28,Undervoltage,Yes
+177,4.33,49.13,27,Undervoltage,Yes
+259,16.23,50.08,55,Overload,Yes
+256,19.06,49.87,49,Overload,Yes
+1,0.0,0.0,22,Line Break,Yes
+3,0.0,0.0,26,Line Break,Yes
+235,4.02,50.07,33,Normal,No
+20,0.0,0.0,27,Line Break,Yes
+245,18.85,49.87,52,Overload,Yes
+20,0.0,0.0,30,Line Break,Yes
+247,17.92,49.98,44,Overload,Yes
+283,9.3,50.78,39,Overvoltage,Yes
+7,0.0,0.0,20,Line Break,Yes
+10,0.0,0.0,20,Line Break,Yes
+173,3.65,49.35,32,Undervoltage,Yes
+231,6.25,50.17,34,Normal,No
+235,5.96,49.96,33,Normal,No
+137,5.31,49.94,30,Undervoltage,Yes
+224,3.3,49.98,35,Normal,No
+233,6.51,50.08,25,Normal,No
+124,5.34,49.5,27,Undervoltage,Yes
+4,0.0,0.0,21,Line Break,Yes
+2,0.0,0.0,27,Line Break,Yes
+240,5.14,49.98,33,Normal,No
+1,0.0,0.0,28,Line Break,Yes
+234,4.84,49.86,32,Normal,No
+250,10.82,49.88,44,Overload,Yes
+221,4.37,49.97,33,Normal,No
+17,0.0,0.0,22,Line Break,Yes
+236,6.68,50.02,30,Normal,No
+19,0.0,0.0,27,Line Break,Yes
+177,2.37,49.63,28,Undervoltage,Yes
+11,0.0,0.0,29,Line Break,Yes
+239,3.05,50.03,35,Normal,No
+14,0.0,0.0,20,Line Break,Yes
+140,4.86,49.45,32,Undervoltage,Yes
+263,8.27,50.17,33,Overvoltage,Yes
+234,7.33,49.93,31,Normal,No
+249,19.27,50.2,51,Overload,Yes
+12,0.0,0.0,20,Line Break,Yes
+149,3.2,49.14,25,Undervoltage,Yes
+223,6.27,50.13,34,Normal,No
+104,5.01,49.21,27,Undervoltage,Yes
+121,5.61,49.68,34,Undervoltage,Yes
+14,0.0,0.0,28,Line Break,Yes
+252,13.05,50.08,52,Overload,Yes
+234,6.66,50.18,29,Normal,No
+238,4.42,50.05,29,Normal,No
+17,0.0,0.0,26,Line Break,Yes
+284,5.92,50.46,36,Overvoltage,Yes
+17,0.0,0.0,27,Line Break,Yes
+285,9.84,50.52,36,Overvoltage,Yes
+11,0.0,0.0,29,Line Break,Yes
+229,5.51,49.86,32,Normal,No
+15,0.0,0.0,28,Line Break,Yes
+242,12.15,49.86,52,Overload,Yes
+167,5.43,49.42,28,Undervoltage,Yes
+294,6.1,50.87,31,Overvoltage,Yes
+221,5.27,50.03,31,Normal,No
+140,3.84,49.67,30,Undervoltage,Yes
+111,3.62,49.11,31,Undervoltage,Yes
+1,0.0,0.0,24,Line Break,Yes
+225,4.72,50.14,30,Normal,No
+231,6.3,50.18,34,Normal,No
+228,7.48,50.15,31,Normal,No
+19,0.0,0.0,27,Line Break,Yes
+13,0.0,0.0,30,Line Break,Yes
+299,7.18,50.98,33,Overvoltage,Yes
+158,5.98,49.63,35,Undervoltage,Yes
+257,19.76,50.19,53,Overload,Yes
+269,6.77,50.33,41,Overvoltage,Yes
+2,0.0,0.0,28,Line Break,Yes
+250,19.56,50.0,53,Overload,Yes
+254,12.23,50.16,47,Overload,Yes
+247,11.63,49.89,41,Overload,Yes
+252,12.4,49.83,42,Overload,Yes
+257,11.1,50.13,55,Overload,Yes
+254,12.32,49.96,54,Overload,Yes
+233,4.24,50.14,32,Normal,No
+228,5.04,50.02,30,Normal,No
+164,3.01,49.33,33,Undervoltage,Yes
+286,9.55,50.51,41,Overvoltage,Yes
+134,2.88,49.33,27,Undervoltage,Yes
+255,16.13,50.09,41,Overload,Yes
+252,15.42,50.16,49,Overload,Yes
+17,0.0,0.0,30,Line Break,Yes
+148,3.6,50.0,31,Undervoltage,Yes
+264,5.29,50.21,44,Overvoltage,Yes
+291,8.23,50.14,36,Overvoltage,Yes
+247,12.04,50.11,50,Overload,Yes
+275,9.46,50.25,31,Overvoltage,Yes
+226,4.62,49.95,30,Normal,No
+174,2.13,49.26,34,Undervoltage,Yes
+230,5.62,49.89,28,Normal,No
+233,7.97,50.1,34,Normal,No
+139,2.6,49.17,32,Undervoltage,Yes
+151,5.9,49.56,26,Undervoltage,Yes
+226,6.15,50.05,35,Normal,No
+126,4.76,49.13,27,Undervoltage,Yes
+247,13.98,50.13,52,Overload,Yes
+225,7.05,50.07,34,Normal,No
+232,6.4,50.16,34,Normal,No
+127,3.72,49.97,29,Undervoltage,Yes
+268,5.23,50.41,45,Overvoltage,Yes
+240,18.86,50.07,42,Overload,Yes
+300,7.06,50.79,39,Overvoltage,Yes
+289,8.47,50.71,31,Overvoltage,Yes
+151,4.64,49.43,27,Undervoltage,Yes
+283,8.53,50.79,30,Overvoltage,Yes
+242,14.79,49.97,41,Overload,Yes
+161,5.75,49.55,32,Undervoltage,Yes
+175,4.52,49.21,33,Undervoltage,Yes
+256,18.97,50.07,43,Overload,Yes
+260,13.11,49.84,53,Overload,Yes
+291,5.54,50.32,37,Overvoltage,Yes
+156,5.98,49.4,30,Undervoltage,Yes
+149,5.47,49.25,30,Undervoltage,Yes
+11,0.0,0.0,20,Line Break,Yes
+277,9.0,50.28,36,Overvoltage,Yes
+157,4.44,49.5,33,Undervoltage,Yes
+291,5.84,50.97,37,Overvoltage,Yes
+244,11.06,50.17,55,Overload,Yes
+224,4.29,49.84,32,Normal,No
+101,4.76,49.5,25,Undervoltage,Yes
+246,14.65,50.06,40,Overload,Yes
+260,10.53,50.14,41,Overload,Yes
+228,4.35,49.84,28,Normal,No
+160,5.76,49.6,27,Undervoltage,Yes
+238,7.3,50.05,27,Normal,No
+243,16.15,49.82,55,Overload,Yes
+264,9.58,50.7,43,Overvoltage,Yes
+229,5.07,49.81,29,Normal,No
+144,2.58,49.23,32,Undervoltage,Yes
+132,5.26,49.36,29,Undervoltage,Yes
+17,0.0,0.0,21,Line Break,Yes
+299,9.99,50.04,30,Overvoltage,Yes
+265,8.19,50.52,32,Overvoltage,Yes
+242,10.9,50.13,40,Overload,Yes
+244,16.8,49.88,44,Overload,Yes
+18,0.0,0.0,26,Line Break,Yes
+2,0.0,0.0,25,Line Break,Yes
+105,5.56,49.56,31,Undervoltage,Yes
+107,4.56,49.01,30,Undervoltage,Yes
+11,0.0,0.0,25,Line Break,Yes
+3,0.0,0.0,29,Line Break,Yes
+179,5.59,49.88,31,Undervoltage,Yes
+223,4.64,50.06,28,Normal,No
+166,2.24,49.48,32,Undervoltage,Yes
+14,0.0,0.0,23,Line Break,Yes
+230,6.06,50.17,31,Normal,No
+245,17.28,50.0,46,Overload,Yes
+165,2.2,49.61,32,Undervoltage,Yes
+250,16.29,49.85,49,Overload,Yes
+223,4.45,50.07,35,Normal,No
+238,7.58,50.07,25,Normal,No
+172,5.9,49.27,35,Undervoltage,Yes
+226,4.43,50.15,27,Normal,No
+114,2.87,49.15,35,Undervoltage,Yes
+299,6.9,50.84,32,Overvoltage,Yes
+155,2.54,49.98,32,Undervoltage,Yes
+163,2.2,49.29,25,Undervoltage,Yes
+230,6.34,50.16,35,Normal,No
+222,5.5,50.16,28,Normal,No
+264,7.83,50.45,41,Overvoltage,Yes
+102,5.32,49.23,33,Undervoltage,Yes
+236,5.78,50.15,25,Normal,No
+269,7.45,50.44,30,Overvoltage,Yes
+155,6.0,49.33,33,Undervoltage,Yes
+235,6.04,49.84,31,Normal,No
+252,10.04,50.04,53,Overload,Yes
+254,18.17,49.89,48,Overload,Yes
+236,7.57,50.19,26,Normal,No
+237,6.53,50.05,30,Normal,No
+290,6.73,50.11,43,Overvoltage,Yes
+230,7.45,49.86,26,Normal,No
+232,4.95,49.93,26,Normal,No
+233,3.83,50.12,34,Normal,No
+243,11.55,50.0,44,Overload,Yes
+148,2.96,49.4,28,Undervoltage,Yes
+235,5.56,50.18,35,Normal,No
+237,5.94,49.88,32,Normal,No
+281,7.26,50.98,41,Overvoltage,Yes
+258,15.54,49.99,45,Overload,Yes
+223,4.41,49.88,35,Normal,No
+124,2.29,49.36,34,Undervoltage,Yes
+11,0.0,0.0,24,Line Break,Yes
+128,4.37,49.15,31,Undervoltage,Yes
+251,10.56,49.96,40,Overload,Yes
+233,7.82,49.95,34,Normal,No
+223,4.2,49.97,32,Normal,No
+135,5.71,49.18,30,Undervoltage,Yes
+172,4.99,49.25,33,Undervoltage,Yes
+228,5.19,49.87,34,Normal,No
+240,3.28,50.07,34,Normal,No
+0,0.0,0.0,23,Line Break,Yes
+11,0.0,0.0,27,Line Break,Yes
+120,4.48,49.33,32,Undervoltage,Yes
+18,0.0,0.0,27,Line Break,Yes
+252,15.26,49.95,52,Overload,Yes
+250,16.02,49.99,44,Overload,Yes
+272,5.99,50.23,37,Overvoltage,Yes
+252,15.45,50.07,43,Overload,Yes
+11,0.0,0.0,20,Line Break,Yes
+238,6.04,50.11,28,Normal,No
+300,5.87,50.36,34,Overvoltage,Yes
+297,9.31,50.15,44,Overvoltage,Yes
+221,6.16,50.18,34,Normal,No
+15,0.0,0.0,21,Line Break,Yes
+220,5.93,50.06,29,Normal,No
+228,7.3,50.16,33,Normal,No
+244,19.44,49.83,41,Overload,Yes
+268,7.52,50.53,33,Overvoltage,Yes
+257,10.96,49.83,45,Overload,Yes
+277,8.39,50.61,37,Overvoltage,Yes
+140,2.28,49.71,27,Undervoltage,Yes
+251,18.7,50.1,54,Overload,Yes
+280,9.52,50.03,37,Overvoltage,Yes
+155,2.65,49.46,32,Undervoltage,Yes
+19,0.0,0.0,20,Line Break,Yes
+168,4.84,49.07,34,Undervoltage,Yes
+2,0.0,0.0,30,Line Break,Yes
+291,5.02,51.0,35,Overvoltage,Yes
+17,0.0,0.0,28,Line Break,Yes
+19,0.0,0.0,25,Line Break,Yes
+6,0.0,0.0,29,Line Break,Yes
+296,7.44,50.11,34,Overvoltage,Yes
+269,5.73,50.65,42,Overvoltage,Yes
+7,0.0,0.0,28,Line Break,Yes
+14,0.0,0.0,29,Line Break,Yes
+277,8.21,50.12,40,Overvoltage,Yes
+258,19.23,49.97,49,Overload,Yes
+227,6.65,50.14,31,Normal,No
+6,0.0,0.0,28,Line Break,Yes
+226,5.2,50.08,29,Normal,No
+270,6.62,50.13,36,Overvoltage,Yes
+261,5.96,50.28,39,Overvoltage,Yes
+135,4.63,49.82,27,Undervoltage,Yes
+259,15.26,49.86,50,Overload,Yes
+18,0.0,0.0,25,Line Break,Yes
+240,19.2,50.06,54,Overload,Yes
+268,9.42,50.73,30,Overvoltage,Yes
+233,3.66,49.87,34,Normal,No
+173,3.18,49.66,25,Undervoltage,Yes
+240,3.15,50.07,29,Normal,No
+266,8.9,50.82,41,Overvoltage,Yes
+235,6.9,50.2,27,Normal,No
+232,3.08,49.85,35,Normal,No
+229,4.52,49.9,28,Normal,No
+146,4.08,49.21,25,Undervoltage,Yes
+222,7.95,49.92,30,Normal,No
+176,5.83,49.4,29,Undervoltage,Yes
+174,5.06,49.05,30,Undervoltage,Yes
+228,3.42,49.84,33,Normal,No
+232,5.85,50.18,32,Normal,No
+231,7.94,49.8,35,Normal,No
+225,3.87,49.95,34,Normal,No
+167,4.05,49.92,33,Undervoltage,Yes
+290,6.24,50.19,32,Overvoltage,Yes
+222,6.92,50.11,33,Normal,No
+117,3.07,49.37,31,Undervoltage,Yes
+129,4.02,49.3,32,Undervoltage,Yes
+20,0.0,0.0,25,Line Break,Yes
+293,9.27,50.11,34,Overvoltage,Yes
+132,3.73,49.66,35,Undervoltage,Yes
+130,5.83,49.6,31,Undervoltage,Yes
+260,15.75,50.13,43,Overload,Yes
+224,4.18,49.94,26,Normal,No
+293,8.09,50.98,30,Overvoltage,Yes
+248,14.98,50.16,49,Overload,Yes
+224,4.03,50.08,33,Normal,No
+151,5.66,49.99,30,Undervoltage,Yes
+287,9.32,50.34,44,Overvoltage,Yes
+109,4.45,49.56,32,Undervoltage,Yes
+247,16.4,50.03,48,Overload,Yes
+278,5.13,50.3,45,Overvoltage,Yes
+155,5.96,49.97,30,Undervoltage,Yes
+19,0.0,0.0,27,Line Break,Yes
+228,3.36,49.89,30,Normal,No
+255,16.94,50.12,46,Overload,Yes
+167,2.74,49.46,25,Undervoltage,Yes
+227,7.1,49.83,32,Normal,No
+283,6.15,50.38,39,Overvoltage,Yes
+280,8.96,50.39,42,Overvoltage,Yes
+242,18.26,49.84,54,Overload,Yes
+296,6.68,50.81,43,Overvoltage,Yes
+19,0.0,0.0,21,Line Break,Yes
+251,16.76,49.82,40,Overload,Yes
+1,0.0,0.0,26,Line Break,Yes
+10,0.0,0.0,27,Line Break,Yes
+105,2.19,49.31,27,Undervoltage,Yes
+262,8.3,50.07,45,Overvoltage,Yes
+299,9.41,50.94,32,Overvoltage,Yes
+296,6.24,50.4,33,Overvoltage,Yes
+255,16.73,49.89,40,Overload,Yes
+221,3.75,49.96,30,Normal,No
+151,2.9,49.87,25,Undervoltage,Yes
+226,4.6,49.84,28,Normal,No
+264,6.38,50.14,45,Overvoltage,Yes
+262,9.62,50.98,42,Overvoltage,Yes
+234,7.13,49.94,29,Normal,No
+172,3.27,49.59,25,Undervoltage,Yes
+274,7.08,50.24,38,Overvoltage,Yes
+179,4.82,49.93,33,Undervoltage,Yes
+234,6.08,49.91,25,Normal,No
+275,5.28,50.29,38,Overvoltage,Yes
+248,17.51,50.03,45,Overload,Yes
+290,7.77,50.55,31,Overvoltage,Yes
+126,4.32,49.09,32,Undervoltage,Yes
+12,0.0,0.0,30,Line Break,Yes
+6,0.0,0.0,22,Line Break,Yes
+261,9.45,50.62,38,Overvoltage,Yes
+283,5.34,50.99,31,Overvoltage,Yes
+293,7.99,50.32,38,Overvoltage,Yes
+261,5.54,50.97,32,Overvoltage,Yes
+220,7.78,49.87,35,Normal,No
+10,0.0,0.0,21,Line Break,Yes
+221,7.87,50.01,26,Normal,No
+260,11.75,50.07,51,Overload,Yes
+229,5.23,49.9,25,Normal,No
+168,3.8,49.22,32,Undervoltage,Yes
+241,19.9,50.01,44,Overload,Yes
+118,5.76,49.87,29,Undervoltage,Yes
+227,5.01,50.08,31,Normal,No
+236,4.53,50.16,31,Normal,No
+254,19.07,49.88,53,Overload,Yes
+224,5.47,50.17,27,Normal,No
+144,5.11,49.99,35,Undervoltage,Yes
+9,0.0,0.0,26,Line Break,Yes
+162,2.52,49.68,34,Undervoltage,Yes
+242,17.37,50.15,45,Overload,Yes
+244,10.04,50.11,47,Overload,Yes
+246,16.93,50.0,47,Overload,Yes
+239,6.65,49.8,30,Normal,No
+277,7.89,50.14,42,Overvoltage,Yes
+7,0.0,0.0,29,Line Break,Yes
+2,0.0,0.0,20,Line Break,Yes
+18,0.0,0.0,28,Line Break,Yes
+277,5.87,50.36,41,Overvoltage,Yes
+248,19.29,49.85,54,Overload,Yes
+231,4.87,49.81,25,Normal,No
+256,18.49,49.86,44,Overload,Yes
+271,5.99,50.34,35,Overvoltage,Yes
+245,19.25,50.11,45,Overload,Yes
+296,5.48,50.96,31,Overvoltage,Yes
+121,4.12,49.33,31,Undervoltage,Yes
+243,19.49,50.13,40,Overload,Yes
+251,10.37,49.87,40,Overload,Yes
+6,0.0,0.0,20,Line Break,Yes
+243,13.94,50.11,50,Overload,Yes
+220,4.58,50.07,29,Normal,No
+164,5.96,49.23,32,Undervoltage,Yes
+271,7.9,50.6,32,Overvoltage,Yes
+159,3.74,49.5,29,Undervoltage,Yes
+12,0.0,0.0,21,Line Break,Yes
+7,0.0,0.0,24,Line Break,Yes
+11,0.0,0.0,29,Line Break,Yes
+281,8.82,50.76,42,Overvoltage,Yes
+2,0.0,0.0,27,Line Break,Yes
+283,6.36,50.34,40,Overvoltage,Yes
+14,0.0,0.0,24,Line Break,Yes
+6,0.0,0.0,23,Line Break,Yes
+299,5.64,50.59,41,Overvoltage,Yes
+161,2.42,49.03,27,Undervoltage,Yes
+162,4.0,49.01,35,Undervoltage,Yes
+239,4.64,50.09,31,Normal,No
+238,5.81,50.05,29,Normal,No
+0,0.0,0.0,30,Line Break,Yes
+126,2.02,49.09,27,Undervoltage,Yes
+255,10.42,50.12,42,Overload,Yes
+260,12.51,49.91,40,Overload,Yes
+274,8.88,50.01,43,Overvoltage,Yes
+249,19.51,50.06,40,Overload,Yes
+107,4.75,49.69,34,Undervoltage,Yes
+248,10.09,50.04,52,Overload,Yes
+145,5.25,49.59,32,Undervoltage,Yes
+119,2.8,49.69,27,Undervoltage,Yes
+297,6.35,50.5,30,Overvoltage,Yes
+288,6.29,50.25,33,Overvoltage,Yes
+259,13.88,50.15,42,Overload,Yes
+245,17.94,50.01,52,Overload,Yes
+259,11.34,50.2,49,Overload,Yes
+169,4.38,49.58,35,Undervoltage,Yes
+273,9.13,50.67,44,Overvoltage,Yes
+15,0.0,0.0,29,Line Break,Yes
+237,7.88,49.89,33,Normal,No
+223,4.27,50.05,33,Normal,No
+265,5.77,50.53,30,Overvoltage,Yes
+299,7.63,50.63,41,Overvoltage,Yes
+287,5.73,50.06,30,Overvoltage,Yes
+19,0.0,0.0,23,Line Break,Yes
+261,5.27,50.37,44,Overvoltage,Yes
+278,9.25,50.01,41,Overvoltage,Yes
+244,14.97,50.16,46,Overload,Yes
+128,2.0,49.4,33,Undervoltage,Yes
+231,7.67,49.9,30,Normal,No
+134,4.12,49.71,30,Undervoltage,Yes
+122,2.6,49.06,35,Undervoltage,Yes
+295,5.02,50.52,30,Overvoltage,Yes
+104,5.31,49.19,26,Undervoltage,Yes
+149,4.79,49.88,28,Undervoltage,Yes
+292,6.61,50.87,32,Overvoltage,Yes
+18,0.0,0.0,20,Line Break,Yes
+245,18.55,49.83,44,Overload,Yes
+298,5.37,50.64,36,Overvoltage,Yes
+238,7.38,50.14,32,Normal,No
+225,6.45,50.16,26,Normal,No
+246,14.14,50.15,55,Overload,Yes
+260,15.71,50.03,51,Overload,Yes
+256,13.37,50.04,49,Overload,Yes
+9,0.0,0.0,28,Line Break,Yes
+228,5.22,49.84,26,Normal,No
+19,0.0,0.0,25,Line Break,Yes
+286,9.36,50.9,34,Overvoltage,Yes
+253,15.98,49.86,52,Overload,Yes
+172,5.74,49.56,28,Undervoltage,Yes
+6,0.0,0.0,29,Line Break,Yes
+239,4.09,49.94,34,Normal,No
+12,0.0,0.0,29,Line Break,Yes
+249,14.47,49.94,44,Overload,Yes
+131,2.19,49.15,26,Undervoltage,Yes
+228,4.22,49.82,35,Normal,No
+230,6.09,49.88,28,Normal,No
+1,0.0,0.0,27,Line Break,Yes
+5,0.0,0.0,22,Line Break,Yes
+229,7.47,49.88,34,Normal,No
+253,18.1,49.91,49,Overload,Yes
+175,3.57,49.5,30,Undervoltage,Yes
+281,8.48,50.3,45,Overvoltage,Yes
+232,4.12,49.92,26,Normal,No
+15,0.0,0.0,20,Line Break,Yes
+222,4.57,49.98,25,Normal,No
+100,3.94,49.86,31,Undervoltage,Yes
+292,6.47,50.11,44,Overvoltage,Yes
+264,9.33,50.67,37,Overvoltage,Yes
+240,14.97,49.87,53,Overload,Yes
+263,6.1,50.73,30,Overvoltage,Yes
+114,2.81,49.33,29,Undervoltage,Yes
+234,7.05,49.85,30,Normal,No
+222,6.08,50.1,29,Normal,No
+224,4.3,49.8,33,Normal,No
+0,0.0,0.0,22,Line Break,Yes
+237,7.18,49.97,35,Normal,No
+241,14.77,49.83,48,Overload,Yes
+289,6.23,50.75,44,Overvoltage,Yes
+0,0.0,0.0,20,Line Break,Yes
+287,6.32,50.23,43,Overvoltage,Yes
+5,0.0,0.0,25,Line Break,Yes
+112,2.29,49.78,28,Undervoltage,Yes
+127,2.78,49.96,25,Undervoltage,Yes
+2,0.0,0.0,24,Line Break,Yes
+263,6.68,50.6,40,Overvoltage,Yes
+292,6.23,50.24,33,Overvoltage,Yes
+237,5.74,49.86,28,Normal,No
+231,5.92,49.83,25,Normal,No
+231,3.3,50.02,30,Normal,No
+177,2.37,49.65,30,Undervoltage,Yes
+265,5.5,50.43,32,Overvoltage,Yes
+223,5.56,50.05,31,Normal,No
+276,5.47,50.68,43,Overvoltage,Yes
+102,4.07,49.05,32,Undervoltage,Yes
+246,17.13,49.97,52,Overload,Yes
+242,14.17,50.12,51,Overload,Yes
+14,0.0,0.0,20,Line Break,Yes
+179,4.14,49.03,32,Undervoltage,Yes
+1,0.0,0.0,21,Line Break,Yes
+115,4.26,49.27,31,Undervoltage,Yes
+0,0.0,0.0,28,Line Break,Yes
+237,6.25,50.11,35,Normal,No
+272,9.42,50.88,44,Overvoltage,Yes
+269,9.2,50.22,37,Overvoltage,Yes
+129,2.26,49.07,31,Undervoltage,Yes
+242,15.98,49.89,45,Overload,Yes
+283,9.98,50.89,43,Overvoltage,Yes
+275,6.45,50.29,39,Overvoltage,Yes
+156,4.19,49.91,34,Undervoltage,Yes
+261,8.62,50.12,38,Overvoltage,Yes
+244,14.82,50.01,55,Overload,Yes
+114,3.43,49.12,31,Undervoltage,Yes
+142,2.74,49.3,25,Undervoltage,Yes
+256,17.34,50.16,43,Overload,Yes
+15,0.0,0.0,21,Line Break,Yes
+280,8.22,50.82,36,Overvoltage,Yes
+148,3.7,49.16,29,Undervoltage,Yes
+245,19.75,49.93,55,Overload,Yes
+15,0.0,0.0,25,Line Break,Yes
+227,5.24,50.09,27,Normal,No
+238,6.7,49.9,28,Normal,No
+253,11.88,49.97,52,Overload,Yes
+256,13.58,49.82,49,Overload,Yes
+230,5.74,50.07,29,Normal,No
+282,7.54,50.87,34,Overvoltage,Yes
+260,14.88,50.04,51,Overload,Yes
+242,13.29,49.98,46,Overload,Yes
+120,5.92,49.74,34,Undervoltage,Yes
+240,5.03,49.98,33,Normal,No
+4,0.0,0.0,28,Line Break,Yes
+123,2.75,49.34,35,Undervoltage,Yes
+16,0.0,0.0,26,Line Break,Yes
+234,4.88,49.96,25,Normal,No
+10,0.0,0.0,29,Line Break,Yes
+224,7.05,49.81,35,Normal,No
+14,0.0,0.0,26,Line Break,Yes
+133,3.82,49.96,29,Undervoltage,Yes
+221,5.16,50.07,32,Normal,No
+260,11.28,50.1,42,Overload,Yes
+279,9.1,50.37,32,Overvoltage,Yes
+260,17.6,50.01,52,Overload,Yes
+221,5.87,50.07,30,Normal,No
+0,0.0,0.0,29,Line Break,Yes
+286,9.24,50.48,38,Overvoltage,Yes
+227,7.95,49.98,28,Normal,No
+20,0.0,0.0,26,Line Break,Yes
+245,12.17,49.88,40,Overload,Yes
+120,3.58,49.88,31,Undervoltage,Yes
+225,7.3,50.06,28,Normal,No
+251,18.13,50.09,41,Overload,Yes
+17,0.0,0.0,23,Line Break,Yes
+242,12.72,50.07,44,Overload,Yes
+6,0.0,0.0,27,Line Break,Yes
+298,9.65,50.58,44,Overvoltage,Yes
+297,6.57,50.67,39,Overvoltage,Yes
+257,16.17,50.18,45,Overload,Yes
+262,8.39,50.14,40,Overvoltage,Yes
+165,3.87,49.61,28,Undervoltage,Yes
+1,0.0,0.0,20,Line Break,Yes
+145,2.43,49.73,28,Undervoltage,Yes
+233,7.12,49.94,30,Normal,No
+18,0.0,0.0,27,Line Break,Yes
+248,11.94,50.11,49,Overload,Yes
+2,0.0,0.0,22,Line Break,Yes
+232,4.02,50.15,27,Normal,No
+242,14.76,49.92,51,Overload,Yes
+237,6.88,50.08,31,Normal,No
+246,12.49,50.06,55,Overload,Yes
+238,3.0,50.18,26,Normal,No
+141,4.53,49.58,33,Undervoltage,Yes
+252,15.47,49.88,50,Overload,Yes
+234,4.11,49.86,29,Normal,No
+9,0.0,0.0,20,Line Break,Yes
+12,0.0,0.0,25,Line Break,Yes
+177,4.84,49.13,25,Undervoltage,Yes
+297,8.78,50.21,32,Overvoltage,Yes
+232,3.26,50.07,26,Normal,No
+241,10.14,50.15,45,Overload,Yes
+265,8.45,50.18,32,Overvoltage,Yes
+18,0.0,0.0,27,Line Break,Yes
+236,7.56,49.82,26,Normal,No
+238,4.23,50.17,30,Normal,No
+243,19.07,50.15,49,Overload,Yes
+226,4.03,49.81,33,Normal,No
+18,0.0,0.0,21,Line Break,Yes
+275,6.17,50.31,43,Overvoltage,Yes
+269,9.44,50.77,36,Overvoltage,Yes
+224,7.6,49.8,29,Normal,No
+222,7.47,50.18,26,Normal,No
+289,5.91,50.24,40,Overvoltage,Yes
+14,0.0,0.0,30,Line Break,Yes
+231,3.74,49.88,27,Normal,No
+287,9.73,50.49,31,Overvoltage,Yes
+242,16.47,49.89,40,Overload,Yes
+172,2.05,49.05,28,Undervoltage,Yes
+230,7.2,50.13,29,Normal,No
+120,4.99,49.48,34,Undervoltage,Yes
+247,10.02,49.8,51,Overload,Yes
+0,0.0,0.0,27,Line Break,Yes
+1,0.0,0.0,20,Line Break,Yes
+296,9.24,50.55,35,Overvoltage,Yes
+13,0.0,0.0,21,Line Break,Yes
+277,8.2,50.84,34,Overvoltage,Yes
+294,9.18,50.75,34,Overvoltage,Yes
+285,7.83,50.94,35,Overvoltage,Yes
+108,5.69,49.79,29,Undervoltage,Yes
+291,9.18,50.78,33,Overvoltage,Yes
+138,3.2,49.14,35,Undervoltage,Yes
+238,6.45,49.99,31,Normal,No
+243,19.41,49.85,47,Overload,Yes
+250,13.57,49.85,49,Overload,Yes
+235,6.12,50.16,25,Normal,No
+231,3.9,49.82,35,Normal,No
+153,4.05,49.23,33,Undervoltage,Yes
+250,11.17,50.04,49,Overload,Yes
+272,8.23,50.35,31,Overvoltage,Yes
+300,9.33,50.23,37,Overvoltage,Yes
+267,5.76,50.68,31,Overvoltage,Yes
+266,7.81,50.35,31,Overvoltage,Yes
+240,5.03,49.92,25,Normal,No
+1,0.0,0.0,27,Line Break,Yes
+17,0.0,0.0,25,Line Break,Yes
+272,9.62,50.56,38,Overvoltage,Yes
+225,6.06,49.97,27,Normal,No
+226,4.56,50.06,28,Normal,No
+153,2.93,49.1,33,Undervoltage,Yes
+231,3.59,49.85,29,Normal,No
+224,5.17,50.15,29,Normal,No
+249,17.95,50.02,41,Overload,Yes
+280,7.37,50.41,30,Overvoltage,Yes
+238,3.29,49.96,29,Normal,No
+118,4.44,49.87,25,Undervoltage,Yes
+230,3.64,50.09,28,Normal,No
+237,5.99,49.82,28,Normal,No
+223,3.29,49.94,26,Normal,No
+288,5.06,50.36,35,Overvoltage,Yes
+144,5.23,49.75,28,Undervoltage,Yes
+4,0.0,0.0,26,Line Break,Yes
+228,3.13,49.81,35,Normal,No
+257,15.1,50.1,53,Overload,Yes
+231,6.77,49.83,31,Normal,No
+239,7.49,50.14,32,Normal,No
+259,18.07,50.18,46,Overload,Yes
+291,8.91,50.6,31,Overvoltage,Yes
+8,0.0,0.0,23,Line Break,Yes
+249,15.48,50.07,53,Overload,Yes
+294,9.31,50.58,30,Overvoltage,Yes
+231,4.94,50.0,32,Normal,No
+257,10.05,49.82,49,Overload,Yes
+233,4.19,50.12,28,Normal,No
+18,0.0,0.0,22,Line Break,Yes
+223,5.24,50.15,28,Normal,No
+2,0.0,0.0,23,Line Break,Yes
+137,4.41,49.33,33,Undervoltage,Yes
+179,2.64,49.72,26,Undervoltage,Yes
+249,19.49,49.91,54,Overload,Yes
+299,8.92,50.25,35,Overvoltage,Yes
+15,0.0,0.0,20,Line Break,Yes
+107,2.8,49.88,25,Undervoltage,Yes
+271,9.36,50.85,39,Overvoltage,Yes
+241,13.89,50.09,50,Overload,Yes
+135,5.62,49.6,29,Undervoltage,Yes
+169,3.42,49.65,26,Undervoltage,Yes
+225,7.46,50.0,31,Normal,No
+176,2.5,49.75,26,Undervoltage,Yes
+261,6.68,50.1,31,Overvoltage,Yes
+241,13.1,49.99,48,Overload,Yes
+237,4.39,50.13,30,Normal,No
+4,0.0,0.0,28,Line Break,Yes
+223,4.25,49.84,33,Normal,No
+272,5.68,50.32,41,Overvoltage,Yes
+5,0.0,0.0,28,Line Break,Yes
+240,6.77,50.1,28,Normal,No
+245,15.46,50.02,45,Overload,Yes
+274,5.2,50.72,41,Overvoltage,Yes
+132,3.8,49.28,30,Undervoltage,Yes
+125,5.96,49.78,25,Undervoltage,Yes
+236,5.65,50.11,29,Normal,No
+255,15.75,49.87,46,Overload,Yes
+243,15.67,50.02,43,Overload,Yes
+300,7.19,50.71,41,Overvoltage,Yes
+259,19.74,49.96,53,Overload,Yes
+278,6.63,50.47,30,Overvoltage,Yes
+226,4.33,49.86,32,Normal,No
+227,6.34,49.82,34,Normal,No
+265,7.16,50.74,42,Overvoltage,Yes
+176,2.32,49.73,32,Undervoltage,Yes
+240,14.28,50.12,43,Overload,Yes
+222,4.24,49.98,32,Normal,No
+7,0.0,0.0,30,Line Break,Yes
+5,0.0,0.0,26,Line Break,Yes
+296,6.35,50.11,35,Overvoltage,Yes
+140,4.98,49.35,29,Undervoltage,Yes
+268,7.69,50.67,41,Overvoltage,Yes
+107,2.26,49.99,30,Undervoltage,Yes
+234,6.39,49.99,29,Normal,No
+286,7.57,50.72,45,Overvoltage,Yes
+279,8.64,50.17,42,Overvoltage,Yes
+246,13.51,49.96,53,Overload,Yes
+250,16.56,50.14,49,Overload,Yes
+101,2.42,49.59,25,Undervoltage,Yes
+19,0.0,0.0,23,Line Break,Yes
+226,3.5,49.95,29,Normal,No
+256,15.02,49.96,43,Overload,Yes
+226,7.37,50.06,27,Normal,No
+268,8.38,50.73,40,Overvoltage,Yes
+228,4.75,50.06,27,Normal,No
+178,2.04,49.95,30,Undervoltage,Yes
+232,4.19,49.81,34,Normal,No
+254,15.66,49.89,53,Overload,Yes
+151,2.12,49.05,25,Undervoltage,Yes
+283,6.67,50.79,38,Overvoltage,Yes
+266,6.5,50.5,33,Overvoltage,Yes
+104,5.4,49.27,30,Undervoltage,Yes
+5,0.0,0.0,23,Line Break,Yes
+177,5.11,49.52,34,Undervoltage,Yes
+236,3.01,49.92,27,Normal,No
+223,6.97,50.01,26,Normal,No
+228,3.19,50.06,27,Normal,No
+224,4.83,49.89,30,Normal,No
+235,7.67,49.87,26,Normal,No
+3,0.0,0.0,30,Line Break,Yes
+297,6.89,50.8,43,Overvoltage,Yes
+224,5.08,49.86,28,Normal,No
+257,12.06,50.06,48,Overload,Yes
+241,15.01,49.96,53,Overload,Yes
+159,4.51,49.96,30,Undervoltage,Yes
+230,7.28,49.93,35,Normal,No
+276,8.34,50.64,32,Overvoltage,Yes
+241,19.89,50.0,47,Overload,Yes
+238,3.95,50.18,27,Normal,No
+230,6.54,50.18,33,Normal,No
+266,9.53,50.97,34,Overvoltage,Yes
+0,0.0,0.0,28,Line Break,Yes
+236,4.64,50.1,34,Normal,No
+293,8.24,50.1,37,Overvoltage,Yes
+151,4.61,49.42,28,Undervoltage,Yes
+234,5.36,50.08,29,Normal,No
+244,18.87,50.01,46,Overload,Yes
+117,5.23,49.86,33,Undervoltage,Yes
+228,5.68,49.91,25,Normal,No
+149,3.88,49.46,30,Undervoltage,Yes
+290,9.16,50.16,41,Overvoltage,Yes
+289,6.18,50.95,40,Overvoltage,Yes
+18,0.0,0.0,22,Line Break,Yes
+253,10.37,49.98,45,Overload,Yes
+14,0.0,0.0,24,Line Break,Yes
+253,15.19,49.91,42,Overload,Yes
+14,0.0,0.0,21,Line Break,Yes
+286,9.78,50.59,41,Overvoltage,Yes
+254,15.29,49.88,45,Overload,Yes
+259,14.24,50.05,54,Overload,Yes
+130,3.97,49.87,27,Undervoltage,Yes
+109,3.45,49.44,27,Undervoltage,Yes
+234,3.15,49.92,30,Normal,No
+1,0.0,0.0,27,Line Break,Yes
+225,4.14,49.91,26,Normal,No
+264,6.05,50.22,35,Overvoltage,Yes
+255,16.3,49.85,47,Overload,Yes
+2,0.0,0.0,22,Line Break,Yes
+265,9.78,50.58,42,Overvoltage,Yes
+233,6.36,50.17,34,Normal,No
+290,5.79,50.68,36,Overvoltage,Yes
+151,2.54,49.37,34,Undervoltage,Yes
+157,5.87,49.29,29,Undervoltage,Yes
+289,7.18,50.64,44,Overvoltage,Yes
+250,18.65,50.16,52,Overload,Yes
+220,7.54,49.96,29,Normal,No
+173,5.0,49.4,33,Undervoltage,Yes
+221,6.27,49.86,26,Normal,No
+252,15.05,49.85,52,Overload,Yes
+238,6.19,50.18,28,Normal,No
+113,5.54,49.62,28,Undervoltage,Yes
+4,0.0,0.0,24,Line Break,Yes
+230,5.53,49.88,31,Normal,No
+13,0.0,0.0,23,Line Break,Yes
+17,0.0,0.0,23,Line Break,Yes
+240,4.04,50.18,31,Normal,No
+149,2.25,50.0,35,Undervoltage,Yes
+256,15.32,49.82,54,Overload,Yes
+17,0.0,0.0,28,Line Break,Yes
+234,6.63,50.06,26,Normal,No
+263,9.5,50.94,43,Overvoltage,Yes
+141,3.75,49.1,34,Undervoltage,Yes
+289,7.88,50.47,43,Overvoltage,Yes
+102,5.12,49.38,31,Undervoltage,Yes
+221,3.44,50.18,29,Normal,No
+172,5.35,50.0,33,Undervoltage,Yes
+176,4.43,49.67,35,Undervoltage,Yes
+244,17.15,50.19,51,Overload,Yes
+6,0.0,0.0,26,Line Break,Yes
+13,0.0,0.0,28,Line Break,Yes
+293,8.54,50.01,34,Overvoltage,Yes
+125,2.38,49.32,35,Undervoltage,Yes
+295,9.22,50.06,35,Overvoltage,Yes
+233,3.36,50.19,33,Normal,No
+268,8.68,50.44,34,Overvoltage,Yes
+255,17.64,50.19,51,Overload,Yes
+225,4.28,50.08,27,Normal,No
+7,0.0,0.0,30,Line Break,Yes
+19,0.0,0.0,23,Line Break,Yes
+140,2.71,49.47,25,Undervoltage,Yes
+227,6.96,49.94,35,Normal,No
+299,5.38,50.28,43,Overvoltage,Yes
+9,0.0,0.0,30,Line Break,Yes
+288,7.79,50.69,35,Overvoltage,Yes
+267,5.3,50.74,39,Overvoltage,Yes
+228,7.76,50.01,30,Normal,No
+243,12.13,50.12,43,Overload,Yes
+250,16.04,49.95,41,Overload,Yes
+297,9.71,50.11,45,Overvoltage,Yes
+300,9.1,50.29,39,Overvoltage,Yes
+223,7.55,50.14,35,Normal,No
+243,17.24,49.82,54,Overload,Yes
+225,5.02,50.13,29,Normal,No
+118,3.39,49.61,34,Undervoltage,Yes
+20,0.0,0.0,20,Line Break,Yes
+110,4.4,49.17,26,Undervoltage,Yes
+124,5.12,49.73,30,Undervoltage,Yes
+257,15.42,50.17,40,Overload,Yes
+292,6.16,50.64,40,Overvoltage,Yes
+6,0.0,0.0,30,Line Break,Yes
+168,2.41,49.32,29,Undervoltage,Yes
+106,3.24,49.32,31,Undervoltage,Yes
+5,0.0,0.0,21,Line Break,Yes
+1,0.0,0.0,23,Line Break,Yes
+12,0.0,0.0,26,Line Break,Yes
+252,16.29,50.06,47,Overload,Yes
+20,0.0,0.0,22,Line Break,Yes
+11,0.0,0.0,25,Line Break,Yes
+271,7.98,50.24,38,Overvoltage,Yes
+251,13.42,50.13,46,Overload,Yes
+249,14.61,49.87,44,Overload,Yes
+275,5.94,50.93,43,Overvoltage,Yes
+6,0.0,0.0,21,Line Break,Yes
+255,16.63,49.88,48,Overload,Yes
+4,0.0,0.0,29,Line Break,Yes
+250,15.92,49.92,55,Overload,Yes
+249,13.22,50.18,41,Overload,Yes
+244,19.62,49.91,54,Overload,Yes
+153,3.55,49.91,33,Undervoltage,Yes
+12,0.0,0.0,29,Line Break,Yes
+252,18.45,50.19,41,Overload,Yes
+230,4.01,50.02,25,Normal,No
+177,3.03,49.8,25,Undervoltage,Yes
+293,5.22,50.08,44,Overvoltage,Yes
+250,13.7,50.05,41,Overload,Yes
+121,3.38,49.66,26,Undervoltage,Yes
+236,3.62,49.87,34,Normal,No
+249,10.86,50.07,50,Overload,Yes
+20,0.0,0.0,28,Line Break,Yes
+256,12.94,50.06,50,Overload,Yes
+221,3.9,49.96,33,Normal,No
+258,15.98,50.02,53,Overload,Yes
+276,5.41,50.07,40,Overvoltage,Yes
+224,3.03,49.82,34,Normal,No
+100,2.77,49.78,26,Undervoltage,Yes
+108,2.2,49.25,27,Undervoltage,Yes
+272,7.66,50.06,39,Overvoltage,Yes
+269,5.94,50.73,36,Overvoltage,Yes
+280,9.92,50.77,40,Overvoltage,Yes
+102,2.2,49.37,31,Undervoltage,Yes
+12,0.0,0.0,20,Line Break,Yes
+252,18.57,50.14,46,Overload,Yes
+283,5.33,50.17,37,Overvoltage,Yes
+223,3.05,50.16,31,Normal,No
+144,2.77,49.18,26,Undervoltage,Yes
+226,5.72,49.89,32,Normal,No
+157,5.62,49.52,31,Undervoltage,Yes
+256,17.84,49.99,47,Overload,Yes
+16,0.0,0.0,30,Line Break,Yes
+121,4.84,49.07,31,Undervoltage,Yes
+4,0.0,0.0,22,Line Break,Yes
+249,13.95,49.99,42,Overload,Yes
+258,15.66,49.81,50,Overload,Yes
+5,0.0,0.0,25,Line Break,Yes
+1,0.0,0.0,20,Line Break,Yes
+250,15.42,50.19,47,Overload,Yes
+0,0.0,0.0,25,Line Break,Yes
+2,0.0,0.0,27,Line Break,Yes
+236,7.36,49.8,29,Normal,No
+279,7.49,50.8,36,Overvoltage,Yes
+16,0.0,0.0,25,Line Break,Yes
+124,5.91,49.79,32,Undervoltage,Yes
+283,9.89,50.75,45,Overvoltage,Yes
+12,0.0,0.0,22,Line Break,Yes
+145,3.85,49.24,35,Undervoltage,Yes
+246,18.76,49.91,51,Overload,Yes
+221,3.08,50.14,28,Normal,No
+149,4.88,49.2,35,Undervoltage,Yes
+240,7.32,50.18,30,Normal,No
+5,0.0,0.0,28,Line Break,Yes
+10,0.0,0.0,28,Line Break,Yes
+246,11.84,50.12,48,Overload,Yes
+118,3.48,49.3,29,Undervoltage,Yes
+3,0.0,0.0,23,Line Break,Yes
+278,7.97,50.02,31,Overvoltage,Yes
+10,0.0,0.0,29,Line Break,Yes
+293,9.4,50.74,43,Overvoltage,Yes
+17,0.0,0.0,22,Line Break,Yes
+299,9.61,50.59,37,Overvoltage,Yes
+273,6.43,50.17,45,Overvoltage,Yes
+0,0.0,0.0,24,Line Break,Yes
+165,4.8,49.4,30,Undervoltage,Yes
+174,3.87,49.07,35,Undervoltage,Yes
+111,5.5,49.01,30,Undervoltage,Yes
+253,10.85,49.89,42,Overload,Yes
+232,5.21,50.06,30,Normal,No
+221,3.04,50.13,35,Normal,No
+223,6.29,50.19,28,Normal,No
+0,0.0,0.0,26,Line Break,Yes
+251,18.13,49.96,48,Overload,Yes
+174,4.41,49.67,27,Undervoltage,Yes
+220,7.09,50.04,25,Normal,No
+179,5.06,49.55,32,Undervoltage,Yes
+20,0.0,0.0,26,Line Break,Yes
+232,7.19,50.19,30,Normal,No
+127,2.59,49.98,33,Undervoltage,Yes
+116,5.53,49.54,29,Undervoltage,Yes
+244,19.24,49.89,49,Overload,Yes
+228,5.75,50.2,31,Normal,No
+241,10.07,49.84,44,Overload,Yes
+221,7.53,49.89,25,Normal,No
+1,0.0,0.0,22,Line Break,Yes
+276,7.36,50.67,31,Overvoltage,Yes
+256,17.42,49.98,44,Overload,Yes
+243,15.57,50.15,48,Overload,Yes
+228,6.74,49.97,28,Normal,No
+116,2.16,49.38,27,Undervoltage,Yes
+300,7.69,50.91,44,Overvoltage,Yes
+168,2.74,49.81,35,Undervoltage,Yes
+259,17.05,49.82,53,Overload,Yes
+176,5.98,49.29,26,Undervoltage,Yes
+4,0.0,0.0,25,Line Break,Yes
+231,6.13,50.08,31,Normal,No
+249,13.27,50.12,45,Overload,Yes
+149,2.37,49.81,32,Undervoltage,Yes
+289,7.42,50.58,30,Overvoltage,Yes
+268,6.39,50.13,33,Overvoltage,Yes
+0,0.0,0.0,26,Line Break,Yes
+227,3.14,50.09,26,Normal,No
+9,0.0,0.0,25,Line Break,Yes
+233,4.6,49.85,34,Normal,No
+258,11.43,50.14,51,Overload,Yes
+246,12.35,50.03,55,Overload,Yes
+153,4.61,49.93,34,Undervoltage,Yes
+253,19.51,49.89,46,Overload,Yes
+244,14.25,50.05,43,Overload,Yes
+10,0.0,0.0,23,Line Break,Yes
+285,8.36,50.3,34,Overvoltage,Yes
+244,10.85,49.83,44,Overload,Yes
+283,9.95,50.96,35,Overvoltage,Yes
+19,0.0,0.0,26,Line Break,Yes
+9,0.0,0.0,20,Line Break,Yes
+5,0.0,0.0,26,Line Break,Yes
+178,3.54,49.54,35,Undervoltage,Yes
+227,6.24,49.93,29,Normal,No
+126,3.57,49.31,26,Undervoltage,Yes
+222,3.62,50.12,31,Normal,No
+12,0.0,0.0,29,Line Break,Yes
+112,2.69,49.61,31,Undervoltage,Yes
+114,2.01,49.71,26,Undervoltage,Yes
+268,9.73,50.77,32,Overvoltage,Yes
+271,8.9,50.62,35,Overvoltage,Yes
+10,0.0,0.0,27,Line Break,Yes
+276,9.67,50.81,30,Overvoltage,Yes
+284,9.1,50.47,32,Overvoltage,Yes
+233,7.06,49.97,30,Normal,No
+246,15.13,50.2,52,Overload,Yes
+172,4.35,49.23,34,Undervoltage,Yes
+165,4.69,49.07,34,Undervoltage,Yes
+275,6.61,50.09,35,Overvoltage,Yes
+256,13.94,50.16,53,Overload,Yes
+237,5.01,49.81,27,Normal,No
+3,0.0,0.0,25,Line Break,Yes
+227,6.78,50.12,33,Normal,No
+232,6.97,50.11,29,Normal,No
+172,3.73,49.72,31,Undervoltage,Yes
+236,7.54,49.93,34,Normal,No
+16,0.0,0.0,21,Line Break,Yes
+270,7.23,50.64,37,Overvoltage,Yes
+156,4.05,49.57,29,Undervoltage,Yes
+256,13.83,49.85,45,Overload,Yes
+16,0.0,0.0,24,Line Break,Yes
+241,19.12,50.06,49,Overload,Yes
+245,15.53,49.89,55,Overload,Yes
+150,4.28,49.84,34,Undervoltage,Yes
+276,8.82,50.67,37,Overvoltage,Yes
+260,12.1,49.96,45,Overload,Yes
+118,3.01,49.87,33,Undervoltage,Yes
+256,13.32,50.15,53,Overload,Yes
+137,4.78,49.9,26,Undervoltage,Yes
+103,3.64,49.39,26,Undervoltage,Yes
+138,2.51,49.69,25,Undervoltage,Yes
+10,0.0,0.0,21,Line Break,Yes
+284,5.2,50.2,31,Overvoltage,Yes
+232,4.57,50.11,29,Normal,No
+262,7.08,50.3,35,Overvoltage,Yes
+179,3.53,49.35,32,Undervoltage,Yes
+253,17.86,50.09,42,Overload,Yes
+292,8.84,50.36,37,Overvoltage,Yes
+250,15.89,50.03,42,Overload,Yes
+273,9.32,50.72,35,Overvoltage,Yes
+248,12.29,49.87,53,Overload,Yes
+227,6.33,50.03,25,Normal,No
+254,13.43,50.13,52,Overload,Yes
+125,5.65,49.09,33,Undervoltage,Yes
+10,0.0,0.0,26,Line Break,Yes
+276,7.5,50.07,39,Overvoltage,Yes
+161,3.95,49.43,27,Undervoltage,Yes
+268,6.85,50.68,44,Overvoltage,Yes
+126,4.2,49.05,29,Undervoltage,Yes
+239,6.48,49.94,27,Normal,No
+288,6.51,50.02,43,Overvoltage,Yes
+18,0.0,0.0,22,Line Break,Yes
+258,13.35,50.14,50,Overload,Yes
+247,18.44,50.1,44,Overload,Yes
+15,0.0,0.0,28,Line Break,Yes
+151,5.89,49.01,35,Undervoltage,Yes
+220,3.16,49.81,28,Normal,No
+165,5.19,49.36,32,Undervoltage,Yes
+226,3.23,49.88,31,Normal,No
+250,16.57,50.15,45,Overload,Yes
+127,3.62,49.85,30,Undervoltage,Yes
+246,19.65,50.19,45,Overload,Yes
+241,11.86,49.81,54,Overload,Yes
+263,6.53,50.17,42,Overvoltage,Yes
+135,2.28,49.58,34,Undervoltage,Yes
+224,3.09,50.2,35,Normal,No
+236,5.86,50.15,29,Normal,No
+179,4.22,49.53,32,Undervoltage,Yes
+262,6.21,50.23,38,Overvoltage,Yes
+228,5.58,49.86,35,Normal,No
+244,16.18,50.09,50,Overload,Yes
+249,19.63,49.89,54,Overload,Yes
+177,4.32,49.94,27,Undervoltage,Yes
+148,4.57,49.65,26,Undervoltage,Yes
+113,4.89,49.93,32,Undervoltage,Yes
+154,3.54,49.24,30,Undervoltage,Yes
+166,3.76,49.13,25,Undervoltage,Yes
+111,3.73,49.48,33,Undervoltage,Yes
+234,4.79,50.04,28,Normal,No
+123,3.41,49.7,26,Undervoltage,Yes
+131,5.75,49.41,26,Undervoltage,Yes
+249,14.61,49.89,40,Overload,Yes
+118,3.64,49.33,31,Undervoltage,Yes
+281,7.96,50.37,42,Overvoltage,Yes
+133,2.49,49.09,29,Undervoltage,Yes
+259,18.96,49.82,52,Overload,Yes
+224,3.55,50.11,25,Normal,No
+229,5.59,50.14,30,Normal,No
+254,13.75,49.87,50,Overload,Yes
+293,8.85,50.08,36,Overvoltage,Yes
+243,11.68,50.19,46,Overload,Yes
+138,3.81,49.23,31,Undervoltage,Yes
+235,3.65,50.02,26,Normal,No
+15,0.0,0.0,20,Line Break,Yes
+126,5.39,49.08,25,Undervoltage,Yes
+6,0.0,0.0,25,Line Break,Yes
+221,7.38,49.96,34,Normal,No
+18,0.0,0.0,24,Line Break,Yes
+142,3.59,49.09,35,Undervoltage,Yes
+16,0.0,0.0,23,Line Break,Yes
+258,17.96,50.03,50,Overload,Yes
+252,14.32,49.95,55,Overload,Yes
+155,5.84,49.29,26,Undervoltage,Yes
+145,5.44,49.39,32,Undervoltage,Yes
+110,4.57,49.23,33,Undervoltage,Yes
+297,7.17,50.11,37,Overvoltage,Yes
+258,12.2,50.03,52,Overload,Yes
+15,0.0,0.0,25,Line Break,Yes
+118,3.94,49.49,35,Undervoltage,Yes
+159,2.56,49.68,32,Undervoltage,Yes
+268,6.61,50.96,31,Overvoltage,Yes
+230,3.56,50.17,29,Normal,No
+150,3.51,49.01,30,Undervoltage,Yes
+133,3.68,49.44,30,Undervoltage,Yes
+230,3.79,49.81,28,Normal,No
+273,6.56,50.09,35,Overvoltage,Yes
+236,4.04,49.82,35,Normal,No
+150,5.22,49.71,27,Undervoltage,Yes
+278,8.51,50.61,33,Overvoltage,Yes
+242,13.39,50.03,40,Overload,Yes
+127,4.61,49.63,30,Undervoltage,Yes
+0,0.0,0.0,21,Line Break,Yes
+242,16.35,49.98,50,Overload,Yes
+242,11.62,49.8,55,Overload,Yes
+147,5.97,49.34,32,Undervoltage,Yes
+221,3.97,50.12,25,Normal,No
+137,4.92,49.05,35,Undervoltage,Yes
+1,0.0,0.0,29,Line Break,Yes
+233,7.98,50.17,32,Normal,No
+293,8.65,50.9,41,Overvoltage,Yes
+224,6.85,50.0,30,Normal,No
+13,0.0,0.0,26,Line Break,Yes
+263,5.2,50.33,43,Overvoltage,Yes
+287,6.18,50.67,33,Overvoltage,Yes
+13,0.0,0.0,23,Line Break,Yes
+241,11.39,49.86,53,Overload,Yes
+111,4.7,49.36,28,Undervoltage,Yes
+236,6.26,49.97,28,Normal,No
+157,4.35,49.48,27,Undervoltage,Yes
+232,3.91,50.17,30,Normal,No
+293,5.89,50.46,34,Overvoltage,Yes
+281,8.88,50.98,33,Overvoltage,Yes
+11,0.0,0.0,22,Line Break,Yes
+165,4.45,49.04,28,Undervoltage,Yes
+256,15.69,50.14,40,Overload,Yes
+230,5.21,50.03,25,Normal,No
+146,2.5,49.84,29,Undervoltage,Yes
+283,9.45,50.7,44,Overvoltage,Yes
+289,8.03,50.45,41,Overvoltage,Yes
+4,0.0,0.0,26,Line Break,Yes
+6,0.0,0.0,29,Line Break,Yes
+230,7.85,50.03,30,Normal,No
+5,0.0,0.0,28,Line Break,Yes
+165,3.97,49.14,29,Undervoltage,Yes
+233,4.59,49.96,35,Normal,No
+240,7.46,49.87,27,Normal,No
+284,8.53,50.6,43,Overvoltage,Yes
+254,11.92,50.09,49,Overload,Yes
+179,5.21,49.13,27,Undervoltage,Yes
+7,0.0,0.0,29,Line Break,Yes
+246,12.47,50.14,40,Overload,Yes
+241,10.57,50.09,52,Overload,Yes
+294,7.45,50.51,35,Overvoltage,Yes
+12,0.0,0.0,21,Line Break,Yes
+282,7.74,50.62,32,Overvoltage,Yes
+10,0.0,0.0,24,Line Break,Yes
+4,0.0,0.0,30,Line Break,Yes
+260,18.85,50.07,55,Overload,Yes
+253,14.34,49.9,42,Overload,Yes
+2,0.0,0.0,21,Line Break,Yes
+249,15.71,49.95,52,Overload,Yes
+4,0.0,0.0,28,Line Break,Yes
+138,4.59,49.15,35,Undervoltage,Yes
+259,15.21,49.89,46,Overload,Yes
+0,0.0,0.0,24,Line Break,Yes
+226,6.46,49.81,25,Normal,No
+248,18.32,49.89,47,Overload,Yes
+10,0.0,0.0,29,Line Break,Yes
+142,3.88,49.49,35,Undervoltage,Yes
+244,11.88,49.87,42,Overload,Yes
+4,0.0,0.0,27,Line Break,Yes
+112,3.79,49.96,35,Undervoltage,Yes
+0,0.0,0.0,28,Line Break,Yes
+273,6.62,50.15,36,Overvoltage,Yes
+233,3.54,50.01,28,Normal,No
+132,4.03,49.87,25,Undervoltage,Yes
+246,13.41,50.03,53,Overload,Yes
+230,4.81,49.85,25,Normal,No
+15,0.0,0.0,24,Line Break,Yes
+240,18.96,50.16,53,Overload,Yes
+296,8.35,50.6,35,Overvoltage,Yes
+256,12.75,49.85,44,Overload,Yes
+105,2.13,49.93,27,Undervoltage,Yes
+223,6.85,50.09,32,Normal,No
+10,0.0,0.0,21,Line Break,Yes
+170,3.33,49.94,27,Undervoltage,Yes
+223,6.03,49.95,32,Normal,No
+10,0.0,0.0,27,Line Break,Yes
+8,0.0,0.0,27,Line Break,Yes
+223,5.36,49.98,32,Normal,No
+226,5.4,49.83,33,Normal,No
+114,4.52,49.17,31,Undervoltage,Yes
+101,4.44,49.31,27,Undervoltage,Yes
+10,0.0,0.0,27,Line Break,Yes
+13,0.0,0.0,24,Line Break,Yes
+285,9.52,50.44,41,Overvoltage,Yes
+9,0.0,0.0,29,Line Break,Yes
+257,11.61,49.94,54,Overload,Yes
+298,5.42,50.75,41,Overvoltage,Yes
+0,0.0,0.0,23,Line Break,Yes
+3,0.0,0.0,30,Line Break,Yes
+13,0.0,0.0,29,Line Break,Yes
+281,9.03,50.31,39,Overvoltage,Yes
+241,17.78,49.96,44,Overload,Yes
+254,12.03,50.03,42,Overload,Yes
+228,5.73,49.93,34,Normal,No
+245,14.51,49.87,44,Overload,Yes
+166,2.23,49.71,34,Undervoltage,Yes
+239,4.48,49.89,30,Normal,No
+239,6.85,50.04,33,Normal,No
+236,5.71,50.19,35,Normal,No
+108,4.71,49.27,30,Undervoltage,Yes
+284,5.2,50.74,38,Overvoltage,Yes
+255,19.24,50.08,48,Overload,Yes
+116,5.91,49.1,35,Undervoltage,Yes
+274,8.39,50.29,39,Overvoltage,Yes
+268,5.79,50.64,33,Overvoltage,Yes
+100,3.62,49.55,26,Undervoltage,Yes
+254,18.82,50.15,40,Overload,Yes
+291,6.44,50.79,38,Overvoltage,Yes
+233,3.79,50.07,29,Normal,No
+6,0.0,0.0,22,Line Break,Yes
+275,7.37,50.29,44,Overvoltage,Yes
+145,4.18,49.55,29,Undervoltage,Yes
+234,6.18,49.91,35,Normal,No
+11,0.0,0.0,27,Line Break,Yes
+6,0.0,0.0,29,Line Break,Yes
+2,0.0,0.0,22,Line Break,Yes
+10,0.0,0.0,27,Line Break,Yes
+243,15.39,50.19,47,Overload,Yes
+103,4.62,49.0,27,Undervoltage,Yes
+221,6.16,50.11,30,Normal,No
+242,10.48,49.97,54,Overload,Yes
+246,19.75,49.92,51,Overload,Yes
+261,7.41,50.64,36,Overvoltage,Yes
+10,0.0,0.0,29,Line Break,Yes
+109,4.74,49.51,28,Undervoltage,Yes
+257,16.42,50.2,54,Overload,Yes
+250,10.81,50.11,50,Overload,Yes
+178,2.71,49.71,35,Undervoltage,Yes
+221,7.91,49.89,34,Normal,No
+5,0.0,0.0,25,Line Break,Yes
+267,8.67,50.52,36,Overvoltage,Yes
+278,7.93,50.2,31,Overvoltage,Yes
+286,7.1,50.2,41,Overvoltage,Yes
+5,0.0,0.0,27,Line Break,Yes
+244,12.94,49.89,49,Overload,Yes
+244,13.02,50.11,48,Overload,Yes
+281,7.55,50.76,30,Overvoltage,Yes
+179,4.79,49.18,34,Undervoltage,Yes
+284,5.71,50.36,40,Overvoltage,Yes
+129,5.14,49.36,30,Undervoltage,Yes
+233,7.15,50.1,26,Normal,No
+9,0.0,0.0,25,Line Break,Yes
+249,17.15,49.88,42,Overload,Yes
+11,0.0,0.0,26,Line Break,Yes
+9,0.0,0.0,20,Line Break,Yes
+152,3.47,49.82,25,Undervoltage,Yes
+10,0.0,0.0,21,Line Break,Yes
+220,6.56,50.0,27,Normal,No
+8,0.0,0.0,23,Line Break,Yes
+278,5.07,50.77,32,Overvoltage,Yes
+277,5.82,50.07,38,Overvoltage,Yes
+266,7.06,50.85,32,Overvoltage,Yes
+2,0.0,0.0,29,Line Break,Yes
+2,0.0,0.0,28,Line Break,Yes
+239,5.98,49.98,28,Normal,No
+134,4.1,49.26,25,Undervoltage,Yes
+158,5.47,49.54,35,Undervoltage,Yes
+288,5.22,50.96,36,Overvoltage,Yes
+107,3.95,49.93,30,Undervoltage,Yes
+256,10.05,50.14,49,Overload,Yes
+297,9.02,50.45,42,Overvoltage,Yes
+240,11.6,50.05,41,Overload,Yes
+234,4.54,49.81,27,Normal,No
+293,6.16,50.2,38,Overvoltage,Yes
+6,0.0,0.0,21,Line Break,Yes
+106,2.02,49.9,34,Undervoltage,Yes
+224,6.95,49.98,28,Normal,No
+3,0.0,0.0,28,Line Break,Yes
+18,0.0,0.0,28,Line Break,Yes
+241,15.21,49.99,46,Overload,Yes
+222,7.97,50.12,29,Normal,No
+123,5.03,49.13,27,Undervoltage,Yes
+249,12.17,49.93,51,Overload,Yes
+16,0.0,0.0,23,Line Break,Yes
+2,0.0,0.0,22,Line Break,Yes
+129,5.54,49.27,28,Undervoltage,Yes
+6,0.0,0.0,22,Line Break,Yes
+130,2.11,49.75,31,Undervoltage,Yes
+13,0.0,0.0,24,Line Break,Yes
+225,5.38,50.11,31,Normal,No
+136,5.93,49.7,28,Undervoltage,Yes
+295,6.67,50.4,33,Overvoltage,Yes
+234,4.94,49.9,28,Normal,No
+268,8.14,50.48,38,Overvoltage,Yes
+237,7.21,50.15,31,Normal,No
+12,0.0,0.0,27,Line Break,Yes
+248,15.43,50.09,49,Overload,Yes
+179,2.94,49.89,35,Undervoltage,Yes
+248,10.23,50.02,49,Overload,Yes
+20,0.0,0.0,21,Line Break,Yes
+164,3.55,49.9,25,Undervoltage,Yes
+248,15.88,49.83,40,Overload,Yes
+255,16.45,50.13,55,Overload,Yes
+130,4.04,49.36,30,Undervoltage,Yes
+259,10.47,50.12,52,Overload,Yes
+248,15.63,49.81,47,Overload,Yes
+157,4.72,49.55,26,Undervoltage,Yes
+245,14.94,49.95,51,Overload,Yes
+288,8.58,50.2,42,Overvoltage,Yes
+111,2.7,49.94,25,Undervoltage,Yes
+11,0.0,0.0,25,Line Break,Yes
+262,8.7,50.34,36,Overvoltage,Yes
+224,7.99,50.03,30,Normal,No
+119,4.61,49.55,31,Undervoltage,Yes
+238,4.98,49.96,34,Normal,No
+297,7.52,50.24,30,Overvoltage,Yes
+260,10.14,50.01,40,Overload,Yes
+229,3.17,50.02,35,Normal,No
+290,8.68,50.06,31,Overvoltage,Yes
+279,6.87,50.81,35,Overvoltage,Yes
+12,0.0,0.0,22,Line Break,Yes
+245,14.86,49.91,48,Overload,Yes
+249,12.12,50.09,50,Overload,Yes
+273,9.27,50.21,41,Overvoltage,Yes
+266,8.08,50.59,45,Overvoltage,Yes
+2,0.0,0.0,20,Line Break,Yes
+17,0.0,0.0,21,Line Break,Yes
+257,10.83,49.81,43,Overload,Yes
+232,7.05,49.91,25,Normal,No
+6,0.0,0.0,26,Line Break,Yes
+297,8.77,50.5,40,Overvoltage,Yes
+145,5.16,49.69,33,Undervoltage,Yes
+252,15.9,49.98,53,Overload,Yes
+121,5.81,49.09,28,Undervoltage,Yes
+151,4.04,49.24,31,Undervoltage,Yes
+17,0.0,0.0,30,Line Break,Yes
+245,18.0,50.14,47,Overload,Yes
+7,0.0,0.0,28,Line Break,Yes
+270,8.01,50.22,40,Overvoltage,Yes
+0,0.0,0.0,22,Line Break,Yes
+259,18.6,49.92,53,Overload,Yes
+295,8.86,50.07,41,Overvoltage,Yes
+141,2.87,49.2,28,Undervoltage,Yes
+8,0.0,0.0,27,Line Break,Yes
+243,18.31,49.88,44,Overload,Yes
+220,4.51,49.89,25,Normal,No
+4,0.0,0.0,24,Line Break,Yes
+267,7.43,50.6,30,Overvoltage,Yes
+10,0.0,0.0,27,Line Break,Yes
+257,10.65,50.02,47,Overload,Yes
+252,15.31,50.0,44,Overload,Yes
+12,0.0,0.0,30,Line Break,Yes
+220,7.52,50.07,34,Normal,No
+290,6.13,50.04,39,Overvoltage,Yes
+14,0.0,0.0,22,Line Break,Yes
+269,5.65,50.58,31,Overvoltage,Yes
+229,4.48,50.15,31,Normal,No
+20,0.0,0.0,20,Line Break,Yes
+137,3.44,49.28,28,Undervoltage,Yes
+283,5.31,50.19,36,Overvoltage,Yes
+236,6.87,49.96,32,Normal,No
+11,0.0,0.0,23,Line Break,Yes
+254,13.96,49.94,44,Overload,Yes
+16,0.0,0.0,22,Line Break,Yes
+296,6.1,50.94,41,Overvoltage,Yes
+234,7.74,49.83,32,Normal,No
+236,3.93,50.02,28,Normal,No
+258,14.14,49.93,46,Overload,Yes
+285,5.48,50.38,30,Overvoltage,Yes
+286,9.26,50.53,37,Overvoltage,Yes
+236,6.46,50.15,31,Normal,No
+0,0.0,0.0,26,Line Break,Yes
+1,0.0,0.0,21,Line Break,Yes
+124,3.37,49.87,33,Undervoltage,Yes
+176,3.68,49.32,34,Undervoltage,Yes
+154,2.15,49.96,25,Undervoltage,Yes
+13,0.0,0.0,20,Line Break,Yes
+266,9.59,50.77,43,Overvoltage,Yes
+103,3.29,49.09,26,Undervoltage,Yes
+246,15.89,50.15,52,Overload,Yes
+229,7.27,50.15,27,Normal,No
+155,4.85,49.09,31,Undervoltage,Yes
+242,14.63,49.97,53,Overload,Yes
+273,7.44,50.84,30,Overvoltage,Yes
+235,4.64,50.06,30,Normal,No
+110,2.08,49.57,33,Undervoltage,Yes
+125,3.85,49.74,34,Undervoltage,Yes
+2,0.0,0.0,23,Line Break,Yes
+160,4.26,49.33,30,Undervoltage,Yes
+276,8.46,50.84,36,Overvoltage,Yes
+220,6.44,49.88,33,Normal,No
+16,0.0,0.0,20,Line Break,Yes
+14,0.0,0.0,20,Line Break,Yes
+237,6.74,49.92,33,Normal,No
+227,5.06,49.98,30,Normal,No
+2,0.0,0.0,21,Line Break,Yes
+241,19.98,50.18,49,Overload,Yes
+161,5.28,49.62,26,Undervoltage,Yes
+12,0.0,0.0,22,Line Break,Yes
+1,0.0,0.0,22,Line Break,Yes
+234,3.02,50.07,32,Normal,No
+151,3.74,49.31,30,Undervoltage,Yes
+248,11.66,50.15,53,Overload,Yes
+232,5.6,49.83,35,Normal,No
+227,4.05,50.05,31,Normal,No
+2,0.0,0.0,30,Line Break,Yes
+283,8.05,50.88,34,Overvoltage,Yes
+228,6.45,49.85,33,Normal,No
+18,0.0,0.0,26,Line Break,Yes
+15,0.0,0.0,23,Line Break,Yes
+153,4.64,49.53,31,Undervoltage,Yes
+220,4.33,49.82,34,Normal,No
+241,11.51,50.01,55,Overload,Yes
+173,5.51,49.09,35,Undervoltage,Yes
+137,2.39,49.59,32,Undervoltage,Yes
+152,5.18,49.31,33,Undervoltage,Yes
+13,0.0,0.0,30,Line Break,Yes
+160,3.2,49.48,27,Undervoltage,Yes
+104,4.84,49.85,25,Undervoltage,Yes
+234,5.98,50.13,26,Normal,No
+296,7.19,50.93,33,Overvoltage,Yes
+294,7.82,50.08,34,Overvoltage,Yes
+289,8.85,50.49,40,Overvoltage,Yes
+290,5.86,50.21,39,Overvoltage,Yes
+226,5.85,50.05,35,Normal,No
+177,5.43,49.69,28,Undervoltage,Yes
+272,9.67,50.97,41,Overvoltage,Yes
+6,0.0,0.0,29,Line Break,Yes
+244,15.79,49.96,55,Overload,Yes
+237,7.48,49.83,32,Normal,No
+6,0.0,0.0,22,Line Break,Yes
+171,2.99,49.71,30,Undervoltage,Yes
+246,17.63,50.14,55,Overload,Yes
+257,18.1,49.84,52,Overload,Yes
+236,7.83,49.93,35,Normal,No
+229,4.07,50.01,31,Normal,No
+226,4.03,50.14,34,Normal,No
+157,4.72,49.17,35,Undervoltage,Yes
+268,8.64,50.03,30,Overvoltage,Yes
+10,0.0,0.0,26,Line Break,Yes
+0,0.0,0.0,29,Line Break,Yes
+258,14.43,50.07,42,Overload,Yes
+3,0.0,0.0,21,Line Break,Yes
+258,18.12,49.9,50,Overload,Yes
+270,7.98,50.43,32,Overvoltage,Yes
+103,4.03,49.22,33,Undervoltage,Yes
+20,0.0,0.0,24,Line Break,Yes
+258,12.75,49.87,43,Overload,Yes
+281,5.03,50.27,37,Overvoltage,Yes
+141,2.03,49.71,34,Undervoltage,Yes
+112,5.31,49.07,28,Undervoltage,Yes
+271,5.83,50.1,40,Overvoltage,Yes
+154,2.77,49.22,26,Undervoltage,Yes
+108,5.3,49.88,29,Undervoltage,Yes
+225,4.14,50.09,28,Normal,No
+229,7.59,50.1,29,Normal,No
+259,13.31,50.03,48,Overload,Yes
+175,3.57,49.76,31,Undervoltage,Yes
+270,6.7,50.78,42,Overvoltage,Yes
+292,6.32,50.53,37,Overvoltage,Yes
+299,7.0,50.25,36,Overvoltage,Yes
+228,7.68,50.14,26,Normal,No
+252,16.14,49.99,46,Overload,Yes
+110,3.1,49.72,31,Undervoltage,Yes
+281,7.4,50.48,31,Overvoltage,Yes
+151,3.36,49.22,31,Undervoltage,Yes
+15,0.0,0.0,20,Line Break,Yes
+289,7.48,50.11,36,Overvoltage,Yes
+258,14.44,49.95,47,Overload,Yes
+255,13.7,50.01,47,Overload,Yes
+173,5.72,49.77,28,Undervoltage,Yes
+119,5.34,49.66,26,Undervoltage,Yes
+234,6.47,50.04,34,Normal,No
+253,11.13,49.8,45,Overload,Yes
+18,0.0,0.0,24,Line Break,Yes
+233,5.02,50.13,26,Normal,No
+231,7.19,49.91,34,Normal,No
+230,3.64,50.18,30,Normal,No
+260,14.22,50.07,53,Overload,Yes
+250,15.59,50.06,43,Overload,Yes
+109,3.3,49.46,26,Undervoltage,Yes
+238,3.57,49.93,32,Normal,No
+5,0.0,0.0,24,Line Break,Yes
+279,8.82,50.44,41,Overvoltage,Yes
+254,10.41,49.84,43,Overload,Yes
+148,5.9,49.2,35,Undervoltage,Yes
+112,4.64,49.32,25,Undervoltage,Yes
+17,0.0,0.0,21,Line Break,Yes
+127,4.75,49.19,35,Undervoltage,Yes
+245,16.24,50.03,49,Overload,Yes
+104,5.13,49.16,26,Undervoltage,Yes
+233,5.26,50.12,35,Normal,No
+9,0.0,0.0,22,Line Break,Yes
+293,8.3,50.48,39,Overvoltage,Yes
+19,0.0,0.0,22,Line Break,Yes
+265,6.2,50.66,33,Overvoltage,Yes
+267,5.34,50.12,35,Overvoltage,Yes
+240,11.31,50.05,51,Overload,Yes
+16,0.0,0.0,21,Line Break,Yes
+269,8.44,50.77,34,Overvoltage,Yes
+295,6.88,50.16,38,Overvoltage,Yes
+241,16.3,49.85,46,Overload,Yes
+276,6.27,50.58,44,Overvoltage,Yes
+111,5.68,49.17,29,Undervoltage,Yes
+271,7.42,50.5,35,Overvoltage,Yes
+19,0.0,0.0,26,Line Break,Yes
+298,5.45,50.81,38,Overvoltage,Yes
+232,4.6,49.96,26,Normal,No
+261,6.02,50.79,37,Overvoltage,Yes
+2,0.0,0.0,21,Line Break,Yes
+132,2.68,49.15,27,Undervoltage,Yes
+268,9.01,50.86,42,Overvoltage,Yes
+257,17.82,49.96,49,Overload,Yes
+222,5.73,49.98,30,Normal,No
+229,7.13,50.15,29,Normal,No
+233,6.66,50.02,29,Normal,No
+244,19.68,50.08,44,Overload,Yes
+113,4.78,49.6,26,Undervoltage,Yes
+262,5.03,50.72,33,Overvoltage,Yes
+124,5.26,49.52,27,Undervoltage,Yes
+20,0.0,0.0,29,Line Break,Yes
+222,3.33,49.93,32,Normal,No
+277,6.59,50.35,35,Overvoltage,Yes
+288,9.16,50.35,40,Overvoltage,Yes
+268,6.22,50.74,34,Overvoltage,Yes
+6,0.0,0.0,21,Line Break,Yes
+20,0.0,0.0,22,Line Break,Yes
+154,2.76,49.91,30,Undervoltage,Yes
+245,18.3,49.81,44,Overload,Yes
+125,4.56,49.42,34,Undervoltage,Yes
+297,9.0,50.66,44,Overvoltage,Yes
+3,0.0,0.0,21,Line Break,Yes
+260,19.52,50.19,48,Overload,Yes
+296,6.45,50.41,45,Overvoltage,Yes
+256,12.33,50.06,43,Overload,Yes
+145,3.53,49.67,26,Undervoltage,Yes
+222,3.85,50.0,26,Normal,No
+242,12.71,49.8,49,Overload,Yes
+245,17.57,50.17,42,Overload,Yes
+108,5.12,49.51,25,Undervoltage,Yes
+276,7.44,50.57,37,Overvoltage,Yes
+231,3.23,49.86,26,Normal,No
+228,5.25,49.84,26,Normal,No
+5,0.0,0.0,23,Line Break,Yes
+240,10.1,50.13,55,Overload,Yes
+100,3.97,49.3,32,Undervoltage,Yes
+19,0.0,0.0,20,Line Break,Yes
+289,6.76,50.78,41,Overvoltage,Yes
+290,8.9,50.47,34,Overvoltage,Yes
+244,12.09,49.94,54,Overload,Yes
+236,7.43,49.86,34,Normal,No
+223,3.18,50.01,25,Normal,No
+7,0.0,0.0,27,Line Break,Yes
+229,4.72,50.15,31,Normal,No
+173,3.6,49.99,29,Undervoltage,Yes
+244,14.79,49.86,41,Overload,Yes
+7,0.0,0.0,25,Line Break,Yes
+174,3.28,49.75,29,Undervoltage,Yes
+4,0.0,0.0,25,Line Break,Yes
+238,6.69,49.99,25,Normal,No
+255,10.56,49.83,44,Overload,Yes
+244,13.09,49.96,44,Overload,Yes
+241,14.09,49.97,49,Overload,Yes
+270,8.85,50.82,36,Overvoltage,Yes
+222,7.36,50.06,34,Normal,No
+222,6.52,49.86,33,Normal,No
+118,5.24,49.38,30,Undervoltage,Yes
+14,0.0,0.0,23,Line Break,Yes
+223,3.73,50.05,35,Normal,No
+10,0.0,0.0,21,Line Break,Yes
+272,6.14,50.13,41,Overvoltage,Yes
+274,5.89,50.49,38,Overvoltage,Yes
+11,0.0,0.0,28,Line Break,Yes
+131,3.41,49.52,32,Undervoltage,Yes
+298,7.76,50.02,45,Overvoltage,Yes
+225,7.7,50.1,34,Normal,No
+102,5.02,49.05,27,Undervoltage,Yes
+260,19.67,50.04,55,Overload,Yes
+142,2.71,49.71,29,Undervoltage,Yes
+258,15.76,49.88,43,Overload,Yes
+285,9.23,50.41,33,Overvoltage,Yes
+260,16.84,49.89,54,Overload,Yes
+222,5.5,49.89,25,Normal,No
+224,7.56,50.0,31,Normal,No
+114,4.73,49.6,29,Undervoltage,Yes
+282,5.79,50.55,45,Overvoltage,Yes
+151,3.92,49.71,25,Undervoltage,Yes
+221,3.23,49.97,34,Normal,No
+244,16.92,49.81,44,Overload,Yes
+129,3.19,49.88,26,Undervoltage,Yes
+117,4.71,49.32,33,Undervoltage,Yes
+274,5.75,50.25,45,Overvoltage,Yes
+12,0.0,0.0,24,Line Break,Yes
+252,12.46,50.04,47,Overload,Yes
+287,7.83,50.93,41,Overvoltage,Yes
+19,0.0,0.0,27,Line Break,Yes
+293,5.05,50.32,44,Overvoltage,Yes
+235,7.19,49.99,34,Normal,No
+244,13.5,50.14,44,Overload,Yes
+223,4.39,49.83,32,Normal,No
+235,6.13,50.19,28,Normal,No
+0,0.0,0.0,27,Line Break,Yes
+153,2.74,49.75,28,Undervoltage,Yes
+226,3.21,49.85,32,Normal,No
+258,11.24,49.95,44,Overload,Yes
+259,11.92,49.95,49,Overload,Yes
+241,11.08,49.89,54,Overload,Yes
+230,3.63,50.1,26,Normal,No
+133,3.01,49.44,32,Undervoltage,Yes
+229,3.24,50.06,29,Normal,No
+232,3.43,50.04,30,Normal,No
+226,3.24,49.95,27,Normal,No
+245,17.01,50.18,50,Overload,Yes
+2,0.0,0.0,26,Line Break,Yes
+3,0.0,0.0,30,Line Break,Yes
+225,6.69,50.04,29,Normal,No
+2,0.0,0.0,30,Line Break,Yes
+224,3.66,50.02,31,Normal,No
+124,3.9,49.63,25,Undervoltage,Yes
+258,17.32,49.85,44,Overload,Yes
+221,7.77,50.0,27,Normal,No
+281,9.25,50.13,36,Overvoltage,Yes
+268,5.4,50.47,42,Overvoltage,Yes
+100,5.59,49.24,27,Undervoltage,Yes
+268,5.01,50.32,39,Overvoltage,Yes
+18,0.0,0.0,27,Line Break,Yes
+291,5.37,50.59,36,Overvoltage,Yes
+225,4.54,50.06,33,Normal,No
+277,7.77,50.34,30,Overvoltage,Yes
+124,2.16,49.01,30,Undervoltage,Yes
+107,4.41,49.27,25,Undervoltage,Yes
+9,0.0,0.0,22,Line Break,Yes
+274,5.66,50.01,32,Overvoltage,Yes
+14,0.0,0.0,26,Line Break,Yes
+220,6.58,49.93,26,Normal,No
+10,0.0,0.0,27,Line Break,Yes
+248,19.78,49.95,43,Overload,Yes
+227,3.09,50.05,33,Normal,No
+100,4.02,49.2,33,Undervoltage,Yes
+176,4.68,49.08,32,Undervoltage,Yes
+177,3.71,49.17,35,Undervoltage,Yes
+252,16.16,50.02,43,Overload,Yes
+222,6.48,49.8,32,Normal,No
+237,3.09,50.14,27,Normal,No
+9,0.0,0.0,22,Line Break,Yes
+156,3.93,49.64,31,Undervoltage,Yes
+14,0.0,0.0,26,Line Break,Yes
+228,7.11,50.1,32,Normal,No
+0,0.0,0.0,24,Line Break,Yes
+240,13.55,49.82,42,Overload,Yes
+258,16.06,50.09,49,Overload,Yes
+137,2.46,49.05,32,Undervoltage,Yes
+8,0.0,0.0,23,Line Break,Yes
+235,5.43,50.02,32,Normal,No
+256,16.65,49.86,48,Overload,Yes
+276,6.89,50.35,34,Overvoltage,Yes
+275,7.81,50.25,35,Overvoltage,Yes
+0,0.0,0.0,24,Line Break,Yes
+242,16.86,49.96,46,Overload,Yes
+249,14.22,49.9,43,Overload,Yes
+287,6.75,50.51,35,Overvoltage,Yes
+108,3.58,49.1,34,Undervoltage,Yes
+222,3.34,50.19,29,Normal,No
+283,9.5,50.97,38,Overvoltage,Yes
+118,2.43,49.1,30,Undervoltage,Yes
+272,9.74,50.63,42,Overvoltage,Yes
+14,0.0,0.0,25,Line Break,Yes
+19,0.0,0.0,22,Line Break,Yes
+223,5.75,49.89,28,Normal,No
+293,6.72,50.6,35,Overvoltage,Yes
+119,5.71,49.24,35,Undervoltage,Yes
+9,0.0,0.0,24,Line Break,Yes
+139,2.54,49.19,30,Undervoltage,Yes
+275,6.2,50.62,43,Overvoltage,Yes
+7,0.0,0.0,27,Line Break,Yes
+259,13.52,50.1,45,Overload,Yes
+17,0.0,0.0,26,Line Break,Yes
+275,5.85,50.94,41,Overvoltage,Yes
+259,15.55,50.08,46,Overload,Yes
+175,2.23,49.03,30,Undervoltage,Yes
+221,5.76,50.15,33,Normal,No
+296,5.39,50.21,40,Overvoltage,Yes
+221,5.6,49.85,28,Normal,No
+133,4.29,49.17,31,Undervoltage,Yes
+251,18.87,49.94,49,Overload,Yes
+11,0.0,0.0,30,Line Break,Yes
+246,18.7,49.84,51,Overload,Yes
+117,4.08,49.74,34,Undervoltage,Yes
+142,3.74,49.51,29,Undervoltage,Yes
+2,0.0,0.0,30,Line Break,Yes
+288,8.7,50.75,33,Overvoltage,Yes
+272,9.8,50.24,34,Overvoltage,Yes
+160,4.66,49.48,33,Undervoltage,Yes
+9,0.0,0.0,29,Line Break,Yes
+154,5.0,49.14,27,Undervoltage,Yes
+15,0.0,0.0,21,Line Break,Yes
+280,9.9,50.51,36,Overvoltage,Yes
+100,2.09,49.85,26,Undervoltage,Yes
+229,7.52,50.02,27,Normal,No
+159,3.37,49.77,27,Undervoltage,Yes
+16,0.0,0.0,27,Line Break,Yes
+144,2.87,49.32,31,Undervoltage,Yes
+123,4.66,49.48,35,Undervoltage,Yes
+255,10.67,50.19,40,Overload,Yes
+19,0.0,0.0,24,Line Break,Yes
+12,0.0,0.0,20,Line Break,Yes
+134,2.18,49.19,35,Undervoltage,Yes
+102,2.95,49.83,35,Undervoltage,Yes
+148,3.36,49.61,26,Undervoltage,Yes
+228,7.5,50.18,26,Normal,No
+146,3.34,49.83,26,Undervoltage,Yes
+293,5.32,50.23,45,Overvoltage,Yes
+132,3.85,49.07,28,Undervoltage,Yes
+240,17.61,49.84,53,Overload,Yes
+1,0.0,0.0,26,Line Break,Yes
+20,0.0,0.0,30,Line Break,Yes
+163,4.85,49.01,35,Undervoltage,Yes
+248,11.75,50.07,42,Overload,Yes
+132,2.19,49.62,25,Undervoltage,Yes
+15,0.0,0.0,20,Line Break,Yes
+7,0.0,0.0,22,Line Break,Yes
+239,6.8,50.04,33,Normal,No
+0,0.0,0.0,24,Line Break,Yes
+287,9.53,50.24,31,Overvoltage,Yes
+281,8.72,50.09,41,Overvoltage,Yes
+229,6.13,49.83,33,Normal,No
+255,19.79,50.19,47,Overload,Yes
+241,15.91,49.96,41,Overload,Yes
+20,0.0,0.0,22,Line Break,Yes
+262,8.53,50.24,36,Overvoltage,Yes
+269,7.41,50.85,35,Overvoltage,Yes
+268,5.02,50.48,45,Overvoltage,Yes
+129,5.2,49.07,33,Undervoltage,Yes
+279,9.28,50.92,40,Overvoltage,Yes
+282,6.61,50.55,42,Overvoltage,Yes
+246,19.33,49.87,43,Overload,Yes
+236,6.79,50.13,33,Normal,No
+14,0.0,0.0,28,Line Break,Yes
+15,0.0,0.0,23,Line Break,Yes
+104,4.88,49.3,27,Undervoltage,Yes
+240,19.37,49.82,51,Overload,Yes
+285,8.86,50.86,43,Overvoltage,Yes
+223,7.49,50.12,32,Normal,No
+235,4.78,49.97,25,Normal,No
+127,2.29,49.22,26,Undervoltage,Yes
+100,4.59,49.34,33,Undervoltage,Yes
+110,4.3,49.74,29,Undervoltage,Yes
+12,0.0,0.0,26,Line Break,Yes
+284,7.41,50.92,37,Overvoltage,Yes
+244,13.19,50.14,43,Overload,Yes
+260,15.03,50.02,54,Overload,Yes
+146,2.62,49.73,31,Undervoltage,Yes
+160,2.44,49.02,30,Undervoltage,Yes
+292,7.29,50.28,39,Overvoltage,Yes
+0,0.0,0.0,27,Line Break,Yes
+3,0.0,0.0,28,Line Break,Yes
+9,0.0,0.0,25,Line Break,Yes
+224,3.98,50.05,31,Normal,No
+116,3.79,49.65,31,Undervoltage,Yes
+267,5.55,50.66,41,Overvoltage,Yes
+268,6.13,50.97,37,Overvoltage,Yes
+245,13.72,50.1,50,Overload,Yes
+268,6.48,50.22,43,Overvoltage,Yes
+239,4.7,50.11,29,Normal,No
+162,3.86,49.55,31,Undervoltage,Yes
+14,0.0,0.0,26,Line Break,Yes
+16,0.0,0.0,25,Line Break,Yes
+254,19.16,49.92,49,Overload,Yes
+273,9.72,50.1,41,Overvoltage,Yes
+12,0.0,0.0,30,Line Break,Yes
+18,0.0,0.0,25,Line Break,Yes
+253,17.13,49.9,55,Overload,Yes
+282,8.09,50.53,45,Overvoltage,Yes
+9,0.0,0.0,21,Line Break,Yes
+115,4.33,49.61,31,Undervoltage,Yes
+257,13.02,49.97,48,Overload,Yes
+178,4.82,49.61,25,Undervoltage,Yes
+230,3.14,49.83,31,Normal,No
+11,0.0,0.0,21,Line Break,Yes
+11,0.0,0.0,22,Line Break,Yes
+238,6.25,50.04,33,Normal,No
+158,5.19,49.44,30,Undervoltage,Yes
+222,5.39,49.8,28,Normal,No
+10,0.0,0.0,27,Line Break,Yes
+4,0.0,0.0,29,Line Break,Yes
+291,5.31,50.69,37,Overvoltage,Yes
+14,0.0,0.0,25,Line Break,Yes
+232,3.22,49.81,35,Normal,No
+4,0.0,0.0,23,Line Break,Yes
+297,6.95,50.98,40,Overvoltage,Yes
+10,0.0,0.0,28,Line Break,Yes
+224,5.57,50.0,26,Normal,No
+239,7.83,50.15,25,Normal,No
+220,4.22,50.12,28,Normal,No
+12,0.0,0.0,25,Line Break,Yes
+115,4.31,49.7,32,Undervoltage,Yes
+15,0.0,0.0,21,Line Break,Yes
+113,5.93,49.87,25,Undervoltage,Yes
+291,9.66,50.25,45,Overvoltage,Yes
+1,0.0,0.0,23,Line Break,Yes
+240,10.22,50.01,48,Overload,Yes
+162,2.11,49.21,27,Undervoltage,Yes
+245,14.06,49.96,40,Overload,Yes
+105,4.35,49.76,35,Undervoltage,Yes
+285,8.27,50.19,43,Overvoltage,Yes
+154,4.43,49.47,31,Undervoltage,Yes
+13,0.0,0.0,25,Line Break,Yes
+3,0.0,0.0,30,Line Break,Yes
+240,3.71,50.06,27,Normal,No
+123,4.54,49.32,33,Undervoltage,Yes
+102,3.04,49.12,35,Undervoltage,Yes
+282,8.38,50.83,30,Overvoltage,Yes
+284,6.17,50.38,36,Overvoltage,Yes
+5,0.0,0.0,23,Line Break,Yes
+5,0.0,0.0,27,Line Break,Yes
+228,4.23,49.95,30,Normal,No
+159,2.79,49.02,30,Undervoltage,Yes
+15,0.0,0.0,28,Line Break,Yes
+242,19.5,49.85,51,Overload,Yes
+13,0.0,0.0,24,Line Break,Yes
+271,10.0,50.8,31,Overvoltage,Yes
+3,0.0,0.0,23,Line Break,Yes
+237,7.82,49.83,28,Normal,No
+1,0.0,0.0,26,Line Break,Yes
+16,0.0,0.0,20,Line Break,Yes
+20,0.0,0.0,21,Line Break,Yes
+281,9.57,50.52,33,Overvoltage,Yes
+231,3.52,50.06,31,Normal,No
+240,4.62,49.83,31,Normal,No
+262,7.63,50.64,38,Overvoltage,Yes
+166,4.41,49.31,35,Undervoltage,Yes
+280,7.26,50.16,34,Overvoltage,Yes
+260,10.64,50.04,49,Overload,Yes
+233,3.68,50.19,30,Normal,No
+238,3.7,49.85,32,Normal,No
+282,8.24,50.74,30,Overvoltage,Yes
+290,5.57,50.39,37,Overvoltage,Yes
+220,6.0,49.86,34,Normal,No
+241,18.42,50.15,40,Overload,Yes
+221,4.4,50.18,27,Normal,No
+228,3.53,49.96,25,Normal,No
+252,10.85,50.02,55,Overload,Yes
+103,4.79,49.77,33,Undervoltage,Yes
+256,13.34,50.19,40,Overload,Yes
+279,9.74,50.77,43,Overvoltage,Yes
+106,5.93,49.17,28,Undervoltage,Yes
+265,6.93,50.46,34,Overvoltage,Yes
+295,6.6,50.8,43,Overvoltage,Yes
+226,4.66,49.91,25,Normal,No
+221,5.15,50.12,30,Normal,No
+2,0.0,0.0,20,Line Break,Yes
+236,4.57,50.07,27,Normal,No
+232,6.88,49.94,34,Normal,No
+162,2.92,49.39,31,Undervoltage,Yes
+238,5.5,50.11,35,Normal,No
+280,9.26,50.19,30,Overvoltage,Yes
+278,7.56,50.22,31,Overvoltage,Yes
+5,0.0,0.0,23,Line Break,Yes
+169,2.76,49.03,33,Undervoltage,Yes
+14,0.0,0.0,21,Line Break,Yes
+12,0.0,0.0,23,Line Break,Yes
+136,3.19,49.64,28,Undervoltage,Yes
+245,16.57,50.19,42,Overload,Yes
+2,0.0,0.0,30,Line Break,Yes
+1,0.0,0.0,29,Line Break,Yes
+231,3.02,49.81,25,Normal,No
+221,4.98,50.2,29,Normal,No
+18,0.0,0.0,25,Line Break,Yes
+139,2.56,49.18,31,Undervoltage,Yes
+171,4.23,49.43,30,Undervoltage,Yes
+103,2.24,49.29,26,Undervoltage,Yes
+222,5.79,49.96,35,Normal,No
+18,0.0,0.0,30,Line Break,Yes
+231,4.1,49.96,29,Normal,No
+258,14.3,50.17,51,Overload,Yes
+229,3.58,49.95,32,Normal,No
+253,19.14,50.17,55,Overload,Yes
+254,18.28,50.12,51,Overload,Yes
+3,0.0,0.0,30,Line Break,Yes
+13,0.0,0.0,30,Line Break,Yes
+245,14.52,50.04,40,Overload,Yes
+104,3.86,49.8,25,Undervoltage,Yes
+259,10.15,49.87,43,Overload,Yes
+269,6.96,50.11,37,Overvoltage,Yes
+238,5.98,50.14,27,Normal,No
+249,12.4,50.14,45,Overload,Yes
+140,5.27,49.94,31,Undervoltage,Yes
+0,0.0,0.0,22,Line Break,Yes
+228,6.15,49.89,28,Normal,No
+114,2.07,49.16,35,Undervoltage,Yes
+294,5.68,50.06,34,Overvoltage,Yes
+124,2.15,49.57,34,Undervoltage,Yes
+6,0.0,0.0,24,Line Break,Yes
+252,12.49,50.2,48,Overload,Yes
+286,9.43,50.46,38,Overvoltage,Yes
+249,17.25,50.06,54,Overload,Yes
+249,15.03,50.17,47,Overload,Yes
+108,2.52,49.89,25,Undervoltage,Yes
+240,13.99,49.81,50,Overload,Yes
+278,9.78,50.97,45,Overvoltage,Yes
+154,5.04,49.62,33,Undervoltage,Yes
+247,15.56,49.83,54,Overload,Yes
+161,5.87,49.41,29,Undervoltage,Yes
+9,0.0,0.0,25,Line Break,Yes
+179,5.7,49.66,30,Undervoltage,Yes
+300,7.65,50.72,34,Overvoltage,Yes
+147,4.46,49.17,34,Undervoltage,Yes
+16,0.0,0.0,26,Line Break,Yes
+224,5.09,50.04,25,Normal,No
+246,16.23,49.83,49,Overload,Yes
+266,6.98,50.45,37,Overvoltage,Yes
+240,19.54,49.97,43,Overload,Yes
+281,8.22,50.03,32,Overvoltage,Yes
+262,6.65,50.6,43,Overvoltage,Yes
+249,10.55,49.97,48,Overload,Yes
+247,19.75,49.97,43,Overload,Yes
+10,0.0,0.0,25,Line Break,Yes
+139,3.46,49.72,25,Undervoltage,Yes
+297,8.37,50.89,38,Overvoltage,Yes
+8,0.0,0.0,23,Line Break,Yes
+154,3.53,49.16,29,Undervoltage,Yes
+20,0.0,0.0,25,Line Break,Yes
+267,8.78,50.48,45,Overvoltage,Yes
+19,0.0,0.0,30,Line Break,Yes
+258,12.76,49.81,54,Overload,Yes
+225,3.36,49.89,26,Normal,No
+266,5.23,50.3,39,Overvoltage,Yes
+257,10.9,50.11,46,Overload,Yes
+14,0.0,0.0,25,Line Break,Yes
+244,14.29,50.19,46,Overload,Yes
+270,6.95,50.7,42,Overvoltage,Yes
+267,7.38,50.58,31,Overvoltage,Yes
+223,6.24,50.12,33,Normal,No
+261,9.46,50.1,31,Overvoltage,Yes
+225,3.82,49.94,29,Normal,No
+170,3.77,49.74,35,Undervoltage,Yes
+130,5.67,49.22,26,Undervoltage,Yes
+289,9.84,50.35,41,Overvoltage,Yes
+276,5.74,50.93,43,Overvoltage,Yes
+11,0.0,0.0,29,Line Break,Yes
+297,5.69,50.18,40,Overvoltage,Yes
+13,0.0,0.0,23,Line Break,Yes
+4,0.0,0.0,27,Line Break,Yes
+112,4.4,49.85,35,Undervoltage,Yes
+226,5.0,50.01,27,Normal,No
+230,4.85,50.1,32,Normal,No
+279,6.52,50.25,45,Overvoltage,Yes
+8,0.0,0.0,20,Line Break,Yes
+249,15.61,49.98,52,Overload,Yes
+233,7.72,49.88,31,Normal,No
+255,14.11,49.98,45,Overload,Yes
+12,0.0,0.0,22,Line Break,Yes
+279,7.5,50.11,37,Overvoltage,Yes
+264,6.83,50.58,32,Overvoltage,Yes
+283,9.74,50.2,33,Overvoltage,Yes
+249,17.4,49.95,54,Overload,Yes
+128,3.4,49.12,32,Undervoltage,Yes
+287,5.49,50.69,34,Overvoltage,Yes
+259,19.75,49.92,49,Overload,Yes
+274,6.84,50.71,42,Overvoltage,Yes
+20,0.0,0.0,26,Line Break,Yes
+228,4.5,49.91,27,Normal,No
+8,0.0,0.0,24,Line Break,Yes
+232,5.62,50.15,31,Normal,No
+14,0.0,0.0,26,Line Break,Yes
+233,3.41,49.92,27,Normal,No
+103,3.84,49.28,34,Undervoltage,Yes
+259,10.67,50.07,40,Overload,Yes
+235,3.4,50.05,26,Normal,No
+177,3.34,49.33,32,Undervoltage,Yes
+16,0.0,0.0,21,Line Break,Yes
+231,4.7,50.01,28,Normal,No
+0,0.0,0.0,20,Line Break,Yes
+221,7.28,50.12,31,Normal,No
+268,8.2,50.93,43,Overvoltage,Yes
+12,0.0,0.0,23,Line Break,Yes
+297,6.33,50.46,36,Overvoltage,Yes
+179,2.32,49.3,34,Undervoltage,Yes
+239,4.25,49.92,33,Normal,No
+0,0.0,0.0,21,Line Break,Yes
+256,14.1,49.94,51,Overload,Yes
+141,3.73,49.6,29,Undervoltage,Yes
+289,6.88,50.71,39,Overvoltage,Yes
+228,4.24,50.11,26,Normal,No
+222,4.19,49.92,29,Normal,No
+236,6.9,50.09,31,Normal,No
+282,5.42,50.32,43,Overvoltage,Yes
+169,5.12,49.97,35,Undervoltage,Yes
+155,5.28,49.79,26,Undervoltage,Yes
+293,7.64,50.85,32,Overvoltage,Yes
+7,0.0,0.0,22,Line Break,Yes
+140,2.0,49.34,34,Undervoltage,Yes
+236,3.97,50.06,25,Normal,No
+238,7.14,50.17,25,Normal,No
+4,0.0,0.0,28,Line Break,Yes
+137,4.68,49.31,27,Undervoltage,Yes
+6,0.0,0.0,26,Line Break,Yes
+100,5.48,49.16,29,Undervoltage,Yes
+242,10.47,50.03,55,Overload,Yes
+19,0.0,0.0,28,Line Break,Yes
+238,7.05,50.02,25,Normal,No
+5,0.0,0.0,23,Line Break,Yes
+102,5.57,49.23,31,Undervoltage,Yes
+297,9.7,50.36,42,Overvoltage,Yes
+18,0.0,0.0,30,Line Break,Yes
+252,10.68,50.16,53,Overload,Yes
+141,5.42,49.96,32,Undervoltage,Yes
+256,11.2,49.98,49,Overload,Yes
+298,8.8,50.72,43,Overvoltage,Yes
+297,5.28,50.93,44,Overvoltage,Yes
+10,0.0,0.0,29,Line Break,Yes
+234,5.5,49.94,27,Normal,No
+222,3.0,50.18,31,Normal,No
+245,14.14,50.18,41,Overload,Yes
+230,5.22,49.85,35,Normal,No
+2,0.0,0.0,26,Line Break,Yes
+4,0.0,0.0,25,Line Break,Yes
+241,14.52,50.0,45,Overload,Yes
+12,0.0,0.0,28,Line Break,Yes
+239,6.6,49.89,26,Normal,No
+159,5.77,49.19,32,Undervoltage,Yes
+299,6.99,50.66,43,Overvoltage,Yes
+222,5.14,49.83,35,Normal,No
+266,8.47,50.72,37,Overvoltage,Yes
+221,5.6,50.08,26,Normal,No
+285,7.41,50.3,43,Overvoltage,Yes
+283,5.67,50.1,42,Overvoltage,Yes
+224,5.01,50.16,33,Normal,No
+7,0.0,0.0,30,Line Break,Yes
+18,0.0,0.0,20,Line Break,Yes
+127,3.91,49.46,28,Undervoltage,Yes
+227,6.13,49.84,25,Normal,No
+280,9.26,50.98,32,Overvoltage,Yes
+111,5.98,49.94,29,Undervoltage,Yes
+222,5.84,49.93,30,Normal,No
+294,9.31,50.91,38,Overvoltage,Yes
+248,10.41,50.07,44,Overload,Yes
+247,16.43,49.91,40,Overload,Yes
+265,5.34,50.4,44,Overvoltage,Yes
+266,9.9,50.27,34,Overvoltage,Yes
+246,10.31,49.84,44,Overload,Yes
+0,0.0,0.0,24,Line Break,Yes
+258,19.52,49.89,40,Overload,Yes
+20,0.0,0.0,26,Line Break,Yes
+240,13.4,50.16,55,Overload,Yes
+256,18.23,49.85,41,Overload,Yes
+244,19.27,49.84,42,Overload,Yes
+239,7.93,50.15,35,Normal,No
+10,0.0,0.0,22,Line Break,Yes
+17,0.0,0.0,22,Line Break,Yes
+9,0.0,0.0,27,Line Break,Yes
+105,3.65,49.97,34,Undervoltage,Yes
+246,12.08,50.18,46,Overload,Yes
+224,6.35,50.14,31,Normal,No
+237,4.99,50.14,35,Normal,No
+169,3.24,49.68,34,Undervoltage,Yes
+225,4.84,50.14,26,Normal,No
+221,5.24,50.06,31,Normal,No
+236,3.18,49.81,28,Normal,No
+4,0.0,0.0,28,Line Break,Yes
+12,0.0,0.0,20,Line Break,Yes
+275,5.09,50.55,38,Overvoltage,Yes
+237,3.5,50.12,33,Normal,No
+7,0.0,0.0,20,Line Break,Yes
+235,4.7,49.83,25,Normal,No
+238,7.03,49.92,33,Normal,No
+247,14.15,50.08,55,Overload,Yes
+156,2.21,49.74,32,Undervoltage,Yes
+14,0.0,0.0,20,Line Break,Yes
+9,0.0,0.0,28,Line Break,Yes
+6,0.0,0.0,21,Line Break,Yes
+252,19.32,49.94,42,Overload,Yes
+3,0.0,0.0,29,Line Break,Yes
+139,5.25,49.71,26,Undervoltage,Yes
+150,5.82,49.01,35,Undervoltage,Yes
+131,5.39,49.01,30,Undervoltage,Yes
+286,6.13,50.71,35,Overvoltage,Yes
+238,7.27,49.94,25,Normal,No
+6,0.0,0.0,22,Line Break,Yes
+125,5.05,49.44,29,Undervoltage,Yes
+256,13.36,49.95,45,Overload,Yes
+4,0.0,0.0,21,Line Break,Yes
+16,0.0,0.0,22,Line Break,Yes
+170,5.13,49.94,31,Undervoltage,Yes
+288,7.05,50.31,34,Overvoltage,Yes
+232,6.2,49.96,34,Normal,No
+16,0.0,0.0,21,Line Break,Yes
+1,0.0,0.0,22,Line Break,Yes
+233,7.22,50.0,28,Normal,No
+257,12.69,50.07,40,Overload,Yes
+225,5.78,50.1,29,Normal,No
+14,0.0,0.0,20,Line Break,Yes
+150,4.48,49.6,29,Undervoltage,Yes
+131,2.82,49.5,33,Undervoltage,Yes
+292,5.56,50.92,42,Overvoltage,Yes
+233,3.95,50.18,34,Normal,No
+19,0.0,0.0,22,Line Break,Yes
+228,5.75,50.14,28,Normal,No
+18,0.0,0.0,27,Line Break,Yes
+296,7.84,50.01,30,Overvoltage,Yes
+259,11.28,49.97,51,Overload,Yes
+9,0.0,0.0,29,Line Break,Yes
+296,9.0,50.53,32,Overvoltage,Yes
+274,6.69,50.02,44,Overvoltage,Yes
+128,4.28,49.03,32,Undervoltage,Yes
+278,5.82,50.13,36,Overvoltage,Yes
+256,19.32,49.87,42,Overload,Yes
+260,12.71,49.98,54,Overload,Yes
+16,0.0,0.0,24,Line Break,Yes
+222,4.34,50.19,26,Normal,No
+282,5.73,50.22,41,Overvoltage,Yes
+161,3.74,49.83,25,Undervoltage,Yes
+257,16.4,50.01,50,Overload,Yes
+247,17.14,49.97,47,Overload,Yes
+291,8.37,50.7,30,Overvoltage,Yes
+295,9.58,50.27,44,Overvoltage,Yes
+17,0.0,0.0,22,Line Break,Yes
+20,0.0,0.0,24,Line Break,Yes
+235,3.83,49.82,28,Normal,No
+231,6.26,50.1,28,Normal,No
+248,19.6,50.19,43,Overload,Yes
+246,10.71,50.13,55,Overload,Yes
+17,0.0,0.0,22,Line Break,Yes
+238,5.03,49.86,25,Normal,No
+227,4.79,49.88,30,Normal,No
+123,4.53,49.65,32,Undervoltage,Yes
+256,19.69,50.07,46,Overload,Yes
+233,5.75,49.96,26,Normal,No
+255,10.55,50.05,53,Overload,Yes
+170,2.13,49.53,27,Undervoltage,Yes
+271,6.91,50.12,45,Overvoltage,Yes
+6,0.0,0.0,29,Line Break,Yes
+251,11.8,50.11,54,Overload,Yes
+7,0.0,0.0,25,Line Break,Yes
+287,5.03,50.79,37,Overvoltage,Yes
+14,0.0,0.0,27,Line Break,Yes
+240,6.55,50.17,25,Normal,No
+4,0.0,0.0,30,Line Break,Yes
+243,14.8,49.97,51,Overload,Yes
+262,7.12,50.31,32,Overvoltage,Yes
+4,0.0,0.0,28,Line Break,Yes
+131,5.68,49.06,35,Undervoltage,Yes
+242,19.04,50.19,51,Overload,Yes
+282,5.4,50.26,36,Overvoltage,Yes
+105,5.46,49.8,28,Undervoltage,Yes
+242,18.04,50.14,50,Overload,Yes
+275,5.43,50.54,32,Overvoltage,Yes
+245,13.21,49.87,50,Overload,Yes
+125,3.83,49.68,31,Undervoltage,Yes
+2,0.0,0.0,26,Line Break,Yes
+237,5.35,50.09,25,Normal,No
+136,5.64,49.43,29,Undervoltage,Yes
+2,0.0,0.0,25,Line Break,Yes
+247,16.76,49.94,42,Overload,Yes
+5,0.0,0.0,22,Line Break,Yes
+285,8.06,50.57,39,Overvoltage,Yes
+20,0.0,0.0,24,Line Break,Yes
+261,6.08,50.46,39,Overvoltage,Yes
+236,6.26,50.01,35,Normal,No
+14,0.0,0.0,21,Line Break,Yes
+269,10.0,50.73,35,Overvoltage,Yes
+12,0.0,0.0,26,Line Break,Yes
+240,3.88,49.81,32,Normal,No
+257,10.59,50.03,44,Overload,Yes
+174,5.44,49.62,29,Undervoltage,Yes
+226,3.18,49.8,34,Normal,No
+158,2.42,49.1,27,Undervoltage,Yes
+18,0.0,0.0,26,Line Break,Yes
+220,7.87,50.19,31,Normal,No
+167,2.04,49.79,26,Undervoltage,Yes
+5,0.0,0.0,20,Line Break,Yes
+19,0.0,0.0,29,Line Break,Yes
+245,19.95,50.1,55,Overload,Yes
+262,5.86,50.65,42,Overvoltage,Yes
+297,8.27,50.47,35,Overvoltage,Yes
+159,5.77,49.39,25,Undervoltage,Yes
+271,7.49,50.79,30,Overvoltage,Yes
+152,3.98,49.22,35,Undervoltage,Yes
+9,0.0,0.0,29,Line Break,Yes
+129,3.84,49.75,25,Undervoltage,Yes
+239,7.66,49.85,35,Normal,No
+11,0.0,0.0,23,Line Break,Yes
+233,4.66,50.16,28,Normal,No
+238,6.3,50.03,32,Normal,No
+149,4.15,49.94,32,Undervoltage,Yes
+274,9.9,50.5,34,Overvoltage,Yes
+5,0.0,0.0,28,Line Break,Yes
+221,7.07,50.14,26,Normal,No
+256,13.5,49.94,52,Overload,Yes
+231,7.71,49.86,30,Normal,No
+257,10.45,50.18,53,Overload,Yes
+5,0.0,0.0,21,Line Break,Yes
+118,3.97,49.83,33,Undervoltage,Yes
+146,4.17,49.1,29,Undervoltage,Yes
+245,19.41,50.15,44,Overload,Yes
+171,5.19,49.78,29,Undervoltage,Yes
+160,2.92,49.82,27,Undervoltage,Yes
+237,7.91,50.02,30,Normal,No
+174,3.6,49.21,33,Undervoltage,Yes
+7,0.0,0.0,21,Line Break,Yes
+141,2.94,49.03,34,Undervoltage,Yes
+7,0.0,0.0,24,Line Break,Yes
+278,8.36,50.41,42,Overvoltage,Yes
+247,16.63,49.98,40,Overload,Yes
+238,7.08,49.84,30,Normal,No
+144,3.63,49.21,30,Undervoltage,Yes
+11,0.0,0.0,26,Line Break,Yes
+250,11.39,50.19,40,Overload,Yes
+231,6.79,49.86,33,Normal,No
+100,5.44,49.07,33,Undervoltage,Yes
+18,0.0,0.0,25,Line Break,Yes
+224,7.31,49.94,30,Normal,No
+136,4.66,49.07,32,Undervoltage,Yes
+3,0.0,0.0,28,Line Break,Yes
+251,13.36,49.85,49,Overload,Yes
+122,4.61,49.21,27,Undervoltage,Yes
+112,2.75,49.36,29,Undervoltage,Yes
+222,7.51,49.81,29,Normal,No
+16,0.0,0.0,21,Line Break,Yes
+271,5.13,50.5,30,Overvoltage,Yes
+17,0.0,0.0,30,Line Break,Yes
+228,6.4,49.99,25,Normal,No
+177,4.07,49.19,34,Undervoltage,Yes
+291,9.37,50.95,34,Overvoltage,Yes
+253,15.4,49.83,42,Overload,Yes
+226,4.52,50.0,29,Normal,No
+296,9.23,50.16,45,Overvoltage,Yes
+298,9.5,50.39,37,Overvoltage,Yes
+245,11.07,50.03,48,Overload,Yes
+170,4.08,49.51,34,Undervoltage,Yes
+1,0.0,0.0,27,Line Break,Yes
+239,5.15,49.88,27,Normal,No
+262,7.92,50.56,43,Overvoltage,Yes
+252,19.13,49.8,49,Overload,Yes
+112,5.68,49.76,32,Undervoltage,Yes
+289,5.39,51.0,34,Overvoltage,Yes
+275,5.06,50.66,35,Overvoltage,Yes
+226,4.93,50.1,33,Normal,No
+14,0.0,0.0,30,Line Break,Yes
+174,5.11,49.71,33,Undervoltage,Yes
+9,0.0,0.0,21,Line Break,Yes
+19,0.0,0.0,20,Line Break,Yes
+223,4.95,50.09,29,Normal,No
+256,12.29,49.89,43,Overload,Yes
+245,14.95,50.14,51,Overload,Yes
+18,0.0,0.0,22,Line Break,Yes
+4,0.0,0.0,29,Line Break,Yes
+271,9.92,50.4,40,Overvoltage,Yes
+148,5.53,49.35,28,Undervoltage,Yes
+172,5.7,49.71,33,Undervoltage,Yes
+18,0.0,0.0,30,Line Break,Yes
+283,7.52,50.9,31,Overvoltage,Yes
+247,14.01,49.89,48,Overload,Yes
+176,5.73,49.49,26,Undervoltage,Yes
+4,0.0,0.0,20,Line Break,Yes
+8,0.0,0.0,28,Line Break,Yes
+266,9.01,50.2,35,Overvoltage,Yes
+19,0.0,0.0,27,Line Break,Yes
+5,0.0,0.0,21,Line Break,Yes
+154,5.73,49.55,25,Undervoltage,Yes
+232,4.65,49.98,27,Normal,No
+168,2.2,49.1,25,Undervoltage,Yes
+262,5.37,50.86,34,Overvoltage,Yes
+116,4.19,49.63,33,Undervoltage,Yes
+166,2.33,49.76,30,Undervoltage,Yes
+9,0.0,0.0,26,Line Break,Yes
+154,3.86,49.3,28,Undervoltage,Yes
+5,0.0,0.0,28,Line Break,Yes
+223,6.13,50.14,35,Normal,No
+129,2.43,49.84,30,Undervoltage,Yes
+164,4.86,49.54,28,Undervoltage,Yes
+176,3.05,49.77,33,Undervoltage,Yes
+17,0.0,0.0,21,Line Break,Yes
+276,7.29,50.5,31,Overvoltage,Yes
+262,5.56,50.65,33,Overvoltage,Yes
+119,5.8,49.17,32,Undervoltage,Yes
+238,6.73,50.03,30,Normal,No
+12,0.0,0.0,25,Line Break,Yes
+5,0.0,0.0,29,Line Break,Yes
+295,8.12,50.48,33,Overvoltage,Yes
+227,6.83,49.8,29,Normal,No
+235,6.72,49.89,26,Normal,No
+279,7.41,50.04,40,Overvoltage,Yes
+247,10.78,50.16,46,Overload,Yes
+11,0.0,0.0,30,Line Break,Yes
+281,8.16,50.02,38,Overvoltage,Yes
+260,10.23,49.8,54,Overload,Yes
+125,5.17,49.43,33,Undervoltage,Yes
+297,5.75,50.78,37,Overvoltage,Yes
+256,13.74,49.81,53,Overload,Yes
+250,19.52,49.95,52,Overload,Yes
+226,5.64,49.91,31,Normal,No
+226,3.96,50.0,32,Normal,No
+16,0.0,0.0,23,Line Break,Yes
+169,2.73,49.56,26,Undervoltage,Yes
+226,6.98,49.83,26,Normal,No
+0,0.0,0.0,26,Line Break,Yes
+175,5.42,49.77,29,Undervoltage,Yes
+227,6.17,49.88,33,Normal,No
+254,14.73,49.93,43,Overload,Yes
+241,10.88,49.91,52,Overload,Yes
+233,6.59,50.08,34,Normal,No
+10,0.0,0.0,29,Line Break,Yes
+251,13.6,50.02,48,Overload,Yes
+240,16.2,49.87,45,Overload,Yes
+117,4.98,49.17,31,Undervoltage,Yes
+240,11.56,49.9,50,Overload,Yes
+254,17.98,49.81,54,Overload,Yes
+260,10.15,49.99,50,Overload,Yes
+298,9.82,50.97,38,Overvoltage,Yes
+2,0.0,0.0,27,Line Break,Yes
+20,0.0,0.0,24,Line Break,Yes
+220,6.48,49.9,33,Normal,No
+19,0.0,0.0,28,Line Break,Yes
+9,0.0,0.0,21,Line Break,Yes
+148,4.15,49.49,26,Undervoltage,Yes
+246,13.39,50.08,48,Overload,Yes
+141,3.83,49.7,33,Undervoltage,Yes
+272,6.56,50.38,40,Overvoltage,Yes
+231,7.8,50.16,35,Normal,No
+142,2.22,49.16,35,Undervoltage,Yes
+4,0.0,0.0,21,Line Break,Yes
+254,14.57,50.07,47,Overload,Yes
+150,2.09,49.27,30,Undervoltage,Yes
+240,4.76,50.1,25,Normal,No
+260,19.35,49.98,47,Overload,Yes
+242,13.35,50.19,55,Overload,Yes
+252,19.71,50.09,42,Overload,Yes
+296,5.94,50.59,35,Overvoltage,Yes
+16,0.0,0.0,23,Line Break,Yes
+245,11.87,50.0,52,Overload,Yes
+230,6.64,49.99,25,Normal,No
+268,9.16,50.24,38,Overvoltage,Yes
+294,6.8,50.61,36,Overvoltage,Yes
+287,6.6,50.8,37,Overvoltage,Yes
+255,19.23,49.96,54,Overload,Yes
+7,0.0,0.0,20,Line Break,Yes
+17,0.0,0.0,29,Line Break,Yes
+231,6.85,50.03,35,Normal,No
+235,7.79,50.17,26,Normal,No
+270,9.42,50.6,41,Overvoltage,Yes
+164,5.39,49.01,29,Undervoltage,Yes
+242,14.28,50.11,51,Overload,Yes
+274,9.66,50.25,33,Overvoltage,Yes
+257,12.42,50.14,55,Overload,Yes
+130,4.09,49.61,29,Undervoltage,Yes
+125,5.58,49.49,27,Undervoltage,Yes
+242,13.53,50.2,42,Overload,Yes
+275,6.41,50.43,31,Overvoltage,Yes
+270,9.45,50.14,40,Overvoltage,Yes
+16,0.0,0.0,24,Line Break,Yes
+269,5.97,50.38,37,Overvoltage,Yes
+238,5.33,50.09,34,Normal,No
+242,12.59,49.93,51,Overload,Yes
+10,0.0,0.0,29,Line Break,Yes
+19,0.0,0.0,20,Line Break,Yes
+255,19.55,50.13,42,Overload,Yes
+237,5.95,49.8,35,Normal,No
+223,5.12,50.17,35,Normal,No
+260,19.58,49.92,46,Overload,Yes
+246,13.0,49.85,47,Overload,Yes
+130,4.83,49.76,28,Undervoltage,Yes
+16,0.0,0.0,30,Line Break,Yes
+260,14.08,50.11,46,Overload,Yes
+229,6.62,49.96,29,Normal,No
+280,9.01,50.68,40,Overvoltage,Yes
+230,4.36,50.2,34,Normal,No
+10,0.0,0.0,25,Line Break,Yes
+237,4.89,50.04,28,Normal,No
+134,3.32,49.97,30,Undervoltage,Yes
+130,2.51,49.76,26,Undervoltage,Yes
+139,4.06,49.6,35,Undervoltage,Yes
+248,16.97,50.19,43,Overload,Yes
+12,0.0,0.0,21,Line Break,Yes
+278,8.87,50.04,43,Overvoltage,Yes
+156,2.7,49.51,27,Undervoltage,Yes
+265,7.72,50.43,38,Overvoltage,Yes
+149,5.36,49.77,32,Undervoltage,Yes
+4,0.0,0.0,23,Line Break,Yes
+247,13.28,50.16,51,Overload,Yes
+272,6.02,50.17,33,Overvoltage,Yes
+167,3.51,49.22,35,Undervoltage,Yes
+260,18.71,50.12,41,Overload,Yes
+239,5.98,50.16,27,Normal,No
+245,18.51,50.18,51,Overload,Yes
+224,3.11,50.0,28,Normal,No
+227,5.4,50.01,30,Normal,No
+224,7.22,49.88,26,Normal,No
+239,3.36,50.14,28,Normal,No
+10,0.0,0.0,21,Line Break,Yes
+237,5.47,49.89,25,Normal,No
+3,0.0,0.0,24,Line Break,Yes
+238,7.33,49.98,32,Normal,No
+272,6.62,50.06,38,Overvoltage,Yes
+275,8.95,50.85,39,Overvoltage,Yes
+255,12.36,49.83,45,Overload,Yes
+289,7.35,50.53,44,Overvoltage,Yes
+154,3.21,49.1,35,Undervoltage,Yes
+270,8.25,50.9,45,Overvoltage,Yes
+249,12.91,50.11,47,Overload,Yes
+14,0.0,0.0,20,Line Break,Yes
+251,14.31,49.98,53,Overload,Yes
+222,7.68,50.2,29,Normal,No
+286,5.13,50.35,44,Overvoltage,Yes
+151,4.33,49.61,29,Undervoltage,Yes
+259,19.04,49.84,44,Overload,Yes
+222,3.1,49.82,28,Normal,No
+245,19.9,49.94,40,Overload,Yes
+247,12.9,49.92,45,Overload,Yes
+253,17.23,50.0,44,Overload,Yes
+271,8.67,50.42,34,Overvoltage,Yes
+163,3.47,49.44,28,Undervoltage,Yes
+1,0.0,0.0,21,Line Break,Yes
+234,3.28,50.11,31,Normal,No
+262,9.29,50.87,30,Overvoltage,Yes
+262,5.57,50.43,36,Overvoltage,Yes
+291,8.04,50.28,34,Overvoltage,Yes
+270,7.35,50.14,45,Overvoltage,Yes
+258,16.73,50.06,51,Overload,Yes
+242,15.43,50.16,40,Overload,Yes
+6,0.0,0.0,25,Line Break,Yes
+6,0.0,0.0,25,Line Break,Yes
+110,5.06,49.16,34,Undervoltage,Yes
+239,5.93,50.15,29,Normal,No
+237,3.51,49.88,29,Normal,No
+8,0.0,0.0,23,Line Break,Yes
+15,0.0,0.0,28,Line Break,Yes
+156,5.24,49.83,28,Undervoltage,Yes
+115,3.55,49.72,34,Undervoltage,Yes
+9,0.0,0.0,27,Line Break,Yes
+229,5.01,50.13,32,Normal,No
+284,8.81,50.86,40,Overvoltage,Yes
+226,6.39,50.17,25,Normal,No
+279,9.35,50.14,34,Overvoltage,Yes
+6,0.0,0.0,29,Line Break,Yes
+248,13.95,50.04,44,Overload,Yes
+221,5.24,49.9,32,Normal,No
+240,11.27,49.83,44,Overload,Yes
+259,10.48,49.9,53,Overload,Yes
+259,18.5,50.01,42,Overload,Yes
+292,9.16,50.56,30,Overvoltage,Yes
+178,5.71,49.23,29,Undervoltage,Yes
+282,9.49,50.67,39,Overvoltage,Yes
+242,17.84,50.1,47,Overload,Yes
+300,7.4,50.42,31,Overvoltage,Yes
+220,5.28,50.09,28,Normal,No
+282,7.73,50.24,31,Overvoltage,Yes
+238,3.23,50.18,31,Normal,No
+4,0.0,0.0,23,Line Break,Yes
+231,7.68,49.89,27,Normal,No
+268,6.85,50.31,31,Overvoltage,Yes
+121,5.35,49.13,26,Undervoltage,Yes
+100,2.68,49.03,31,Undervoltage,Yes
+259,16.49,50.08,44,Overload,Yes
+247,13.97,50.04,43,Overload,Yes
+145,5.65,49.69,28,Undervoltage,Yes
+244,12.4,50.11,41,Overload,Yes
+252,16.8,49.85,54,Overload,Yes
+225,7.08,50.08,27,Normal,No
+2,0.0,0.0,25,Line Break,Yes
+145,2.33,49.44,25,Undervoltage,Yes
+162,4.23,49.77,29,Undervoltage,Yes
+150,5.34,49.54,26,Undervoltage,Yes
+237,5.1,49.93,30,Normal,No
+167,4.53,49.12,30,Undervoltage,Yes
+13,0.0,0.0,29,Line Break,Yes
+289,5.85,50.92,33,Overvoltage,Yes
+161,3.09,49.81,34,Undervoltage,Yes
+9,0.0,0.0,24,Line Break,Yes
+168,3.4,49.74,31,Undervoltage,Yes
+296,9.13,50.14,37,Overvoltage,Yes
+240,5.15,49.88,27,Normal,No
+283,7.68,50.32,35,Overvoltage,Yes
+241,10.78,49.93,52,Overload,Yes
+282,6.7,50.09,42,Overvoltage,Yes
+240,7.84,50.1,27,Normal,No
+17,0.0,0.0,27,Line Break,Yes
+272,8.75,50.71,39,Overvoltage,Yes
+170,2.94,49.32,35,Undervoltage,Yes
+134,5.91,49.14,26,Undervoltage,Yes
+136,2.51,49.45,28,Undervoltage,Yes
+248,19.71,49.97,49,Overload,Yes
+1,0.0,0.0,22,Line Break,Yes
+169,3.64,49.76,27,Undervoltage,Yes
+258,13.13,50.03,50,Overload,Yes
+240,5.74,50.04,28,Normal,No
+220,6.58,50.11,27,Normal,No
+177,4.43,49.47,27,Undervoltage,Yes
+263,6.73,50.05,34,Overvoltage,Yes
+8,0.0,0.0,20,Line Break,Yes
+5,0.0,0.0,21,Line Break,Yes
+127,5.16,49.92,33,Undervoltage,Yes
+5,0.0,0.0,25,Line Break,Yes
+296,7.06,50.7,39,Overvoltage,Yes
+282,6.56,50.72,44,Overvoltage,Yes
+280,6.82,50.75,45,Overvoltage,Yes
+299,7.48,50.3,38,Overvoltage,Yes
+152,4.6,49.69,27,Undervoltage,Yes
+15,0.0,0.0,21,Line Break,Yes
+249,19.55,50.2,48,Overload,Yes
+106,2.39,49.85,26,Undervoltage,Yes
+296,8.15,50.76,31,Overvoltage,Yes
+269,8.8,50.94,32,Overvoltage,Yes
+242,14.39,49.84,42,Overload,Yes
+6,0.0,0.0,23,Line Break,Yes
+243,12.02,50.04,42,Overload,Yes
+226,4.97,50.0,29,Normal,No
+255,16.51,50.1,43,Overload,Yes
+230,4.65,49.87,30,Normal,No
+145,3.12,49.14,33,Undervoltage,Yes
+283,8.44,50.72,43,Overvoltage,Yes
+241,10.66,49.98,40,Overload,Yes
+258,13.65,49.87,45,Overload,Yes
+227,5.02,50.03,28,Normal,No
+300,9.03,50.12,37,Overvoltage,Yes
+118,3.45,49.22,33,Undervoltage,Yes
+290,9.5,50.34,33,Overvoltage,Yes
+3,0.0,0.0,27,Line Break,Yes
+236,7.65,50.12,30,Normal,No
+19,0.0,0.0,23,Line Break,Yes
+240,7.71,49.99,34,Normal,No
+164,5.81,49.46,35,Undervoltage,Yes
+227,5.26,50.13,34,Normal,No
+221,7.47,49.9,32,Normal,No
+278,9.32,50.33,38,Overvoltage,Yes
+240,6.53,50.18,34,Normal,No
+233,5.15,50.12,28,Normal,No
+152,3.63,49.85,35,Undervoltage,Yes
+253,19.85,49.85,41,Overload,Yes
+2,0.0,0.0,24,Line Break,Yes
+245,16.76,49.9,42,Overload,Yes
+241,14.0,50.18,55,Overload,Yes
+243,15.59,49.99,53,Overload,Yes
+287,8.1,50.86,31,Overvoltage,Yes
+224,4.02,50.02,28,Normal,No
+9,0.0,0.0,21,Line Break,Yes
+159,4.06,49.04,31,Undervoltage,Yes
+17,0.0,0.0,30,Line Break,Yes
+12,0.0,0.0,30,Line Break,Yes
+247,17.19,49.97,47,Overload,Yes
+104,2.23,49.79,32,Undervoltage,Yes
+126,5.85,49.29,30,Undervoltage,Yes
+176,4.71,49.35,29,Undervoltage,Yes
+14,0.0,0.0,27,Line Break,Yes
+105,5.45,49.52,34,Undervoltage,Yes
+171,2.64,49.74,25,Undervoltage,Yes
+245,12.29,49.9,52,Overload,Yes
+126,2.2,49.52,31,Undervoltage,Yes
+260,17.81,49.82,55,Overload,Yes
+178,2.92,49.2,31,Undervoltage,Yes
+273,5.97,50.49,41,Overvoltage,Yes
+244,10.63,50.12,42,Overload,Yes
+250,14.45,49.95,53,Overload,Yes
+296,6.54,50.05,33,Overvoltage,Yes
+0,0.0,0.0,25,Line Break,Yes
+241,17.46,50.14,43,Overload,Yes
+142,3.46,49.18,30,Undervoltage,Yes
+240,4.86,50.18,25,Normal,No
+143,5.32,49.25,31,Undervoltage,Yes
+242,12.23,49.86,51,Overload,Yes
+252,17.37,50.06,48,Overload,Yes
+272,5.2,50.93,31,Overvoltage,Yes
+239,7.53,49.84,26,Normal,No
+225,5.8,50.11,34,Normal,No
+257,15.19,49.95,54,Overload,Yes
+260,10.81,49.81,41,Overload,Yes
+256,18.17,49.82,40,Overload,Yes
+165,3.52,49.35,31,Undervoltage,Yes
+231,6.27,49.83,25,Normal,No
+275,9.49,50.77,45,Overvoltage,Yes
+154,3.51,49.98,29,Undervoltage,Yes
+250,16.81,49.99,48,Overload,Yes
+286,7.33,50.56,37,Overvoltage,Yes
+283,7.79,50.04,38,Overvoltage,Yes
+147,2.09,49.95,29,Undervoltage,Yes
+294,8.08,50.63,39,Overvoltage,Yes
+298,7.85,50.33,37,Overvoltage,Yes
+224,5.91,49.9,34,Normal,No
+299,6.56,50.14,36,Overvoltage,Yes
+124,5.58,49.19,35,Undervoltage,Yes
+1,0.0,0.0,25,Line Break,Yes
+285,7.84,50.97,43,Overvoltage,Yes
+220,3.53,50.17,28,Normal,No
+173,2.39,49.96,28,Undervoltage,Yes
+6,0.0,0.0,29,Line Break,Yes
+281,6.11,50.95,41,Overvoltage,Yes
+235,4.07,49.91,33,Normal,No
+152,2.52,49.54,26,Undervoltage,Yes
+257,15.77,50.05,42,Overload,Yes
+257,14.72,49.83,52,Overload,Yes
+20,0.0,0.0,20,Line Break,Yes
+106,2.5,49.54,28,Undervoltage,Yes
+0,0.0,0.0,26,Line Break,Yes
+222,6.26,49.96,30,Normal,No
+257,19.3,49.82,51,Overload,Yes
+254,12.2,49.9,49,Overload,Yes
+9,0.0,0.0,21,Line Break,Yes
+259,11.18,50.12,50,Overload,Yes
+224,3.03,49.96,32,Normal,No
+233,5.12,50.06,31,Normal,No
+11,0.0,0.0,21,Line Break,Yes
+136,5.68,49.11,32,Undervoltage,Yes
+229,6.44,49.87,29,Normal,No
+223,3.91,50.13,25,Normal,No
+295,7.96,50.62,42,Overvoltage,Yes
+246,14.93,50.17,43,Overload,Yes
+115,4.24,49.78,30,Undervoltage,Yes
+251,14.1,50.14,52,Overload,Yes
+298,5.32,50.5,40,Overvoltage,Yes
+137,2.23,49.73,32,Undervoltage,Yes
+225,7.74,49.94,32,Normal,No
+20,0.0,0.0,23,Line Break,Yes
+247,15.36,50.08,50,Overload,Yes
+256,19.22,50.14,46,Overload,Yes
+220,5.37,50.03,26,Normal,No
+17,0.0,0.0,28,Line Break,Yes
+108,2.55,49.37,32,Undervoltage,Yes
+4,0.0,0.0,20,Line Break,Yes
+300,6.66,50.9,44,Overvoltage,Yes
+110,5.35,49.52,33,Undervoltage,Yes
+133,3.28,49.37,28,Undervoltage,Yes
+20,0.0,0.0,30,Line Break,Yes
+248,10.21,50.16,46,Overload,Yes
+138,3.1,49.75,25,Undervoltage,Yes
+19,0.0,0.0,25,Line Break,Yes
+235,7.26,50.18,34,Normal,No
+12,0.0,0.0,30,Line Break,Yes
+146,6.0,49.5,35,Undervoltage,Yes
+4,0.0,0.0,25,Line Break,Yes
+5,0.0,0.0,27,Line Break,Yes
+292,6.02,50.63,34,Overvoltage,Yes
+241,11.12,50.03,44,Overload,Yes
+270,5.19,50.84,35,Overvoltage,Yes
+11,0.0,0.0,24,Line Break,Yes
+221,4.77,49.96,31,Normal,No
+18,0.0,0.0,23,Line Break,Yes
+229,3.89,50.06,29,Normal,No
+225,3.27,50.08,25,Normal,No
+289,5.51,50.5,42,Overvoltage,Yes
+8,0.0,0.0,21,Line Break,Yes
+240,19.87,50.16,54,Overload,Yes
+14,0.0,0.0,23,Line Break,Yes
+116,4.29,49.95,31,Undervoltage,Yes
+139,4.94,49.33,32,Undervoltage,Yes
+296,6.34,50.28,42,Overvoltage,Yes
+113,5.29,49.31,26,Undervoltage,Yes
+100,4.42,49.6,34,Undervoltage,Yes
+244,16.24,49.92,47,Overload,Yes
+126,4.72,49.6,34,Undervoltage,Yes
+158,2.09,49.6,30,Undervoltage,Yes
+18,0.0,0.0,24,Line Break,Yes
+259,12.65,50.05,55,Overload,Yes
+234,3.25,49.82,35,Normal,No
+257,15.03,49.84,40,Overload,Yes
+284,7.01,50.18,42,Overvoltage,Yes
+282,7.5,50.08,33,Overvoltage,Yes
+269,7.01,50.66,31,Overvoltage,Yes
+151,4.31,49.35,35,Undervoltage,Yes
+242,15.9,50.16,45,Overload,Yes
+0,0.0,0.0,20,Line Break,Yes
+107,5.54,49.98,34,Undervoltage,Yes
+138,3.84,49.57,35,Undervoltage,Yes
+241,17.04,49.98,41,Overload,Yes
+252,12.52,50.1,49,Overload,Yes
+122,5.67,49.88,27,Undervoltage,Yes
+267,8.55,50.02,34,Overvoltage,Yes
+167,5.76,49.03,35,Undervoltage,Yes
+293,6.01,50.94,31,Overvoltage,Yes
+299,6.81,50.22,33,Overvoltage,Yes
+260,14.45,49.82,54,Overload,Yes
+256,16.07,50.09,50,Overload,Yes
+267,5.16,50.97,37,Overvoltage,Yes
+255,15.11,50.2,46,Overload,Yes
+153,5.14,49.62,29,Undervoltage,Yes
+110,4.34,49.85,33,Undervoltage,Yes
+242,17.04,50.06,46,Overload,Yes
+155,5.11,49.66,33,Undervoltage,Yes
+222,4.6,49.93,34,Normal,No
+253,11.46,49.83,53,Overload,Yes
+233,7.37,49.88,33,Normal,No
+223,3.71,49.98,25,Normal,No
+262,8.2,50.47,32,Overvoltage,Yes
+145,4.71,49.63,30,Undervoltage,Yes
+254,10.15,49.87,54,Overload,Yes
+228,6.91,50.07,31,Normal,No
+264,8.62,50.74,43,Overvoltage,Yes
+235,4.64,49.92,31,Normal,No
+141,3.77,49.91,33,Undervoltage,Yes
+243,15.51,49.82,52,Overload,Yes
+258,18.91,50.01,48,Overload,Yes
+238,5.41,50.03,34,Normal,No
+282,7.12,50.8,38,Overvoltage,Yes
+278,5.74,50.42,42,Overvoltage,Yes
+227,3.2,50.08,30,Normal,No
+7,0.0,0.0,29,Line Break,Yes
+277,9.76,50.82,44,Overvoltage,Yes
+4,0.0,0.0,24,Line Break,Yes
+11,0.0,0.0,26,Line Break,Yes
+268,8.22,50.4,35,Overvoltage,Yes
+259,15.32,50.14,50,Overload,Yes
+243,15.49,50.09,46,Overload,Yes
+227,6.8,50.04,28,Normal,No
+11,0.0,0.0,20,Line Break,Yes
+242,13.15,50.04,41,Overload,Yes
+272,6.75,50.69,36,Overvoltage,Yes
+17,0.0,0.0,20,Line Break,Yes
+248,13.73,49.85,52,Overload,Yes
+247,16.69,49.96,52,Overload,Yes
+281,5.66,50.07,34,Overvoltage,Yes
+123,5.67,49.69,34,Undervoltage,Yes
+220,6.88,50.08,30,Normal,No
+230,4.52,49.9,26,Normal,No
+300,7.17,50.67,39,Overvoltage,Yes
+6,0.0,0.0,25,Line Break,Yes
+100,3.57,49.88,35,Undervoltage,Yes
+266,7.01,50.36,37,Overvoltage,Yes
+235,7.26,49.84,30,Normal,No
+19,0.0,0.0,24,Line Break,Yes
+299,7.44,50.71,34,Overvoltage,Yes
+102,2.7,49.07,31,Undervoltage,Yes
+113,5.02,49.32,34,Undervoltage,Yes
+294,8.25,50.93,35,Overvoltage,Yes
+169,2.87,49.51,28,Undervoltage,Yes
+6,0.0,0.0,23,Line Break,Yes
+232,3.48,49.92,34,Normal,No
+172,5.0,49.88,27,Undervoltage,Yes
+152,5.75,49.58,30,Undervoltage,Yes
+17,0.0,0.0,25,Line Break,Yes
+18,0.0,0.0,21,Line Break,Yes
+14,0.0,0.0,25,Line Break,Yes
+259,13.04,50.05,42,Overload,Yes
+1,0.0,0.0,20,Line Break,Yes
+120,2.12,49.39,35,Undervoltage,Yes
+277,8.04,50.9,34,Overvoltage,Yes
+263,8.32,50.66,34,Overvoltage,Yes
+11,0.0,0.0,27,Line Break,Yes
+249,18.54,50.13,45,Overload,Yes
+278,8.7,50.62,37,Overvoltage,Yes
+119,2.73,49.6,30,Undervoltage,Yes
+15,0.0,0.0,21,Line Break,Yes
+149,4.48,49.05,32,Undervoltage,Yes
+129,2.52,49.39,27,Undervoltage,Yes
+297,5.58,50.6,36,Overvoltage,Yes
+147,3.8,49.41,26,Undervoltage,Yes
+151,4.36,49.32,32,Undervoltage,Yes
+246,17.93,50.02,52,Overload,Yes
+231,3.88,49.86,31,Normal,No
+230,7.1,49.82,28,Normal,No
+17,0.0,0.0,20,Line Break,Yes
+233,7.16,49.9,30,Normal,No
+288,8.72,50.59,42,Overvoltage,Yes
+175,5.08,49.52,31,Undervoltage,Yes
+20,0.0,0.0,26,Line Break,Yes
+277,5.17,50.33,32,Overvoltage,Yes
+248,10.23,49.87,45,Overload,Yes
+16,0.0,0.0,23,Line Break,Yes
+281,7.1,50.35,31,Overvoltage,Yes
+223,5.85,50.15,31,Normal,No
+7,0.0,0.0,20,Line Break,Yes
+11,0.0,0.0,28,Line Break,Yes
+230,7.51,50.17,30,Normal,No
+264,5.93,50.67,38,Overvoltage,Yes
+243,11.59,50.12,48,Overload,Yes
+241,14.64,49.95,44,Overload,Yes
+249,16.7,50.02,43,Overload,Yes
+255,16.87,49.87,43,Overload,Yes
+284,9.84,50.6,41,Overvoltage,Yes
+103,3.19,49.56,32,Undervoltage,Yes
+2,0.0,0.0,30,Line Break,Yes
+120,4.96,49.61,26,Undervoltage,Yes
+250,13.27,49.8,45,Overload,Yes
+176,5.33,49.6,31,Undervoltage,Yes
+2,0.0,0.0,21,Line Break,Yes
+285,8.92,50.46,40,Overvoltage,Yes
+256,12.85,50.04,44,Overload,Yes
+17,0.0,0.0,27,Line Break,Yes
+2,0.0,0.0,22,Line Break,Yes
+228,7.11,50.0,30,Normal,No
+252,17.23,50.13,46,Overload,Yes
+257,11.72,49.95,42,Overload,Yes
+244,17.39,49.83,52,Overload,Yes
+2,0.0,0.0,30,Line Break,Yes
+267,9.12,50.31,42,Overvoltage,Yes
+257,10.53,50.12,54,Overload,Yes
+221,3.98,49.89,30,Normal,No
+16,0.0,0.0,30,Line Break,Yes
+228,5.37,49.9,33,Normal,No
+264,5.64,50.6,34,Overvoltage,Yes
+118,5.83,49.12,31,Undervoltage,Yes
+14,0.0,0.0,29,Line Break,Yes
+233,5.32,50.05,31,Normal,No
+252,19.96,49.89,55,Overload,Yes
+103,3.93,49.62,34,Undervoltage,Yes
+132,4.86,49.26,31,Undervoltage,Yes
+234,3.56,50.09,28,Normal,No
+251,17.79,49.85,44,Overload,Yes
+264,5.95,50.22,32,Overvoltage,Yes
+17,0.0,0.0,26,Line Break,Yes
+233,3.35,50.03,28,Normal,No
+3,0.0,0.0,27,Line Break,Yes
+154,2.41,49.37,31,Undervoltage,Yes
+285,8.85,50.19,42,Overvoltage,Yes
+164,2.92,49.8,28,Undervoltage,Yes
+249,16.72,50.04,54,Overload,Yes
+240,5.64,50.19,28,Normal,No
+296,9.41,50.02,31,Overvoltage,Yes
+116,3.53,49.89,26,Undervoltage,Yes
+233,5.35,50.16,25,Normal,No
+2,0.0,0.0,21,Line Break,Yes
+276,5.46,50.57,31,Overvoltage,Yes
+290,6.2,50.71,35,Overvoltage,Yes
+237,4.2,50.12,33,Normal,No
+178,2.34,49.06,27,Undervoltage,Yes
+281,9.68,50.57,32,Overvoltage,Yes
+238,6.4,49.9,31,Normal,No
+5,0.0,0.0,29,Line Break,Yes
+145,2.15,49.02,33,Undervoltage,Yes
+251,17.71,49.95,49,Overload,Yes
+110,2.25,49.84,25,Undervoltage,Yes
+12,0.0,0.0,20,Line Break,Yes
+0,0.0,0.0,20,Line Break,Yes
+6,0.0,0.0,24,Line Break,Yes
+223,7.64,49.81,31,Normal,No
+101,3.02,49.94,26,Undervoltage,Yes
+2,0.0,0.0,27,Line Break,Yes
+273,5.45,50.37,45,Overvoltage,Yes
+257,12.78,49.92,54,Overload,Yes
+297,6.92,50.11,35,Overvoltage,Yes
+11,0.0,0.0,21,Line Break,Yes
+240,7.6,50.04,29,Normal,No
+249,17.59,50.11,45,Overload,Yes
+261,6.4,50.77,44,Overvoltage,Yes
+260,15.65,50.11,46,Overload,Yes
+155,4.44,49.62,28,Undervoltage,Yes
+268,6.97,50.26,42,Overvoltage,Yes
+6,0.0,0.0,22,Line Break,Yes
+165,3.66,49.16,34,Undervoltage,Yes
+257,14.67,50.08,49,Overload,Yes
+227,5.98,49.89,32,Normal,No
+278,7.37,50.9,32,Overvoltage,Yes
+222,7.55,49.88,35,Normal,No
+125,4.8,49.65,26,Undervoltage,Yes
+279,8.58,50.36,31,Overvoltage,Yes
+105,2.14,49.09,31,Undervoltage,Yes
+244,11.84,49.88,55,Overload,Yes
+225,4.83,49.98,29,Normal,No
+223,5.35,49.94,28,Normal,No
+246,14.92,50.13,55,Overload,Yes
+134,4.25,49.33,25,Undervoltage,Yes
+15,0.0,0.0,28,Line Break,Yes
+8,0.0,0.0,27,Line Break,Yes
+299,9.38,50.96,31,Overvoltage,Yes
+235,4.66,49.94,28,Normal,No
+286,8.81,50.34,38,Overvoltage,Yes
+292,9.38,50.55,38,Overvoltage,Yes
+139,2.92,49.18,27,Undervoltage,Yes
+260,10.25,49.89,44,Overload,Yes
+101,2.27,49.94,25,Undervoltage,Yes
+261,8.2,50.58,31,Overvoltage,Yes
+240,3.61,50.17,25,Normal,No
+242,13.33,49.83,54,Overload,Yes
+255,13.75,50.12,46,Overload,Yes
+107,4.61,49.91,30,Undervoltage,Yes
+224,4.21,49.97,27,Normal,No
+5,0.0,0.0,20,Line Break,Yes
+9,0.0,0.0,22,Line Break,Yes
+140,4.97,49.99,30,Undervoltage,Yes
+124,3.24,49.46,32,Undervoltage,Yes
+240,7.58,50.01,27,Normal,No
+258,12.38,50.12,44,Overload,Yes
+132,4.22,49.91,32,Undervoltage,Yes
+121,5.65,49.1,26,Undervoltage,Yes
+5,0.0,0.0,22,Line Break,Yes
+1,0.0,0.0,28,Line Break,Yes
+292,6.66,50.46,36,Overvoltage,Yes
+270,9.92,50.76,40,Overvoltage,Yes
+125,2.67,49.93,28,Undervoltage,Yes
+144,2.61,49.94,34,Undervoltage,Yes
+269,8.54,50.53,30,Overvoltage,Yes
+248,12.25,49.96,50,Overload,Yes
+164,5.44,49.6,28,Undervoltage,Yes
+160,3.97,49.13,29,Undervoltage,Yes
+262,7.08,50.6,45,Overvoltage,Yes
+275,8.14,50.89,43,Overvoltage,Yes
+246,12.94,50.12,50,Overload,Yes
+288,9.3,50.68,31,Overvoltage,Yes
+227,3.78,50.12,26,Normal,No
+2,0.0,0.0,20,Line Break,Yes
+251,14.97,49.95,48,Overload,Yes
+290,8.12,50.64,31,Overvoltage,Yes
+173,4.43,49.27,32,Undervoltage,Yes
+238,4.08,49.82,26,Normal,No
+290,8.03,50.83,32,Overvoltage,Yes
+227,4.03,50.19,25,Normal,No
+222,3.98,50.16,25,Normal,No
+4,0.0,0.0,29,Line Break,Yes
+223,5.65,50.06,27,Normal,No
+126,2.46,49.6,25,Undervoltage,Yes
+259,11.58,50.06,53,Overload,Yes
+290,8.57,50.66,38,Overvoltage,Yes
+6,0.0,0.0,23,Line Break,Yes
+260,11.16,50.01,52,Overload,Yes
+255,16.9,50.19,40,Overload,Yes
+226,7.33,50.07,27,Normal,No
+131,3.64,49.2,25,Undervoltage,Yes
+244,14.97,49.8,49,Overload,Yes
+245,19.21,50.14,52,Overload,Yes
+252,17.84,50.2,51,Overload,Yes
+169,2.57,49.79,31,Undervoltage,Yes
+287,5.82,50.68,43,Overvoltage,Yes
+15,0.0,0.0,27,Line Break,Yes
+151,5.28,49.14,29,Undervoltage,Yes
+223,5.31,50.13,33,Normal,No
+253,13.28,50.04,46,Overload,Yes
+2,0.0,0.0,30,Line Break,Yes
+8,0.0,0.0,29,Line Break,Yes
+252,12.44,49.86,52,Overload,Yes
+289,6.34,50.26,34,Overvoltage,Yes
+247,11.29,49.92,40,Overload,Yes
+262,9.11,50.01,40,Overvoltage,Yes
+233,3.03,49.98,31,Normal,No
+289,5.43,50.17,41,Overvoltage,Yes
+12,0.0,0.0,25,Line Break,Yes
+103,5.94,49.8,35,Undervoltage,Yes
+9,0.0,0.0,23,Line Break,Yes
+249,11.36,49.91,49,Overload,Yes
+2,0.0,0.0,30,Line Break,Yes
+220,6.02,50.04,26,Normal,No
+241,11.34,49.87,54,Overload,Yes
+295,8.9,50.28,43,Overvoltage,Yes
+1,0.0,0.0,30,Line Break,Yes
+249,14.75,50.1,42,Overload,Yes
+234,4.02,50.04,34,Normal,No
+272,8.27,50.37,45,Overvoltage,Yes
+250,12.67,49.86,48,Overload,Yes
+239,4.9,50.16,32,Normal,No
+140,2.67,49.66,26,Undervoltage,Yes
+261,8.4,50.18,34,Overvoltage,Yes
+270,8.97,50.84,34,Overvoltage,Yes
+9,0.0,0.0,24,Line Break,Yes
+260,16.11,49.86,42,Overload,Yes
+232,6.98,50.0,35,Normal,No
+269,5.93,50.75,41,Overvoltage,Yes
+173,3.75,49.87,31,Undervoltage,Yes
+292,5.76,50.13,38,Overvoltage,Yes
+247,18.43,50.04,49,Overload,Yes
+278,6.66,50.93,36,Overvoltage,Yes
+15,0.0,0.0,25,Line Break,Yes
+17,0.0,0.0,20,Line Break,Yes
+224,6.27,49.96,32,Normal,No
+285,8.05,50.49,39,Overvoltage,Yes
+263,9.04,50.33,42,Overvoltage,Yes
+224,6.68,49.97,35,Normal,No
+260,16.33,50.2,43,Overload,Yes
+246,18.47,49.85,55,Overload,Yes
+293,5.48,50.88,39,Overvoltage,Yes
+118,4.17,49.92,32,Undervoltage,Yes
+271,9.3,50.46,38,Overvoltage,Yes
+270,8.19,50.28,42,Overvoltage,Yes
+265,5.22,50.5,31,Overvoltage,Yes
+230,5.64,49.82,26,Normal,No
+284,6.27,50.33,32,Overvoltage,Yes
+268,5.45,50.64,38,Overvoltage,Yes
+18,0.0,0.0,28,Line Break,Yes
+296,7.79,50.87,33,Overvoltage,Yes
+257,19.76,49.81,41,Overload,Yes
+14,0.0,0.0,27,Line Break,Yes
+274,5.75,50.88,37,Overvoltage,Yes
+5,0.0,0.0,28,Line Break,Yes
+257,15.43,50.08,53,Overload,Yes
+139,3.09,49.92,34,Undervoltage,Yes
+238,3.85,50.03,35,Normal,No
+240,7.06,49.96,26,Normal,No
+8,0.0,0.0,21,Line Break,Yes
+249,15.98,49.96,45,Overload,Yes
+20,0.0,0.0,23,Line Break,Yes
+294,9.93,50.1,41,Overvoltage,Yes
+237,4.91,49.94,34,Normal,No
+17,0.0,0.0,21,Line Break,Yes
+233,7.51,50.2,32,Normal,No
+245,15.0,50.19,52,Overload,Yes
+228,4.51,50.04,32,Normal,No
+262,8.62,50.68,36,Overvoltage,Yes
+16,0.0,0.0,20,Line Break,Yes
+293,6.52,50.11,45,Overvoltage,Yes
+242,11.38,50.15,44,Overload,Yes
+105,5.44,49.37,27,Undervoltage,Yes
+253,11.97,50.03,45,Overload,Yes
+289,6.47,50.84,43,Overvoltage,Yes
+16,0.0,0.0,20,Line Break,Yes
+10,0.0,0.0,23,Line Break,Yes
+232,3.65,50.08,32,Normal,No
+231,7.97,49.84,27,Normal,No
+7,0.0,0.0,20,Line Break,Yes
+10,0.0,0.0,22,Line Break,Yes
+8,0.0,0.0,21,Line Break,Yes
+220,3.31,50.0,35,Normal,No
+236,3.17,49.86,26,Normal,No
+131,3.25,49.39,32,Undervoltage,Yes
+7,0.0,0.0,28,Line Break,Yes
+238,6.91,50.04,26,Normal,No
+136,4.18,49.75,30,Undervoltage,Yes
+249,14.96,50.05,52,Overload,Yes
+11,0.0,0.0,23,Line Break,Yes
+175,4.03,49.11,29,Undervoltage,Yes
+222,4.61,49.83,31,Normal,No
+178,5.68,49.83,34,Undervoltage,Yes
+247,16.72,49.85,54,Overload,Yes
+240,6.55,50.01,31,Normal,No
+297,9.03,50.99,32,Overvoltage,Yes
+6,0.0,0.0,26,Line Break,Yes
+257,13.63,49.9,50,Overload,Yes
+12,0.0,0.0,26,Line Break,Yes
+240,15.79,49.91,41,Overload,Yes
+299,9.45,50.06,34,Overvoltage,Yes
+16,0.0,0.0,29,Line Break,Yes
+145,3.58,49.27,31,Undervoltage,Yes
+241,19.77,50.12,53,Overload,Yes
+13,0.0,0.0,28,Line Break,Yes
+243,18.12,49.96,43,Overload,Yes
+121,4.24,49.6,32,Undervoltage,Yes
+228,6.79,50.14,27,Normal,No
+228,6.18,49.97,28,Normal,No
+264,9.63,50.85,43,Overvoltage,Yes
+260,10.62,50.15,41,Overload,Yes
+281,8.51,50.0,33,Overvoltage,Yes
+285,9.16,50.17,40,Overvoltage,Yes
+259,15.91,50.17,47,Overload,Yes
+264,5.68,50.07,42,Overvoltage,Yes
+176,4.27,49.05,31,Undervoltage,Yes
+227,3.54,50.19,31,Normal,No
+224,6.91,49.82,29,Normal,No
+294,9.53,50.8,31,Overvoltage,Yes
+248,13.7,49.92,50,Overload,Yes
+166,5.59,49.95,25,Undervoltage,Yes
+227,7.68,49.9,25,Normal,No
+238,3.25,50.01,32,Normal,No
+20,0.0,0.0,27,Line Break,Yes
+162,5.92,49.09,27,Undervoltage,Yes
+19,0.0,0.0,20,Line Break,Yes
+273,5.82,50.9,33,Overvoltage,Yes
+250,18.45,50.19,40,Overload,Yes
+231,6.69,50.14,29,Normal,No
+9,0.0,0.0,21,Line Break,Yes
+168,4.07,49.64,33,Undervoltage,Yes
+243,10.81,50.12,44,Overload,Yes
+256,19.2,49.9,43,Overload,Yes
+235,3.79,49.92,27,Normal,No
+291,8.32,50.63,39,Overvoltage,Yes
+232,6.37,50.07,30,Normal,No
+251,14.66,49.82,51,Overload,Yes
+253,10.61,49.94,49,Overload,Yes
+240,18.79,50.15,55,Overload,Yes
+239,7.72,50.08,34,Normal,No
+128,3.59,49.89,28,Undervoltage,Yes
+2,0.0,0.0,20,Line Break,Yes
+240,12.32,50.18,46,Overload,Yes
+14,0.0,0.0,30,Line Break,Yes
+281,5.59,50.26,39,Overvoltage,Yes
+227,5.21,50.17,30,Normal,No
+228,5.43,49.88,35,Normal,No
+239,3.12,50.1,29,Normal,No
+291,6.76,50.64,44,Overvoltage,Yes
+19,0.0,0.0,26,Line Break,Yes
+256,18.6,50.04,49,Overload,Yes
+14,0.0,0.0,30,Line Break,Yes
+296,9.16,50.2,33,Overvoltage,Yes
+249,17.58,50.04,40,Overload,Yes
+248,18.92,50.11,41,Overload,Yes
+20,0.0,0.0,22,Line Break,Yes
+287,6.02,50.8,30,Overvoltage,Yes
+170,2.55,49.67,27,Undervoltage,Yes
+258,13.14,50.02,40,Overload,Yes
+245,16.14,50.1,49,Overload,Yes
+228,7.26,50.08,33,Normal,No
+246,11.42,50.17,52,Overload,Yes
+233,5.56,49.95,27,Normal,No
+280,7.62,50.5,30,Overvoltage,Yes
+112,3.1,49.11,30,Undervoltage,Yes
+274,6.11,50.75,44,Overvoltage,Yes
+240,14.52,50.01,50,Overload,Yes
+250,14.59,49.95,40,Overload,Yes
+241,18.54,50.1,49,Overload,Yes
+10,0.0,0.0,20,Line Break,Yes
+275,8.82,50.1,38,Overvoltage,Yes
+298,5.67,50.85,32,Overvoltage,Yes
+15,0.0,0.0,23,Line Break,Yes
+265,6.59,50.37,32,Overvoltage,Yes
+226,4.52,49.96,33,Normal,No
+238,5.06,50.19,25,Normal,No
+275,9.91,50.45,30,Overvoltage,Yes
+0,0.0,0.0,24,Line Break,Yes
+17,0.0,0.0,29,Line Break,Yes
+270,9.82,50.86,43,Overvoltage,Yes
+227,7.42,50.08,28,Normal,No
+241,17.05,50.09,53,Overload,Yes
+238,6.96,49.96,30,Normal,No
+11,0.0,0.0,22,Line Break,Yes
+227,6.37,50.17,34,Normal,No
+244,13.38,50.11,42,Overload,Yes
+258,19.39,49.99,42,Overload,Yes
+230,5.48,50.02,28,Normal,No
+286,9.43,50.55,40,Overvoltage,Yes
+20,0.0,0.0,30,Line Break,Yes
+241,14.53,50.16,44,Overload,Yes
+291,5.45,50.36,41,Overvoltage,Yes
+253,11.56,49.98,54,Overload,Yes
+236,6.15,49.9,25,Normal,No
+252,16.22,50.14,50,Overload,Yes
+229,7.56,49.92,26,Normal,No
+227,3.51,49.87,25,Normal,No
+19,0.0,0.0,23,Line Break,Yes
+227,7.14,49.88,30,Normal,No
+141,2.89,49.55,31,Undervoltage,Yes
+155,3.98,49.3,32,Undervoltage,Yes
+258,19.61,50.14,42,Overload,Yes
+19,0.0,0.0,23,Line Break,Yes
+116,3.31,49.08,26,Undervoltage,Yes
+146,4.96,49.4,25,Undervoltage,Yes
+296,5.83,50.27,37,Overvoltage,Yes
+237,3.82,50.11,30,Normal,No
+106,3.9,49.86,26,Undervoltage,Yes
+264,5.18,50.98,41,Overvoltage,Yes
+240,15.12,50.15,52,Overload,Yes
+260,12.66,50.14,42,Overload,Yes
+250,18.04,49.86,44,Overload,Yes
+223,6.41,50.06,32,Normal,No
+157,4.07,49.62,32,Undervoltage,Yes
+259,14.95,49.81,46,Overload,Yes
+284,9.45,50.95,40,Overvoltage,Yes
+223,4.81,50.03,29,Normal,No
+276,7.97,50.3,45,Overvoltage,Yes
+260,13.7,49.84,55,Overload,Yes
+157,3.59,49.89,33,Undervoltage,Yes
+258,12.93,49.88,44,Overload,Yes
+266,5.69,50.66,40,Overvoltage,Yes
+230,7.37,50.1,25,Normal,No
+239,6.89,49.96,31,Normal,No
+261,6.3,50.66,37,Overvoltage,Yes
+128,3.04,49.17,32,Undervoltage,Yes
+270,6.35,50.19,44,Overvoltage,Yes
+156,4.14,49.13,31,Undervoltage,Yes
+157,2.96,49.98,32,Undervoltage,Yes
+16,0.0,0.0,29,Line Break,Yes
+262,7.85,50.1,37,Overvoltage,Yes
+240,4.93,50.12,35,Normal,No
+259,15.82,49.99,53,Overload,Yes
+259,18.51,50.18,55,Overload,Yes
+292,8.59,50.56,42,Overvoltage,Yes
+111,5.2,49.46,27,Undervoltage,Yes
+283,6.64,50.85,35,Overvoltage,Yes
+279,9.0,50.77,39,Overvoltage,Yes
+248,11.91,50.04,41,Overload,Yes
+17,0.0,0.0,20,Line Break,Yes
+156,4.86,49.54,29,Undervoltage,Yes
+250,12.83,49.92,54,Overload,Yes
+178,2.84,49.74,35,Undervoltage,Yes
+264,5.25,50.77,45,Overvoltage,Yes
+289,8.47,50.73,44,Overvoltage,Yes
+297,7.75,50.22,44,Overvoltage,Yes
+258,19.95,50.06,43,Overload,Yes
+249,12.01,50.08,55,Overload,Yes
+127,4.09,49.11,28,Undervoltage,Yes
+240,7.87,50.16,32,Normal,No
+117,4.31,49.31,26,Undervoltage,Yes
+242,17.94,50.11,40,Overload,Yes
+291,8.46,50.79,41,Overvoltage,Yes
+179,5.26,49.93,32,Undervoltage,Yes
+15,0.0,0.0,21,Line Break,Yes
+255,15.33,50.0,54,Overload,Yes
+102,2.34,49.48,32,Undervoltage,Yes
+237,6.24,49.92,32,Normal,No
+261,9.75,50.3,35,Overvoltage,Yes
+4,0.0,0.0,22,Line Break,Yes
+106,5.68,49.45,33,Undervoltage,Yes
+294,5.99,50.73,32,Overvoltage,Yes
+172,2.59,49.93,27,Undervoltage,Yes
+110,3.58,49.68,25,Undervoltage,Yes
+231,4.33,50.03,32,Normal,No
+257,10.93,49.85,49,Overload,Yes
+235,4.32,50.12,32,Normal,No
+256,10.95,49.85,43,Overload,Yes
+260,12.5,50.02,42,Overload,Yes
+172,2.29,49.64,27,Undervoltage,Yes
+288,7.26,50.09,39,Overvoltage,Yes
+13,0.0,0.0,24,Line Break,Yes
+284,7.93,50.14,37,Overvoltage,Yes
+5,0.0,0.0,24,Line Break,Yes
+145,5.77,49.87,32,Undervoltage,Yes
+227,3.21,49.82,27,Normal,No
+132,3.57,49.34,33,Undervoltage,Yes
+132,2.67,49.32,26,Undervoltage,Yes
+248,20.0,49.98,42,Overload,Yes
+148,5.46,49.19,35,Undervoltage,Yes
+224,3.48,49.9,33,Normal,No
+128,5.39,49.7,31,Undervoltage,Yes
+250,11.05,49.88,42,Overload,Yes
+228,5.24,49.82,32,Normal,No
+154,4.19,49.05,30,Undervoltage,Yes
+226,5.4,50.04,30,Normal,No
+225,5.48,49.94,25,Normal,No
+269,9.82,50.1,38,Overvoltage,Yes
+225,5.29,49.81,29,Normal,No
+245,11.66,49.91,41,Overload,Yes
+17,0.0,0.0,25,Line Break,Yes
+289,9.1,50.14,45,Overvoltage,Yes
+283,9.35,50.75,37,Overvoltage,Yes
+124,4.41,49.94,26,Undervoltage,Yes
+252,15.88,49.83,49,Overload,Yes
+232,6.0,49.85,29,Normal,No
+14,0.0,0.0,29,Line Break,Yes
+244,19.83,49.99,54,Overload,Yes
+289,6.73,50.06,41,Overvoltage,Yes
+221,7.84,49.94,33,Normal,No
+250,16.95,50.01,54,Overload,Yes
+231,3.92,49.85,25,Normal,No
+172,5.79,49.26,34,Undervoltage,Yes
+245,10.11,50.08,48,Overload,Yes
+286,8.51,50.49,37,Overvoltage,Yes
+289,8.68,50.12,35,Overvoltage,Yes
+281,6.86,50.78,44,Overvoltage,Yes
+273,7.14,50.94,35,Overvoltage,Yes
+140,5.02,49.68,35,Undervoltage,Yes
+16,0.0,0.0,20,Line Break,Yes
+245,11.54,50.14,42,Overload,Yes
+257,12.47,50.19,44,Overload,Yes
+156,3.65,49.51,29,Undervoltage,Yes
+13,0.0,0.0,28,Line Break,Yes
+232,5.67,50.07,27,Normal,No
+229,5.57,49.82,31,Normal,No
+244,12.93,50.05,55,Overload,Yes
+107,5.34,49.02,33,Undervoltage,Yes
+10,0.0,0.0,29,Line Break,Yes
+233,3.53,49.86,35,Normal,No
+134,2.68,49.25,35,Undervoltage,Yes
+297,8.8,50.55,33,Overvoltage,Yes
+233,4.6,49.85,33,Normal,No
+297,8.82,50.37,44,Overvoltage,Yes
+16,0.0,0.0,22,Line Break,Yes
+119,4.27,49.9,34,Undervoltage,Yes
+161,5.61,49.84,25,Undervoltage,Yes
+109,2.17,49.99,28,Undervoltage,Yes
+139,4.77,49.48,27,Undervoltage,Yes
+249,16.64,49.83,41,Overload,Yes
+292,9.06,50.9,30,Overvoltage,Yes
+17,0.0,0.0,27,Line Break,Yes
+247,17.21,50.05,43,Overload,Yes
+171,5.39,49.21,31,Undervoltage,Yes
+237,6.14,50.04,27,Normal,No
+271,9.92,50.46,33,Overvoltage,Yes
+233,4.58,49.86,25,Normal,No
+237,4.82,49.96,26,Normal,No
+237,6.46,49.84,27,Normal,No
+227,6.2,50.03,29,Normal,No
+255,13.02,50.1,53,Overload,Yes
+173,4.64,49.18,32,Undervoltage,Yes
+225,6.35,49.87,33,Normal,No
+252,16.71,50.13,49,Overload,Yes
+255,18.05,50.17,50,Overload,Yes
+257,14.29,50.14,54,Overload,Yes
+7,0.0,0.0,25,Line Break,Yes
+251,14.23,49.82,49,Overload,Yes
+249,12.09,49.88,42,Overload,Yes
+9,0.0,0.0,25,Line Break,Yes
+179,5.67,49.2,27,Undervoltage,Yes
+254,10.22,49.92,48,Overload,Yes
+3,0.0,0.0,20,Line Break,Yes
+166,3.91,49.62,34,Undervoltage,Yes
+266,6.19,50.77,31,Overvoltage,Yes
+11,0.0,0.0,28,Line Break,Yes
+256,16.21,50.03,42,Overload,Yes
+285,6.84,50.36,39,Overvoltage,Yes
+11,0.0,0.0,29,Line Break,Yes
+226,7.56,49.84,29,Normal,No
+10,0.0,0.0,29,Line Break,Yes
+252,18.37,50.1,51,Overload,Yes
+13,0.0,0.0,29,Line Break,Yes
+255,13.02,49.86,40,Overload,Yes
+18,0.0,0.0,27,Line Break,Yes
+289,9.12,50.72,34,Overvoltage,Yes
+8,0.0,0.0,28,Line Break,Yes
+16,0.0,0.0,30,Line Break,Yes
+232,7.41,49.83,34,Normal,No
+289,6.55,50.43,35,Overvoltage,Yes
+259,10.77,49.94,47,Overload,Yes
+245,13.04,49.86,46,Overload,Yes
+11,0.0,0.0,25,Line Break,Yes
+266,5.89,50.99,44,Overvoltage,Yes
+294,9.85,50.97,43,Overvoltage,Yes
+7,0.0,0.0,27,Line Break,Yes
+261,9.42,50.14,44,Overvoltage,Yes
+234,3.05,49.91,29,Normal,No
+291,5.79,50.03,44,Overvoltage,Yes
+0,0.0,0.0,21,Line Break,Yes
+237,5.02,49.88,30,Normal,No
+257,15.18,49.91,44,Overload,Yes
+228,7.74,50.19,31,Normal,No
+130,5.31,49.3,27,Undervoltage,Yes
+226,6.54,49.84,33,Normal,No
+19,0.0,0.0,24,Line Break,Yes
+236,5.7,49.86,31,Normal,No
+253,13.05,49.92,44,Overload,Yes
+276,9.67,50.07,38,Overvoltage,Yes
+240,16.02,50.11,55,Overload,Yes
+300,7.63,50.45,34,Overvoltage,Yes
+266,5.83,50.89,39,Overvoltage,Yes
+166,2.45,49.71,27,Undervoltage,Yes
+290,6.89,50.02,36,Overvoltage,Yes
+240,19.25,49.85,41,Overload,Yes
+120,2.2,49.81,26,Undervoltage,Yes
+15,0.0,0.0,20,Line Break,Yes
+135,4.69,49.06,29,Undervoltage,Yes
+121,5.08,49.05,29,Undervoltage,Yes
+258,11.41,50.07,53,Overload,Yes
+122,4.43,49.76,25,Undervoltage,Yes
+103,4.26,49.07,25,Undervoltage,Yes
+167,3.54,49.82,35,Undervoltage,Yes
+262,9.21,50.26,40,Overvoltage,Yes
+300,6.16,50.99,32,Overvoltage,Yes
+102,3.74,49.45,27,Undervoltage,Yes
+254,15.49,49.97,46,Overload,Yes
+136,2.38,49.18,30,Undervoltage,Yes
+240,18.99,49.87,51,Overload,Yes
+241,16.15,50.11,54,Overload,Yes
+250,19.57,49.9,47,Overload,Yes
+240,5.16,50.17,35,Normal,No
+137,2.36,49.28,27,Undervoltage,Yes
+9,0.0,0.0,25,Line Break,Yes
+243,14.89,49.93,46,Overload,Yes
+170,5.97,49.96,35,Undervoltage,Yes
+10,0.0,0.0,27,Line Break,Yes
+253,14.63,49.84,53,Overload,Yes
+151,2.46,49.65,26,Undervoltage,Yes
+287,6.62,50.28,31,Overvoltage,Yes
+107,2.76,49.7,27,Undervoltage,Yes
+297,8.02,50.34,43,Overvoltage,Yes
+256,16.5,50.03,43,Overload,Yes
+6,0.0,0.0,23,Line Break,Yes
+5,0.0,0.0,29,Line Break,Yes
+289,6.71,50.51,32,Overvoltage,Yes
+12,0.0,0.0,30,Line Break,Yes
+251,19.99,49.93,42,Overload,Yes
+248,14.65,50.03,42,Overload,Yes
+292,5.87,50.34,42,Overvoltage,Yes
+283,7.69,50.51,39,Overvoltage,Yes
+243,11.54,49.86,54,Overload,Yes
+273,8.34,50.57,32,Overvoltage,Yes
+282,5.48,50.48,41,Overvoltage,Yes
+255,12.54,50.1,41,Overload,Yes
+281,7.17,50.23,33,Overvoltage,Yes
+265,7.24,50.15,35,Overvoltage,Yes
+296,8.89,50.93,38,Overvoltage,Yes
+13,0.0,0.0,26,Line Break,Yes
+6,0.0,0.0,24,Line Break,Yes
+276,9.68,50.56,32,Overvoltage,Yes
+297,8.96,50.61,42,Overvoltage,Yes
+226,4.58,49.94,29,Normal,No
+173,4.88,49.85,35,Undervoltage,Yes
+153,3.87,49.1,26,Undervoltage,Yes
+151,3.36,49.12,32,Undervoltage,Yes
+224,7.61,49.93,26,Normal,No
+247,11.67,50.13,49,Overload,Yes
+229,6.67,49.97,26,Normal,No
+227,6.02,49.99,29,Normal,No
+234,3.27,49.82,27,Normal,No
+114,5.19,49.62,26,Undervoltage,Yes
+247,16.82,50.02,51,Overload,Yes
+121,2.76,49.69,29,Undervoltage,Yes
+19,0.0,0.0,29,Line Break,Yes
+116,3.79,49.35,31,Undervoltage,Yes
+285,5.61,50.52,38,Overvoltage,Yes
+177,5.9,49.94,27,Undervoltage,Yes
+2,0.0,0.0,22,Line Break,Yes
+260,14.31,49.81,53,Overload,Yes
+2,0.0,0.0,26,Line Break,Yes
+277,5.64,50.53,41,Overvoltage,Yes
+255,15.24,50.08,49,Overload,Yes
+252,13.12,49.97,47,Overload,Yes
+264,6.27,50.27,45,Overvoltage,Yes
+8,0.0,0.0,26,Line Break,Yes
+11,0.0,0.0,20,Line Break,Yes
+121,2.63,49.37,31,Undervoltage,Yes
+0,0.0,0.0,23,Line Break,Yes
+270,8.85,50.53,35,Overvoltage,Yes
+267,8.06,50.82,32,Overvoltage,Yes
+223,5.63,50.16,33,Normal,No
+152,3.88,49.82,28,Undervoltage,Yes
+176,2.46,49.38,27,Undervoltage,Yes
+299,8.17,50.05,33,Overvoltage,Yes
+222,7.41,49.95,26,Normal,No
+0,0.0,0.0,21,Line Break,Yes
+278,7.89,50.62,43,Overvoltage,Yes
+284,7.27,50.37,36,Overvoltage,Yes
+271,8.84,50.07,38,Overvoltage,Yes
+11,0.0,0.0,26,Line Break,Yes
+264,8.22,50.96,30,Overvoltage,Yes
+148,5.73,49.27,29,Undervoltage,Yes
+264,6.56,50.58,41,Overvoltage,Yes
+243,11.86,50.0,41,Overload,Yes
+256,17.47,49.81,43,Overload,Yes
+229,7.05,49.99,33,Normal,No
+3,0.0,0.0,24,Line Break,Yes
+119,3.24,49.59,31,Undervoltage,Yes
+280,7.32,50.94,44,Overvoltage,Yes
+14,0.0,0.0,21,Line Break,Yes
+221,4.99,50.16,35,Normal,No
+10,0.0,0.0,26,Line Break,Yes
+20,0.0,0.0,25,Line Break,Yes
+258,11.77,50.05,51,Overload,Yes
+247,17.65,50.16,52,Overload,Yes
+8,0.0,0.0,28,Line Break,Yes
+233,4.34,49.93,33,Normal,No
+5,0.0,0.0,26,Line Break,Yes
+260,11.71,50.1,45,Overload,Yes
+259,11.06,50.06,45,Overload,Yes
+15,0.0,0.0,26,Line Break,Yes
+163,2.65,49.86,35,Undervoltage,Yes
+280,6.5,50.27,35,Overvoltage,Yes
+237,3.84,49.92,33,Normal,No
+11,0.0,0.0,23,Line Break,Yes
+255,17.13,50.07,53,Overload,Yes
+251,13.62,49.93,50,Overload,Yes
+160,4.61,49.61,25,Undervoltage,Yes
+248,19.47,49.97,44,Overload,Yes
+20,0.0,0.0,22,Line Break,Yes
+254,16.1,50.11,51,Overload,Yes
+4,0.0,0.0,21,Line Break,Yes
+290,9.85,50.33,42,Overvoltage,Yes
+18,0.0,0.0,20,Line Break,Yes
+250,17.86,50.02,53,Overload,Yes
+238,5.23,49.81,28,Normal,No
+11,0.0,0.0,22,Line Break,Yes
+292,9.28,50.89,36,Overvoltage,Yes
+258,19.48,49.99,54,Overload,Yes
+293,8.14,50.38,38,Overvoltage,Yes
+259,18.8,49.88,45,Overload,Yes
+265,5.2,50.47,32,Overvoltage,Yes
+220,6.57,50.06,30,Normal,No
+239,6.34,50.14,33,Normal,No
+170,3.86,49.29,33,Undervoltage,Yes
+278,6.03,50.4,42,Overvoltage,Yes
+106,4.74,49.14,26,Undervoltage,Yes
+255,17.97,49.94,53,Overload,Yes
+7,0.0,0.0,20,Line Break,Yes
+9,0.0,0.0,29,Line Break,Yes
+117,5.94,49.0,25,Undervoltage,Yes
+4,0.0,0.0,22,Line Break,Yes
+255,11.72,49.83,45,Overload,Yes
+237,5.61,49.95,28,Normal,No
+240,5.69,49.87,33,Normal,No
+263,9.82,50.17,34,Overvoltage,Yes
+9,0.0,0.0,23,Line Break,Yes
+15,0.0,0.0,28,Line Break,Yes
+178,5.69,49.14,29,Undervoltage,Yes
+119,2.84,49.6,25,Undervoltage,Yes
+18,0.0,0.0,22,Line Break,Yes
+252,14.16,50.19,52,Overload,Yes
+289,9.25,50.04,31,Overvoltage,Yes
+172,5.79,49.33,27,Undervoltage,Yes
+18,0.0,0.0,21,Line Break,Yes
+13,0.0,0.0,22,Line Break,Yes
+138,5.4,49.08,27,Undervoltage,Yes
+222,5.25,49.93,27,Normal,No
+269,5.38,50.3,35,Overvoltage,Yes
+175,2.77,49.15,33,Undervoltage,Yes
+148,4.62,49.5,35,Undervoltage,Yes
+261,6.14,50.07,42,Overvoltage,Yes
+18,0.0,0.0,20,Line Break,Yes
+256,14.15,50.15,42,Overload,Yes
+5,0.0,0.0,29,Line Break,Yes
+172,4.24,49.63,25,Undervoltage,Yes
+260,11.85,49.83,43,Overload,Yes
+247,17.48,49.87,55,Overload,Yes
+251,15.92,50.09,42,Overload,Yes
+170,2.39,49.61,30,Undervoltage,Yes
+116,4.25,49.64,34,Undervoltage,Yes
+156,4.17,49.59,33,Undervoltage,Yes
+250,14.1,50.19,50,Overload,Yes
+238,5.62,50.04,35,Normal,No
+249,19.71,50.01,49,Overload,Yes
+240,3.55,49.84,27,Normal,No
+275,7.95,50.06,43,Overvoltage,Yes
+6,0.0,0.0,27,Line Break,Yes
+126,4.75,49.75,32,Undervoltage,Yes
+247,17.91,49.84,48,Overload,Yes
+270,5.23,50.36,35,Overvoltage,Yes
+236,5.98,49.85,31,Normal,No
+240,13.35,50.11,41,Overload,Yes
+235,3.5,50.17,29,Normal,No
+249,16.69,50.08,50,Overload,Yes
+295,7.77,50.75,38,Overvoltage,Yes
+12,0.0,0.0,28,Line Break,Yes
+230,7.23,49.94,29,Normal,No
+249,19.69,50.0,53,Overload,Yes
+255,10.77,49.81,43,Overload,Yes
+249,18.15,50.01,40,Overload,Yes
+248,13.43,49.86,48,Overload,Yes
+0,0.0,0.0,23,Line Break,Yes
+118,3.34,49.53,35,Undervoltage,Yes
+243,13.55,49.88,53,Overload,Yes
+282,9.06,50.75,39,Overvoltage,Yes
+156,2.44,49.28,29,Undervoltage,Yes
+139,4.64,49.88,35,Undervoltage,Yes
+248,19.23,49.86,43,Overload,Yes
+108,3.07,49.36,30,Undervoltage,Yes
+169,5.62,49.49,33,Undervoltage,Yes
+12,0.0,0.0,20,Line Break,Yes
+299,8.9,50.12,32,Overvoltage,Yes
+242,18.63,50.02,48,Overload,Yes
+238,5.49,50.01,27,Normal,No
+292,5.7,50.84,30,Overvoltage,Yes
+229,5.36,49.91,31,Normal,No
+9,0.0,0.0,29,Line Break,Yes
+8,0.0,0.0,24,Line Break,Yes
+130,4.87,49.89,34,Undervoltage,Yes
+156,5.05,49.28,28,Undervoltage,Yes
+295,5.75,50.49,41,Overvoltage,Yes
+241,12.01,50.09,44,Overload,Yes
+220,7.4,50.11,27,Normal,No
+162,5.38,49.64,32,Undervoltage,Yes
+134,4.07,49.88,28,Undervoltage,Yes
+276,7.67,50.48,41,Overvoltage,Yes
+102,5.42,49.36,31,Undervoltage,Yes
+250,16.68,49.94,41,Overload,Yes
+299,8.4,50.85,33,Overvoltage,Yes
+259,16.05,50.03,49,Overload,Yes
+247,15.8,49.85,44,Overload,Yes
+234,3.66,49.8,34,Normal,No
+232,5.63,50.04,26,Normal,No
+254,11.7,49.97,50,Overload,Yes
+109,4.94,49.72,35,Undervoltage,Yes
+162,5.4,49.24,27,Undervoltage,Yes
+166,3.51,49.95,34,Undervoltage,Yes
+111,4.88,49.54,29,Undervoltage,Yes
+249,10.4,49.86,49,Overload,Yes
+243,17.33,50.14,41,Overload,Yes
+166,5.45,49.1,34,Undervoltage,Yes
+248,16.41,50.03,41,Overload,Yes
+243,13.32,49.84,54,Overload,Yes
+176,2.04,49.5,30,Undervoltage,Yes
+256,17.77,49.84,43,Overload,Yes
+241,18.7,49.83,50,Overload,Yes
+148,5.73,49.71,28,Undervoltage,Yes
+155,5.16,49.24,26,Undervoltage,Yes
+159,2.77,49.53,28,Undervoltage,Yes
+150,5.67,49.1,25,Undervoltage,Yes
+285,9.52,50.18,45,Overvoltage,Yes
+300,9.07,50.82,36,Overvoltage,Yes
+17,0.0,0.0,20,Line Break,Yes
+116,2.35,49.01,29,Undervoltage,Yes
+228,6.99,49.91,35,Normal,No
+171,4.45,49.34,34,Undervoltage,Yes
+10,0.0,0.0,30,Line Break,Yes
+276,5.57,50.71,45,Overvoltage,Yes
+137,2.18,49.61,26,Undervoltage,Yes
+249,16.33,50.13,41,Overload,Yes
+15,0.0,0.0,24,Line Break,Yes
+247,15.85,49.99,49,Overload,Yes
+275,7.22,50.03,41,Overvoltage,Yes
+13,0.0,0.0,21,Line Break,Yes
+240,17.51,49.83,55,Overload,Yes
+289,9.88,50.61,39,Overvoltage,Yes
+13,0.0,0.0,28,Line Break,Yes
+171,5.87,49.09,32,Undervoltage,Yes
+10,0.0,0.0,29,Line Break,Yes
+260,16.83,49.92,51,Overload,Yes
+248,14.85,49.88,45,Overload,Yes
+104,2.31,49.4,29,Undervoltage,Yes
+2,0.0,0.0,29,Line Break,Yes
+237,6.27,49.81,30,Normal,No
+277,5.98,50.86,36,Overvoltage,Yes
+236,4.73,49.8,26,Normal,No
+143,4.5,49.68,29,Undervoltage,Yes
+130,3.62,49.74,28,Undervoltage,Yes
+227,3.58,49.89,34,Normal,No
+278,9.02,50.21,42,Overvoltage,Yes
+255,14.94,50.07,46,Overload,Yes
+5,0.0,0.0,25,Line Break,Yes
+103,5.56,49.93,32,Undervoltage,Yes
+253,15.44,49.91,43,Overload,Yes
+129,5.18,49.91,28,Undervoltage,Yes
+112,2.95,49.61,34,Undervoltage,Yes
+240,10.71,49.84,46,Overload,Yes
+229,6.92,50.06,33,Normal,No
+270,6.41,50.23,30,Overvoltage,Yes
+283,7.13,50.75,34,Overvoltage,Yes
+235,6.84,49.86,26,Normal,No
+237,5.76,50.01,27,Normal,No
+276,7.89,50.99,43,Overvoltage,Yes
+289,6.51,50.53,35,Overvoltage,Yes
+268,8.99,50.82,44,Overvoltage,Yes
+105,5.12,49.16,31,Undervoltage,Yes
+12,0.0,0.0,23,Line Break,Yes
+154,3.85,49.68,28,Undervoltage,Yes
+231,4.04,49.98,27,Normal,No
+299,8.1,50.42,38,Overvoltage,Yes
+276,6.77,50.22,40,Overvoltage,Yes
+253,12.87,50.16,46,Overload,Yes
+248,17.2,50.07,53,Overload,Yes
+300,6.33,50.5,35,Overvoltage,Yes
+225,3.12,50.09,35,Normal,No
+252,14.03,50.01,54,Overload,Yes
+7,0.0,0.0,26,Line Break,Yes
+234,4.71,49.81,28,Normal,No
+263,8.15,50.86,44,Overvoltage,Yes
+229,5.07,50.2,28,Normal,No
+165,2.36,49.97,30,Undervoltage,Yes
+272,6.37,50.19,37,Overvoltage,Yes
+153,4.76,49.77,33,Undervoltage,Yes
+249,18.43,49.81,41,Overload,Yes
+5,0.0,0.0,27,Line Break,Yes
+17,0.0,0.0,22,Line Break,Yes
+3,0.0,0.0,22,Line Break,Yes
+131,3.59,49.53,27,Undervoltage,Yes
+9,0.0,0.0,25,Line Break,Yes
+5,0.0,0.0,23,Line Break,Yes
+109,2.1,49.82,27,Undervoltage,Yes
+14,0.0,0.0,27,Line Break,Yes
+249,15.75,49.87,55,Overload,Yes
+253,15.19,50.05,55,Overload,Yes
+235,3.18,50.07,34,Normal,No
+14,0.0,0.0,25,Line Break,Yes
+221,6.65,50.09,34,Normal,No
+294,9.79,50.76,42,Overvoltage,Yes
+9,0.0,0.0,27,Line Break,Yes
+279,8.04,50.9,36,Overvoltage,Yes
+245,17.54,50.03,47,Overload,Yes
+127,2.47,49.34,34,Undervoltage,Yes
+145,2.41,49.96,30,Undervoltage,Yes
+220,4.99,50.19,33,Normal,No
+235,6.39,50.1,31,Normal,No
+240,17.27,50.12,46,Overload,Yes
+261,5.4,50.27,44,Overvoltage,Yes
+222,3.02,50.11,25,Normal,No
+106,4.98,49.86,35,Undervoltage,Yes
+262,9.32,50.76,43,Overvoltage,Yes
+252,13.38,50.12,47,Overload,Yes
+226,3.71,50.02,26,Normal,No
+238,4.72,50.0,35,Normal,No
+282,9.95,50.69,39,Overvoltage,Yes
+130,3.7,49.89,33,Undervoltage,Yes
+116,2.37,50.0,32,Undervoltage,Yes
+247,19.22,50.14,48,Overload,Yes
+230,3.98,50.0,33,Normal,No
+290,5.87,50.42,44,Overvoltage,Yes
+103,4.0,49.29,25,Undervoltage,Yes
+272,6.03,50.31,37,Overvoltage,Yes
+234,3.5,49.86,28,Normal,No
+142,3.24,49.87,31,Undervoltage,Yes
+7,0.0,0.0,29,Line Break,Yes
+0,0.0,0.0,24,Line Break,Yes
+291,7.6,50.35,35,Overvoltage,Yes
+269,6.8,50.56,39,Overvoltage,Yes
+5,0.0,0.0,21,Line Break,Yes
+223,3.42,49.93,33,Normal,No
+8,0.0,0.0,29,Line Break,Yes
+8,0.0,0.0,22,Line Break,Yes
+247,17.1,50.05,48,Overload,Yes
+244,11.99,49.9,48,Overload,Yes
+290,8.6,50.22,30,Overvoltage,Yes
+242,14.94,49.96,44,Overload,Yes
+261,9.04,50.71,35,Overvoltage,Yes
+162,2.34,49.72,30,Undervoltage,Yes
+220,5.61,49.83,31,Normal,No
+3,0.0,0.0,28,Line Break,Yes
+111,2.06,49.97,31,Undervoltage,Yes
+3,0.0,0.0,27,Line Break,Yes
+228,5.63,49.81,27,Normal,No
+127,4.5,49.53,35,Undervoltage,Yes
+231,4.78,50.16,35,Normal,No
+236,6.02,49.97,30,Normal,No
+160,5.06,49.69,28,Undervoltage,Yes
+277,9.89,50.77,34,Overvoltage,Yes
+254,14.09,50.15,52,Overload,Yes
+242,12.34,50.05,50,Overload,Yes
+246,17.27,49.99,46,Overload,Yes
+228,6.02,50.06,25,Normal,No
+261,8.33,50.06,33,Overvoltage,Yes
+279,5.09,50.31,30,Overvoltage,Yes
+258,10.27,50.2,44,Overload,Yes
+133,5.99,49.1,26,Undervoltage,Yes
+20,0.0,0.0,20,Line Break,Yes
+247,17.96,49.86,40,Overload,Yes
+233,7.11,50.14,35,Normal,No
+163,5.45,49.24,29,Undervoltage,Yes
+3,0.0,0.0,23,Line Break,Yes
+238,7.44,50.04,26,Normal,No
+263,6.28,50.71,31,Overvoltage,Yes
+244,14.61,49.84,54,Overload,Yes
+234,7.4,49.94,30,Normal,No
+248,10.09,50.17,41,Overload,Yes
+151,5.71,49.31,34,Undervoltage,Yes
+16,0.0,0.0,20,Line Break,Yes
+251,15.33,50.0,50,Overload,Yes
+257,12.82,49.81,54,Overload,Yes
+228,5.4,50.01,34,Normal,No
+270,8.64,50.63,37,Overvoltage,Yes
+228,5.96,49.85,33,Normal,No
+288,9.91,50.7,40,Overvoltage,Yes
+226,7.97,49.89,27,Normal,No
+265,9.53,50.94,39,Overvoltage,Yes
+298,9.88,50.12,36,Overvoltage,Yes
+290,6.38,50.51,39,Overvoltage,Yes
+285,8.86,50.02,41,Overvoltage,Yes
+145,2.19,49.06,35,Undervoltage,Yes
+102,3.19,49.95,35,Undervoltage,Yes
+226,7.62,50.13,35,Normal,No
+121,4.09,49.08,32,Undervoltage,Yes
+235,4.79,49.92,31,Normal,No
+5,0.0,0.0,20,Line Break,Yes
+173,3.64,50.0,30,Undervoltage,Yes
+18,0.0,0.0,23,Line Break,Yes
+222,7.7,49.91,35,Normal,No
+265,5.55,50.82,40,Overvoltage,Yes
+231,5.45,49.96,31,Normal,No
+19,0.0,0.0,30,Line Break,Yes
+234,4.95,50.06,32,Normal,No
+159,3.66,49.35,35,Undervoltage,Yes
+11,0.0,0.0,26,Line Break,Yes
+233,7.42,50.13,28,Normal,No
+131,2.3,49.24,26,Undervoltage,Yes
+121,5.49,49.97,29,Undervoltage,Yes
+274,9.71,50.67,43,Overvoltage,Yes
+4,0.0,0.0,29,Line Break,Yes
+227,4.52,50.05,30,Normal,No
+279,9.82,50.81,34,Overvoltage,Yes
+232,3.96,50.01,26,Normal,No
+272,5.35,50.07,39,Overvoltage,Yes
+267,9.63,50.55,35,Overvoltage,Yes
+232,4.24,50.07,32,Normal,No
+242,18.84,49.94,52,Overload,Yes
+152,4.24,49.09,30,Undervoltage,Yes
+227,4.39,50.18,27,Normal,No
+239,5.17,49.89,26,Normal,No
+241,14.1,49.92,40,Overload,Yes
+1,0.0,0.0,30,Line Break,Yes
+146,5.69,49.22,32,Undervoltage,Yes
+265,8.63,50.39,40,Overvoltage,Yes
+15,0.0,0.0,24,Line Break,Yes
+275,8.14,50.59,33,Overvoltage,Yes
+159,3.06,49.02,28,Undervoltage,Yes
+159,4.4,49.22,26,Undervoltage,Yes
+271,7.52,50.23,40,Overvoltage,Yes
+3,0.0,0.0,29,Line Break,Yes
+238,5.83,50.18,33,Normal,No
+255,13.6,49.83,54,Overload,Yes
+151,5.43,49.4,34,Undervoltage,Yes
+253,17.11,50.04,51,Overload,Yes
+14,0.0,0.0,28,Line Break,Yes
+166,3.38,49.94,26,Undervoltage,Yes
+0,0.0,0.0,26,Line Break,Yes
+226,3.35,49.94,27,Normal,No
+240,6.24,50.07,33,Normal,No
+114,3.09,49.83,26,Undervoltage,Yes
+241,18.78,49.94,50,Overload,Yes
+244,17.97,49.98,52,Overload,Yes
+258,13.44,49.81,46,Overload,Yes
+240,16.54,49.88,55,Overload,Yes
+10,0.0,0.0,27,Line Break,Yes
+159,2.24,49.2,26,Undervoltage,Yes
+243,18.86,50.04,41,Overload,Yes
+240,12.22,49.99,41,Overload,Yes
+223,6.32,50.08,29,Normal,No
+234,7.72,49.95,31,Normal,No
+261,5.11,50.27,41,Overvoltage,Yes
+236,7.66,49.95,35,Normal,No
+233,7.2,49.81,25,Normal,No
+157,4.98,49.71,28,Undervoltage,Yes
+284,7.35,50.07,38,Overvoltage,Yes
+237,4.98,50.03,28,Normal,No
+249,19.38,49.97,42,Overload,Yes
+0,0.0,0.0,21,Line Break,Yes
+249,13.76,50.17,47,Overload,Yes
+240,16.24,50.18,40,Overload,Yes
+249,13.59,49.86,47,Overload,Yes
+165,4.96,49.21,26,Undervoltage,Yes
+240,4.64,49.82,27,Normal,No
+17,0.0,0.0,20,Line Break,Yes
+11,0.0,0.0,26,Line Break,Yes
+143,3.96,49.05,35,Undervoltage,Yes
+276,8.06,50.86,36,Overvoltage,Yes
+11,0.0,0.0,21,Line Break,Yes
+252,18.15,49.91,44,Overload,Yes
+150,5.07,49.76,30,Undervoltage,Yes
+150,5.74,49.88,25,Undervoltage,Yes
+298,5.66,50.82,45,Overvoltage,Yes
+243,15.44,49.98,49,Overload,Yes
+269,5.44,50.44,32,Overvoltage,Yes
+4,0.0,0.0,27,Line Break,Yes
+6,0.0,0.0,29,Line Break,Yes
+239,4.39,50.18,32,Normal,No
+233,4.98,50.02,27,Normal,No
+226,3.01,50.05,31,Normal,No
+225,3.44,49.86,31,Normal,No
+158,5.43,49.69,34,Undervoltage,Yes
+247,18.79,50.03,55,Overload,Yes
+252,16.6,49.81,43,Overload,Yes
+18,0.0,0.0,20,Line Break,Yes
+132,4.08,49.58,25,Undervoltage,Yes
+170,4.43,49.32,35,Undervoltage,Yes
+226,7.84,50.12,31,Normal,No
+275,8.02,50.47,43,Overvoltage,Yes
+141,4.78,49.22,26,Undervoltage,Yes
+239,4.61,50.12,27,Normal,No
+255,19.34,50.08,55,Overload,Yes
+266,8.26,50.91,38,Overvoltage,Yes
+236,6.62,50.18,35,Normal,No
+109,4.34,49.31,27,Undervoltage,Yes
+10,0.0,0.0,29,Line Break,Yes
+246,11.2,50.0,55,Overload,Yes
+226,7.5,50.07,28,Normal,No
+7,0.0,0.0,24,Line Break,Yes
+246,13.06,49.88,53,Overload,Yes
+288,8.74,50.17,42,Overvoltage,Yes
+165,3.29,49.8,31,Undervoltage,Yes
+235,6.26,50.13,29,Normal,No
+14,0.0,0.0,22,Line Break,Yes
+282,7.44,50.57,36,Overvoltage,Yes
+241,13.86,50.09,41,Overload,Yes
+220,5.21,49.92,27,Normal,No
+153,3.97,49.97,28,Undervoltage,Yes
+137,2.17,49.22,27,Undervoltage,Yes
+15,0.0,0.0,28,Line Break,Yes
+20,0.0,0.0,26,Line Break,Yes
+127,4.26,49.65,25,Undervoltage,Yes
+225,5.73,50.07,34,Normal,No
+108,4.67,49.5,29,Undervoltage,Yes
+0,0.0,0.0,23,Line Break,Yes
+17,0.0,0.0,20,Line Break,Yes
+178,5.76,49.36,35,Undervoltage,Yes
+224,6.12,50.16,26,Normal,No
+244,17.35,50.03,53,Overload,Yes
+14,0.0,0.0,26,Line Break,Yes
+238,7.9,50.14,30,Normal,No
+245,10.78,50.02,41,Overload,Yes
+237,3.26,49.82,28,Normal,No
+240,3.5,49.9,27,Normal,No
+258,14.37,50.06,47,Overload,Yes
+229,7.51,50.05,34,Normal,No
+102,5.18,49.14,31,Undervoltage,Yes
+114,3.42,49.51,26,Undervoltage,Yes
+271,9.84,50.52,34,Overvoltage,Yes
+6,0.0,0.0,22,Line Break,Yes
+102,2.93,49.36,26,Undervoltage,Yes
+281,8.41,50.45,36,Overvoltage,Yes
+227,3.82,50.02,33,Normal,No
+237,4.74,50.15,25,Normal,No
+278,7.19,50.79,36,Overvoltage,Yes
+243,14.81,50.06,50,Overload,Yes
+271,5.57,50.79,38,Overvoltage,Yes
+245,14.29,50.17,52,Overload,Yes
+240,16.1,50.02,43,Overload,Yes
+177,2.9,49.85,34,Undervoltage,Yes
+3,0.0,0.0,20,Line Break,Yes
+236,6.79,50.07,29,Normal,No
+249,14.78,49.83,52,Overload,Yes
+11,0.0,0.0,23,Line Break,Yes
+254,12.85,49.88,51,Overload,Yes
+5,0.0,0.0,24,Line Break,Yes
+151,2.64,49.63,34,Undervoltage,Yes
+6,0.0,0.0,30,Line Break,Yes
+239,5.0,49.93,32,Normal,No
+251,14.37,50.17,45,Overload,Yes
+244,16.71,49.81,44,Overload,Yes
+298,9.36,50.16,38,Overvoltage,Yes
+237,4.32,49.81,34,Normal,No
+221,6.46,50.2,33,Normal,No
+220,6.67,49.85,32,Normal,No
+242,18.19,50.09,52,Overload,Yes
+162,5.14,49.71,32,Undervoltage,Yes
+245,15.43,49.85,40,Overload,Yes
+249,18.86,49.81,40,Overload,Yes
+254,14.07,49.88,46,Overload,Yes
+244,13.42,49.82,49,Overload,Yes
+249,15.11,50.0,44,Overload,Yes
+272,8.47,50.46,36,Overvoltage,Yes
+7,0.0,0.0,29,Line Break,Yes
+221,4.33,49.88,27,Normal,No
+273,7.9,50.43,34,Overvoltage,Yes
+223,4.58,50.15,31,Normal,No
+173,2.75,49.91,28,Undervoltage,Yes
+251,14.02,50.03,41,Overload,Yes
+167,2.47,49.18,35,Undervoltage,Yes
+5,0.0,0.0,28,Line Break,Yes
+179,5.77,49.03,32,Undervoltage,Yes
+251,15.03,49.86,47,Overload,Yes
+260,16.33,49.83,52,Overload,Yes
+234,6.27,50.15,26,Normal,No
+254,19.69,50.19,48,Overload,Yes
+258,14.74,50.11,44,Overload,Yes
+221,7.87,49.88,32,Normal,No
+279,9.48,50.41,43,Overvoltage,Yes
+243,18.28,50.07,41,Overload,Yes
+110,2.54,49.06,28,Undervoltage,Yes
+269,6.36,50.33,33,Overvoltage,Yes
+174,5.43,49.05,32,Undervoltage,Yes
+11,0.0,0.0,25,Line Break,Yes
+252,19.15,49.95,52,Overload,Yes
+158,5.2,49.6,32,Undervoltage,Yes
+149,5.46,49.31,32,Undervoltage,Yes
+126,4.02,49.24,28,Undervoltage,Yes
+172,4.8,49.37,34,Undervoltage,Yes
+259,10.3,49.89,53,Overload,Yes
+165,5.96,49.36,31,Undervoltage,Yes
+10,0.0,0.0,27,Line Break,Yes
+232,5.04,50.18,33,Normal,No
+138,3.65,49.16,27,Undervoltage,Yes
+220,4.13,50.19,33,Normal,No
+250,19.0,50.18,53,Overload,Yes
+254,14.72,49.98,49,Overload,Yes
+281,7.93,50.38,35,Overvoltage,Yes
+249,13.17,50.09,54,Overload,Yes
+135,5.44,49.31,27,Undervoltage,Yes
+296,7.61,50.23,34,Overvoltage,Yes
+5,0.0,0.0,21,Line Break,Yes
+7,0.0,0.0,21,Line Break,Yes
+171,4.59,49.89,32,Undervoltage,Yes
+169,2.2,49.03,26,Undervoltage,Yes
+234,4.18,50.07,25,Normal,No
+266,8.62,50.36,40,Overvoltage,Yes
+240,7.45,50.1,29,Normal,No
+225,4.78,50.01,33,Normal,No
+12,0.0,0.0,30,Line Break,Yes
+297,7.4,50.77,31,Overvoltage,Yes
+220,4.81,50.1,35,Normal,No
+243,16.64,49.97,50,Overload,Yes
+256,19.76,49.85,46,Overload,Yes
+252,13.97,50.07,52,Overload,Yes
+3,0.0,0.0,25,Line Break,Yes
+139,3.97,49.47,31,Undervoltage,Yes
+233,3.66,50.16,29,Normal,No
+16,0.0,0.0,20,Line Break,Yes
+244,13.94,50.18,55,Overload,Yes
+234,6.71,49.92,29,Normal,No
+149,5.72,49.46,26,Undervoltage,Yes
+115,3.95,49.76,28,Undervoltage,Yes
+160,2.16,49.76,27,Undervoltage,Yes
+247,14.86,50.02,50,Overload,Yes
+233,7.31,49.81,34,Normal,No
+247,11.5,49.92,51,Overload,Yes
+222,6.15,49.99,34,Normal,No
+18,0.0,0.0,28,Line Break,Yes
+106,4.45,49.17,33,Undervoltage,Yes
+289,6.46,50.41,33,Overvoltage,Yes
+164,5.2,49.82,25,Undervoltage,Yes
+289,9.41,50.94,32,Overvoltage,Yes
+299,8.6,50.99,36,Overvoltage,Yes
+12,0.0,0.0,23,Line Break,Yes
+140,2.54,49.38,30,Undervoltage,Yes
+251,19.49,49.93,45,Overload,Yes
+296,5.77,50.77,35,Overvoltage,Yes
+19,0.0,0.0,25,Line Break,Yes
+0,0.0,0.0,24,Line Break,Yes
+238,6.88,50.12,30,Normal,No
+9,0.0,0.0,27,Line Break,Yes
+288,5.26,50.32,37,Overvoltage,Yes
+20,0.0,0.0,22,Line Break,Yes
+233,7.88,50.16,33,Normal,No
+150,5.31,49.31,28,Undervoltage,Yes
+299,8.14,50.01,34,Overvoltage,Yes
+252,16.61,50.18,54,Overload,Yes
+265,7.82,50.36,36,Overvoltage,Yes
+162,5.75,49.78,33,Undervoltage,Yes
+11,0.0,0.0,22,Line Break,Yes
+0,0.0,0.0,26,Line Break,Yes
+289,6.85,50.75,32,Overvoltage,Yes
+173,2.87,49.79,26,Undervoltage,Yes
+242,14.68,50.05,43,Overload,Yes
+10,0.0,0.0,24,Line Break,Yes
+263,9.66,50.02,44,Overvoltage,Yes
+16,0.0,0.0,30,Line Break,Yes
+279,5.54,50.46,42,Overvoltage,Yes
+261,8.87,50.69,36,Overvoltage,Yes
+223,7.16,50.04,35,Normal,No
+223,5.71,49.92,26,Normal,No
+280,9.86,50.85,30,Overvoltage,Yes
+109,3.96,49.01,32,Undervoltage,Yes
+174,4.1,49.24,25,Undervoltage,Yes
+242,13.78,49.83,54,Overload,Yes
+20,0.0,0.0,23,Line Break,Yes
+283,9.95,50.92,40,Overvoltage,Yes
+12,0.0,0.0,24,Line Break,Yes
+258,18.53,50.07,54,Overload,Yes
+19,0.0,0.0,28,Line Break,Yes
+291,9.6,50.13,31,Overvoltage,Yes
+13,0.0,0.0,27,Line Break,Yes
+283,5.54,50.82,31,Overvoltage,Yes
+251,18.31,49.9,49,Overload,Yes
+173,5.08,49.72,35,Undervoltage,Yes
+299,6.41,50.25,37,Overvoltage,Yes
+289,9.37,50.1,36,Overvoltage,Yes
+109,2.51,49.02,35,Undervoltage,Yes
+249,14.91,50.03,41,Overload,Yes
+266,7.96,50.92,34,Overvoltage,Yes
+248,12.36,50.09,48,Overload,Yes
+239,7.83,50.18,33,Normal,No
+293,7.83,50.64,34,Overvoltage,Yes
+17,0.0,0.0,26,Line Break,Yes
+246,19.17,50.03,53,Overload,Yes
+7,0.0,0.0,24,Line Break,Yes
+151,3.88,49.9,31,Undervoltage,Yes
+246,15.2,50.05,53,Overload,Yes
+138,4.67,49.25,33,Undervoltage,Yes
+254,16.3,49.87,55,Overload,Yes
+222,4.25,50.09,29,Normal,No
+294,6.24,50.24,41,Overvoltage,Yes
+11,0.0,0.0,27,Line Break,Yes
+287,7.57,50.9,39,Overvoltage,Yes
+8,0.0,0.0,21,Line Break,Yes
+9,0.0,0.0,20,Line Break,Yes
+150,2.8,49.93,25,Undervoltage,Yes
+13,0.0,0.0,27,Line Break,Yes
+9,0.0,0.0,21,Line Break,Yes
+229,4.81,50.19,31,Normal,No
+280,9.25,50.87,32,Overvoltage,Yes
+240,6.51,50.14,27,Normal,No
+250,16.06,50.2,47,Overload,Yes
+143,3.55,49.38,26,Undervoltage,Yes
+226,3.06,50.1,29,Normal,No
+256,17.4,49.89,54,Overload,Yes
+252,11.19,49.84,53,Overload,Yes
+125,2.6,49.19,31,Undervoltage,Yes
+10,0.0,0.0,27,Line Break,Yes
+265,7.79,50.4,45,Overvoltage,Yes
+6,0.0,0.0,26,Line Break,Yes
+257,18.85,49.92,48,Overload,Yes
+113,2.08,49.28,33,Undervoltage,Yes
+279,7.94,50.44,38,Overvoltage,Yes
+153,2.85,49.52,25,Undervoltage,Yes
+232,5.02,50.0,28,Normal,No
+169,4.26,49.87,29,Undervoltage,Yes
+251,19.15,49.89,44,Overload,Yes
+235,6.39,49.83,26,Normal,No
+133,2.21,49.53,30,Undervoltage,Yes
+246,18.1,49.86,44,Overload,Yes
+14,0.0,0.0,22,Line Break,Yes
+125,5.28,49.77,26,Undervoltage,Yes
+129,2.56,49.94,35,Undervoltage,Yes
+275,6.35,50.55,33,Overvoltage,Yes
+131,4.32,49.85,27,Undervoltage,Yes
+7,0.0,0.0,26,Line Break,Yes
+100,4.8,49.46,26,Undervoltage,Yes
+250,19.04,49.82,48,Overload,Yes
+17,0.0,0.0,21,Line Break,Yes
+117,3.65,49.78,26,Undervoltage,Yes
+244,10.85,50.08,43,Overload,Yes
+224,7.3,50.1,32,Normal,No
+237,5.35,50.19,35,Normal,No
+276,6.05,50.88,43,Overvoltage,Yes
+221,3.1,49.94,25,Normal,No
+227,5.3,50.03,25,Normal,No
+233,7.0,49.91,31,Normal,No
+141,3.03,49.2,31,Undervoltage,Yes
+11,0.0,0.0,29,Line Break,Yes
+227,4.47,50.08,31,Normal,No
+221,5.64,50.03,28,Normal,No
+227,5.73,50.19,28,Normal,No
+234,6.49,49.94,30,Normal,No
+154,3.19,49.22,27,Undervoltage,Yes
+241,16.09,50.01,51,Overload,Yes
+131,5.64,49.16,35,Undervoltage,Yes
+153,2.68,49.88,29,Undervoltage,Yes
+0,0.0,0.0,25,Line Break,Yes
+136,4.45,49.65,30,Undervoltage,Yes
+166,5.75,49.08,35,Undervoltage,Yes
+12,0.0,0.0,30,Line Break,Yes
+100,2.14,49.03,27,Undervoltage,Yes
+145,3.51,49.51,27,Undervoltage,Yes
+143,2.08,49.06,31,Undervoltage,Yes
+223,7.52,49.87,29,Normal,No
+292,8.35,50.54,34,Overvoltage,Yes
+139,2.87,49.95,30,Undervoltage,Yes
+161,5.88,49.49,35,Undervoltage,Yes
+272,9.28,50.52,38,Overvoltage,Yes
+257,15.36,50.14,53,Overload,Yes
+234,7.7,49.81,29,Normal,No
+222,7.65,49.98,30,Normal,No
+4,0.0,0.0,22,Line Break,Yes
+247,11.96,49.93,40,Overload,Yes
+132,3.58,49.57,32,Undervoltage,Yes
+153,2.15,49.67,29,Undervoltage,Yes
+126,3.11,49.24,35,Undervoltage,Yes
+163,4.74,49.62,33,Undervoltage,Yes
+168,4.74,49.99,33,Undervoltage,Yes
+273,9.26,50.12,30,Overvoltage,Yes
+270,9.65,50.16,38,Overvoltage,Yes
+250,16.7,49.81,40,Overload,Yes
+4,0.0,0.0,26,Line Break,Yes
+269,7.46,50.67,43,Overvoltage,Yes
+11,0.0,0.0,26,Line Break,Yes
+103,3.56,49.91,33,Undervoltage,Yes
+243,14.3,49.84,43,Overload,Yes
+156,4.51,49.65,33,Undervoltage,Yes
+252,15.68,49.81,49,Overload,Yes
+4,0.0,0.0,28,Line Break,Yes
+11,0.0,0.0,24,Line Break,Yes
+244,10.4,49.97,44,Overload,Yes
+274,9.36,50.74,37,Overvoltage,Yes
+145,5.67,49.28,27,Undervoltage,Yes
+237,3.92,49.99,25,Normal,No
+10,0.0,0.0,25,Line Break,Yes
+278,8.24,50.35,37,Overvoltage,Yes
+274,6.7,50.76,40,Overvoltage,Yes
+291,8.19,50.29,37,Overvoltage,Yes
+240,12.71,49.81,43,Overload,Yes
+283,5.52,50.89,32,Overvoltage,Yes
+9,0.0,0.0,26,Line Break,Yes
+289,5.86,50.21,35,Overvoltage,Yes
+239,4.15,49.99,35,Normal,No
+256,10.13,50.02,42,Overload,Yes
+269,7.39,50.84,34,Overvoltage,Yes
+254,18.01,49.88,40,Overload,Yes
+11,0.0,0.0,26,Line Break,Yes
+245,17.68,49.81,54,Overload,Yes
+0,0.0,0.0,26,Line Break,Yes
+240,15.96,50.13,46,Overload,Yes
+231,3.51,49.86,29,Normal,No
+283,8.59,50.11,38,Overvoltage,Yes
+222,5.67,49.96,33,Normal,No
+15,0.0,0.0,21,Line Break,Yes
+16,0.0,0.0,23,Line Break,Yes
+260,10.51,50.2,55,Overload,Yes
+233,5.87,49.91,28,Normal,No
+245,15.79,50.17,41,Overload,Yes
+172,3.17,49.93,26,Undervoltage,Yes
+293,6.37,50.64,37,Overvoltage,Yes
+12,0.0,0.0,30,Line Break,Yes
+258,17.96,50.11,45,Overload,Yes
+126,3.61,49.99,30,Undervoltage,Yes
+299,5.98,50.66,32,Overvoltage,Yes
+251,14.31,49.93,51,Overload,Yes
+229,4.73,49.88,31,Normal,No
+246,15.18,49.97,55,Overload,Yes
+224,4.98,49.86,25,Normal,No
+134,4.04,49.52,30,Undervoltage,Yes
+286,8.3,50.22,34,Overvoltage,Yes
+291,6.77,50.26,31,Overvoltage,Yes
+293,6.32,50.92,41,Overvoltage,Yes
+226,6.04,49.92,26,Normal,No
+300,6.32,50.78,40,Overvoltage,Yes
+20,0.0,0.0,24,Line Break,Yes
+15,0.0,0.0,28,Line Break,Yes
+290,8.43,50.02,32,Overvoltage,Yes
+275,8.05,50.02,41,Overvoltage,Yes
+262,5.21,50.0,41,Overvoltage,Yes
+299,8.24,50.17,38,Overvoltage,Yes
+287,6.86,50.74,38,Overvoltage,Yes
+14,0.0,0.0,21,Line Break,Yes
+7,0.0,0.0,30,Line Break,Yes
+2,0.0,0.0,30,Line Break,Yes
+259,11.02,49.99,47,Overload,Yes
+287,6.11,50.96,38,Overvoltage,Yes
+233,3.48,49.97,28,Normal,No
+231,5.32,49.89,30,Normal,No
+261,6.77,50.96,43,Overvoltage,Yes
+268,9.08,50.47,37,Overvoltage,Yes
+12,0.0,0.0,27,Line Break,Yes
+233,5.31,50.01,33,Normal,No
+13,0.0,0.0,24,Line Break,Yes
+223,6.22,49.9,25,Normal,No
+248,16.33,49.9,47,Overload,Yes
+175,4.26,49.04,35,Undervoltage,Yes
+292,9.62,50.99,31,Overvoltage,Yes
+179,3.03,49.43,31,Undervoltage,Yes
+128,4.41,49.17,28,Undervoltage,Yes
+254,16.81,49.89,54,Overload,Yes
+160,2.98,49.02,28,Undervoltage,Yes
+250,18.68,49.81,51,Overload,Yes
+291,8.65,50.37,44,Overvoltage,Yes
+251,17.53,50.18,45,Overload,Yes
+242,18.41,50.01,42,Overload,Yes
+248,12.77,49.99,49,Overload,Yes
+252,18.37,49.89,43,Overload,Yes
+6,0.0,0.0,29,Line Break,Yes
+225,7.32,50.1,28,Normal,No
+225,3.51,49.84,35,Normal,No
+223,3.98,50.18,33,Normal,No
+221,4.52,49.81,33,Normal,No
+283,9.22,50.42,32,Overvoltage,Yes
+282,8.98,50.49,38,Overvoltage,Yes
+4,0.0,0.0,27,Line Break,Yes
+249,13.22,49.91,44,Overload,Yes
+276,9.78,50.04,45,Overvoltage,Yes
+12,0.0,0.0,20,Line Break,Yes
+238,3.47,50.05,26,Normal,No
+4,0.0,0.0,21,Line Break,Yes
+261,8.54,50.67,33,Overvoltage,Yes
+245,10.18,50.11,42,Overload,Yes
+256,12.49,49.93,46,Overload,Yes
+15,0.0,0.0,24,Line Break,Yes
+240,19.19,49.98,41,Overload,Yes
+254,18.0,49.87,51,Overload,Yes
+162,2.05,49.17,32,Undervoltage,Yes
+242,18.9,49.81,40,Overload,Yes
+16,0.0,0.0,26,Line Break,Yes
+3,0.0,0.0,29,Line Break,Yes
+222,5.18,50.14,26,Normal,No
+3,0.0,0.0,29,Line Break,Yes
+103,3.55,49.26,31,Undervoltage,Yes
+247,16.54,49.97,40,Overload,Yes
+246,14.69,50.18,50,Overload,Yes
+241,17.12,49.88,40,Overload,Yes
+263,8.35,50.42,36,Overvoltage,Yes
+235,6.37,50.09,35,Normal,No
+236,7.72,49.86,31,Normal,No
+19,0.0,0.0,26,Line Break,Yes
+236,4.76,49.82,34,Normal,No
+249,12.49,50.08,50,Overload,Yes
+142,5.42,49.39,35,Undervoltage,Yes
+293,9.47,50.04,43,Overvoltage,Yes
+3,0.0,0.0,30,Line Break,Yes
+289,6.82,50.55,31,Overvoltage,Yes
+272,7.22,50.27,33,Overvoltage,Yes
+250,14.75,49.89,54,Overload,Yes
+222,7.24,49.96,28,Normal,No
+8,0.0,0.0,25,Line Break,Yes
+171,4.0,49.62,26,Undervoltage,Yes
+116,2.77,49.44,34,Undervoltage,Yes
+2,0.0,0.0,24,Line Break,Yes
+154,4.9,49.48,31,Undervoltage,Yes
+6,0.0,0.0,27,Line Break,Yes
+240,16.63,49.8,49,Overload,Yes
+12,0.0,0.0,29,Line Break,Yes
+260,13.86,50.13,55,Overload,Yes
+9,0.0,0.0,30,Line Break,Yes
+241,15.48,50.01,46,Overload,Yes
+175,2.2,49.92,33,Undervoltage,Yes
+111,3.26,49.58,26,Undervoltage,Yes
+128,5.29,49.65,32,Undervoltage,Yes
+1,0.0,0.0,21,Line Break,Yes
+290,8.5,50.46,41,Overvoltage,Yes
+275,8.99,50.52,39,Overvoltage,Yes
+109,3.9,49.37,32,Undervoltage,Yes
+269,5.21,50.11,43,Overvoltage,Yes
+225,6.6,49.88,33,Normal,No
+238,3.66,50.05,25,Normal,No
+257,12.71,50.18,47,Overload,Yes
+14,0.0,0.0,28,Line Break,Yes
+253,18.14,50.1,40,Overload,Yes
+0,0.0,0.0,22,Line Break,Yes
+245,12.92,50.17,44,Overload,Yes
+5,0.0,0.0,25,Line Break,Yes
+232,7.23,50.19,30,Normal,No
+289,5.08,50.04,41,Overvoltage,Yes
+135,2.2,49.7,35,Undervoltage,Yes
+7,0.0,0.0,26,Line Break,Yes
+247,13.67,50.15,45,Overload,Yes
+281,5.25,50.82,33,Overvoltage,Yes
+265,7.65,50.54,37,Overvoltage,Yes
+272,7.01,50.85,30,Overvoltage,Yes
+254,13.69,50.17,54,Overload,Yes
+291,6.69,50.33,37,Overvoltage,Yes
+137,5.38,49.9,35,Undervoltage,Yes
+3,0.0,0.0,23,Line Break,Yes
+1,0.0,0.0,28,Line Break,Yes
+1,0.0,0.0,29,Line Break,Yes
+13,0.0,0.0,30,Line Break,Yes
+260,16.33,50.18,52,Overload,Yes
+280,7.79,50.13,44,Overvoltage,Yes
+232,5.44,49.88,28,Normal,No
+256,19.49,49.98,44,Overload,Yes
+11,0.0,0.0,21,Line Break,Yes
+14,0.0,0.0,20,Line Break,Yes
+241,19.84,50.15,55,Overload,Yes
+293,9.52,50.1,30,Overvoltage,Yes
+7,0.0,0.0,27,Line Break,Yes
+276,8.08,50.11,37,Overvoltage,Yes
+289,6.7,50.9,40,Overvoltage,Yes
+10,0.0,0.0,25,Line Break,Yes
+17,0.0,0.0,26,Line Break,Yes
+10,0.0,0.0,26,Line Break,Yes
+1,0.0,0.0,28,Line Break,Yes
+275,9.99,50.28,37,Overvoltage,Yes
+158,4.66,49.12,27,Undervoltage,Yes
+262,6.89,50.06,42,Overvoltage,Yes
+9,0.0,0.0,30,Line Break,Yes
+248,16.96,50.17,51,Overload,Yes
+239,5.45,49.87,28,Normal,No
+110,5.45,49.52,32,Undervoltage,Yes
+154,2.38,49.88,27,Undervoltage,Yes
+1,0.0,0.0,29,Line Break,Yes
+222,6.04,49.89,33,Normal,No
+249,17.07,49.81,40,Overload,Yes
+268,5.14,50.57,31,Overvoltage,Yes
+246,14.47,49.9,50,Overload,Yes
+229,3.21,50.01,28,Normal,No
+258,13.22,50.06,47,Overload,Yes
+287,8.31,50.5,42,Overvoltage,Yes
+260,13.4,49.96,42,Overload,Yes
+274,8.24,50.16,30,Overvoltage,Yes
+247,12.56,49.83,43,Overload,Yes
+257,11.64,50.17,48,Overload,Yes
+150,2.38,49.83,26,Undervoltage,Yes
+5,0.0,0.0,29,Line Break,Yes
+224,7.89,50.09,28,Normal,No
+14,0.0,0.0,28,Line Break,Yes
+266,8.1,50.52,38,Overvoltage,Yes
+244,11.88,50.1,42,Overload,Yes
+104,3.85,49.7,30,Undervoltage,Yes
+14,0.0,0.0,21,Line Break,Yes
+118,2.86,49.11,27,Undervoltage,Yes
+3,0.0,0.0,24,Line Break,Yes
+241,10.49,50.19,51,Overload,Yes
+126,5.04,49.33,29,Undervoltage,Yes
+7,0.0,0.0,20,Line Break,Yes
+223,5.51,49.97,28,Normal,No
+227,7.26,50.01,30,Normal,No
+244,18.61,49.92,52,Overload,Yes
+6,0.0,0.0,26,Line Break,Yes
+255,13.18,50.14,49,Overload,Yes
+252,16.41,49.86,54,Overload,Yes
+133,5.78,49.25,33,Undervoltage,Yes
+273,8.22,50.07,37,Overvoltage,Yes
+297,5.03,50.19,37,Overvoltage,Yes
+237,4.56,50.12,28,Normal,No
+221,3.17,50.05,30,Normal,No
+264,8.77,50.63,38,Overvoltage,Yes
+288,9.18,50.32,43,Overvoltage,Yes
+10,0.0,0.0,20,Line Break,Yes
+253,14.98,50.15,43,Overload,Yes
+148,2.45,49.79,26,Undervoltage,Yes
+137,2.0,49.82,30,Undervoltage,Yes
+227,5.33,50.06,28,Normal,No
+221,5.96,50.14,26,Normal,No
+224,4.48,50.03,33,Normal,No
+280,9.01,50.25,40,Overvoltage,Yes
+232,7.82,49.91,32,Normal,No
+248,14.44,50.19,41,Overload,Yes
+8,0.0,0.0,27,Line Break,Yes
+109,4.48,49.0,30,Undervoltage,Yes
+237,7.15,49.8,32,Normal,No
+257,14.41,49.93,46,Overload,Yes
+139,5.38,49.14,31,Undervoltage,Yes
+221,6.32,49.84,35,Normal,No
+243,18.3,50.18,50,Overload,Yes
+244,12.33,49.82,52,Overload,Yes
+16,0.0,0.0,28,Line Break,Yes
+227,3.41,49.83,28,Normal,No
+3,0.0,0.0,25,Line Break,Yes
+242,10.65,50.16,48,Overload,Yes
+1,0.0,0.0,26,Line Break,Yes
+246,15.58,50.03,50,Overload,Yes
+257,12.14,49.85,54,Overload,Yes
+225,4.64,50.1,27,Normal,No
+271,8.46,50.94,33,Overvoltage,Yes
+293,9.69,50.62,39,Overvoltage,Yes
+117,3.5,49.67,28,Undervoltage,Yes
+291,7.44,50.09,38,Overvoltage,Yes
+260,11.58,49.83,46,Overload,Yes
+276,9.5,50.63,32,Overvoltage,Yes
+18,0.0,0.0,26,Line Break,Yes
+286,8.49,50.95,37,Overvoltage,Yes
+223,7.31,49.95,34,Normal,No
+153,2.52,49.22,25,Undervoltage,Yes
+11,0.0,0.0,28,Line Break,Yes
+253,15.58,49.83,52,Overload,Yes
+12,0.0,0.0,26,Line Break,Yes
+299,8.06,50.74,42,Overvoltage,Yes
+165,3.22,49.02,35,Undervoltage,Yes
+251,18.65,49.82,45,Overload,Yes
+243,19.76,49.98,47,Overload,Yes
+248,11.56,50.05,40,Overload,Yes
+273,6.24,50.81,33,Overvoltage,Yes
+250,12.91,50.17,52,Overload,Yes
+256,17.58,50.08,54,Overload,Yes
+278,5.66,50.21,31,Overvoltage,Yes
+3,0.0,0.0,26,Line Break,Yes
+3,0.0,0.0,20,Line Break,Yes
+7,0.0,0.0,22,Line Break,Yes
+226,6.73,50.12,29,Normal,No
+5,0.0,0.0,28,Line Break,Yes
+117,2.69,49.06,34,Undervoltage,Yes
+5,0.0,0.0,22,Line Break,Yes
+242,14.1,49.95,51,Overload,Yes
+279,7.18,50.21,39,Overvoltage,Yes
+267,7.37,50.79,38,Overvoltage,Yes
+232,6.73,50.07,31,Normal,No
+130,4.5,49.94,31,Undervoltage,Yes
+275,5.96,50.02,34,Overvoltage,Yes
+107,4.88,49.32,27,Undervoltage,Yes
+239,5.98,50.15,33,Normal,No
+170,3.73,49.77,26,Undervoltage,Yes
+285,8.88,50.56,39,Overvoltage,Yes
+249,14.3,50.0,45,Overload,Yes
+224,3.01,49.95,31,Normal,No
+299,6.34,50.59,32,Overvoltage,Yes
+257,19.48,50.18,41,Overload,Yes
+171,4.38,49.36,29,Undervoltage,Yes
+300,9.58,50.11,39,Overvoltage,Yes
+278,7.16,50.96,38,Overvoltage,Yes
+152,4.58,49.03,35,Undervoltage,Yes
+259,15.04,49.89,40,Overload,Yes
+144,2.42,49.35,35,Undervoltage,Yes
+249,12.79,50.11,54,Overload,Yes
+178,5.09,49.99,30,Undervoltage,Yes
+3,0.0,0.0,29,Line Break,Yes
+252,11.38,50.07,48,Overload,Yes
+17,0.0,0.0,29,Line Break,Yes
+130,4.83,49.22,32,Undervoltage,Yes
+235,3.41,50.15,27,Normal,No
+7,0.0,0.0,27,Line Break,Yes
+295,7.61,50.83,41,Overvoltage,Yes
+226,3.92,49.99,27,Normal,No
+236,4.18,49.93,26,Normal,No
+265,5.38,50.7,37,Overvoltage,Yes
+132,4.76,49.04,33,Undervoltage,Yes
+12,0.0,0.0,23,Line Break,Yes
+11,0.0,0.0,22,Line Break,Yes
+3,0.0,0.0,30,Line Break,Yes
+285,5.3,50.39,38,Overvoltage,Yes
+139,5.85,49.22,34,Undervoltage,Yes
+253,18.48,50.05,54,Overload,Yes
+293,6.49,50.41,40,Overvoltage,Yes
+252,18.44,50.07,47,Overload,Yes
+17,0.0,0.0,22,Line Break,Yes
+255,16.74,49.86,51,Overload,Yes
+100,4.81,49.86,29,Undervoltage,Yes
+254,12.18,50.19,53,Overload,Yes
+241,19.77,50.17,40,Overload,Yes
+247,17.83,50.05,49,Overload,Yes
+4,0.0,0.0,23,Line Break,Yes
+263,8.59,50.23,39,Overvoltage,Yes
+287,9.25,50.87,35,Overvoltage,Yes
+9,0.0,0.0,26,Line Break,Yes
+293,9.99,50.27,39,Overvoltage,Yes
+161,2.12,49.16,26,Undervoltage,Yes
+1,0.0,0.0,30,Line Break,Yes
+233,3.92,49.99,35,Normal,No
+235,5.14,49.99,32,Normal,No
+238,3.6,49.88,25,Normal,No
+232,5.23,50.12,34,Normal,No
+268,6.99,50.47,37,Overvoltage,Yes
+120,2.65,49.58,34,Undervoltage,Yes
+288,7.97,50.88,32,Overvoltage,Yes
+285,6.6,50.94,30,Overvoltage,Yes
+4,0.0,0.0,30,Line Break,Yes
+273,6.11,50.85,41,Overvoltage,Yes
+258,11.7,49.88,53,Overload,Yes
+300,9.5,50.23,35,Overvoltage,Yes
+231,7.78,50.08,29,Normal,No
+174,3.01,49.69,26,Undervoltage,Yes
+255,13.55,49.91,44,Overload,Yes
+293,8.99,50.07,33,Overvoltage,Yes
+18,0.0,0.0,23,Line Break,Yes
+164,4.61,49.61,32,Undervoltage,Yes
+298,9.75,50.25,44,Overvoltage,Yes
+269,6.34,50.95,32,Overvoltage,Yes
+20,0.0,0.0,29,Line Break,Yes
+149,5.82,49.18,26,Undervoltage,Yes
+240,7.28,49.95,28,Normal,No
+175,4.85,49.44,34,Undervoltage,Yes
+295,8.76,50.53,34,Overvoltage,Yes
+4,0.0,0.0,23,Line Break,Yes
+241,12.46,50.05,55,Overload,Yes
+246,19.84,50.0,45,Overload,Yes
+231,6.68,49.82,31,Normal,No
+246,13.87,49.99,49,Overload,Yes
+247,19.1,49.88,51,Overload,Yes
+173,2.23,49.31,27,Undervoltage,Yes
+1,0.0,0.0,21,Line Break,Yes
+239,4.29,50.11,27,Normal,No
+293,8.27,50.23,31,Overvoltage,Yes
+237,4.77,50.06,35,Normal,No
+231,5.72,50.17,33,Normal,No
+4,0.0,0.0,29,Line Break,Yes
+240,18.65,49.93,54,Overload,Yes
+8,0.0,0.0,22,Line Break,Yes
+9,0.0,0.0,29,Line Break,Yes
+10,0.0,0.0,24,Line Break,Yes
+101,3.59,49.0,27,Undervoltage,Yes
+6,0.0,0.0,24,Line Break,Yes
+267,7.3,50.47,45,Overvoltage,Yes
+298,6.01,50.68,35,Overvoltage,Yes
+230,3.03,50.16,27,Normal,No
+223,4.19,49.83,30,Normal,No
+279,6.18,50.72,37,Overvoltage,Yes
+230,6.91,50.17,34,Normal,No
+252,10.55,49.86,48,Overload,Yes
+2,0.0,0.0,20,Line Break,Yes
+236,5.42,49.93,29,Normal,No
+249,17.85,49.87,54,Overload,Yes
+107,5.85,49.34,30,Undervoltage,Yes
+241,16.4,49.86,53,Overload,Yes
+16,0.0,0.0,30,Line Break,Yes
+143,5.37,49.82,32,Undervoltage,Yes
+292,6.21,50.68,33,Overvoltage,Yes
+240,3.97,49.81,30,Normal,No
+292,6.69,50.41,40,Overvoltage,Yes
+229,4.94,49.81,35,Normal,No
+286,6.93,50.15,41,Overvoltage,Yes
+1,0.0,0.0,23,Line Break,Yes
+1,0.0,0.0,27,Line Break,Yes
+251,10.78,50.0,42,Overload,Yes
+282,7.34,50.77,30,Overvoltage,Yes
+244,18.45,50.15,52,Overload,Yes
+1,0.0,0.0,22,Line Break,Yes
+16,0.0,0.0,25,Line Break,Yes
+299,9.29,50.12,44,Overvoltage,Yes
+300,8.35,50.13,44,Overvoltage,Yes
+147,2.23,49.14,26,Undervoltage,Yes
+281,7.8,50.03,45,Overvoltage,Yes
+155,5.85,49.78,31,Undervoltage,Yes
+155,2.76,49.28,26,Undervoltage,Yes
+279,9.22,50.65,31,Overvoltage,Yes
+300,6.84,50.6,40,Overvoltage,Yes
+5,0.0,0.0,24,Line Break,Yes
+224,5.97,49.92,29,Normal,No
+251,11.86,49.82,46,Overload,Yes
+0,0.0,0.0,27,Line Break,Yes
+262,6.37,50.56,39,Overvoltage,Yes
+6,0.0,0.0,29,Line Break,Yes
+244,15.99,49.93,40,Overload,Yes
+5,0.0,0.0,23,Line Break,Yes
+245,18.67,50.11,55,Overload,Yes
+265,6.21,50.79,37,Overvoltage,Yes
+7,0.0,0.0,24,Line Break,Yes
+128,4.46,49.39,29,Undervoltage,Yes
+232,6.33,49.93,29,Normal,No
+244,15.87,50.12,48,Overload,Yes
+8,0.0,0.0,21,Line Break,Yes
+133,5.99,49.1,27,Undervoltage,Yes
+223,3.88,50.13,34,Normal,No
+260,15.73,50.08,40,Overload,Yes
+12,0.0,0.0,25,Line Break,Yes
+248,16.13,50.06,51,Overload,Yes
+9,0.0,0.0,29,Line Break,Yes
+252,14.92,50.16,54,Overload,Yes
+224,4.87,50.06,34,Normal,No
+2,0.0,0.0,21,Line Break,Yes
+254,11.98,49.84,47,Overload,Yes
+127,4.01,49.95,32,Undervoltage,Yes
+106,2.04,49.48,35,Undervoltage,Yes
+112,4.78,49.41,25,Undervoltage,Yes
+230,4.14,50.14,35,Normal,No
+254,16.9,49.9,42,Overload,Yes
+5,0.0,0.0,27,Line Break,Yes
+105,3.78,49.03,27,Undervoltage,Yes
+292,7.54,50.44,31,Overvoltage,Yes
+1,0.0,0.0,24,Line Break,Yes
+14,0.0,0.0,25,Line Break,Yes
+17,0.0,0.0,28,Line Break,Yes
+276,5.6,50.58,45,Overvoltage,Yes
+258,15.62,49.95,44,Overload,Yes
+124,3.05,49.61,35,Undervoltage,Yes
+268,9.24,50.95,39,Overvoltage,Yes
+178,2.06,49.34,32,Undervoltage,Yes
+249,19.98,50.13,51,Overload,Yes
+143,3.82,49.24,32,Undervoltage,Yes
+280,6.25,50.59,36,Overvoltage,Yes
+5,0.0,0.0,26,Line Break,Yes
+297,7.15,50.9,32,Overvoltage,Yes
+236,7.54,49.9,35,Normal,No
+17,0.0,0.0,27,Line Break,Yes
+3,0.0,0.0,22,Line Break,Yes
+137,3.39,49.82,30,Undervoltage,Yes
+232,7.43,50.08,27,Normal,No
+7,0.0,0.0,27,Line Break,Yes
+238,6.9,49.83,27,Normal,No
+240,13.68,49.89,47,Overload,Yes
+129,2.28,49.67,29,Undervoltage,Yes
+237,5.26,50.05,28,Normal,No
+140,4.59,49.79,33,Undervoltage,Yes
+139,2.95,49.26,29,Undervoltage,Yes
+259,16.29,49.95,51,Overload,Yes
+266,7.32,50.81,40,Overvoltage,Yes
+251,12.58,49.97,44,Overload,Yes
+231,5.48,50.16,25,Normal,No
+240,12.49,50.07,51,Overload,Yes
+155,4.19,49.58,33,Undervoltage,Yes
+285,7.16,50.19,42,Overvoltage,Yes
+251,18.96,49.93,43,Overload,Yes
+220,4.7,50.01,33,Normal,No
+248,15.76,50.18,45,Overload,Yes
+0,0.0,0.0,24,Line Break,Yes
+258,11.08,49.91,54,Overload,Yes
+239,7.0,49.88,32,Normal,No
+16,0.0,0.0,24,Line Break,Yes
+13,0.0,0.0,27,Line Break,Yes
+10,0.0,0.0,24,Line Break,Yes
+161,2.48,49.48,26,Undervoltage,Yes
+15,0.0,0.0,30,Line Break,Yes
+264,9.92,50.59,31,Overvoltage,Yes
+266,7.89,50.69,37,Overvoltage,Yes
+255,17.26,50.2,46,Overload,Yes
+228,6.12,50.01,33,Normal,No
+261,7.41,50.48,33,Overvoltage,Yes
+167,5.26,49.83,26,Undervoltage,Yes
+12,0.0,0.0,21,Line Break,Yes
+176,4.07,49.26,30,Undervoltage,Yes
+259,12.26,50.03,40,Overload,Yes
+259,14.59,50.12,41,Overload,Yes
+20,0.0,0.0,25,Line Break,Yes
+115,5.14,49.86,31,Undervoltage,Yes
+12,0.0,0.0,21,Line Break,Yes
+299,9.84,50.38,32,Overvoltage,Yes
+235,4.92,50.07,31,Normal,No
+257,11.27,50.12,41,Overload,Yes
+247,14.24,50.14,53,Overload,Yes
+249,10.64,50.04,47,Overload,Yes
+179,5.83,49.38,26,Undervoltage,Yes
+12,0.0,0.0,28,Line Break,Yes
+18,0.0,0.0,20,Line Break,Yes
+101,4.92,49.37,33,Undervoltage,Yes
+257,15.38,49.82,55,Overload,Yes
+249,10.07,50.09,55,Overload,Yes
+235,3.48,49.83,27,Normal,No
+3,0.0,0.0,24,Line Break,Yes
+4,0.0,0.0,20,Line Break,Yes
+259,11.78,49.84,43,Overload,Yes
+0,0.0,0.0,23,Line Break,Yes
+228,3.79,50.03,33,Normal,No
+277,5.14,50.04,33,Overvoltage,Yes
+238,5.68,49.89,30,Normal,No
+261,8.52,50.18,44,Overvoltage,Yes
+261,6.92,50.19,32,Overvoltage,Yes
+236,6.26,50.03,29,Normal,No
+13,0.0,0.0,29,Line Break,Yes
+11,0.0,0.0,20,Line Break,Yes
+8,0.0,0.0,30,Line Break,Yes
+234,6.44,50.11,30,Normal,No
+13,0.0,0.0,22,Line Break,Yes
+228,6.41,49.96,25,Normal,No
+238,6.59,49.9,27,Normal,No
+232,7.72,50.17,30,Normal,No
+220,4.11,50.17,33,Normal,No
+254,11.74,49.85,44,Overload,Yes
+175,2.73,49.5,27,Undervoltage,Yes
+259,13.79,50.13,53,Overload,Yes
+239,6.46,50.09,25,Normal,No
+9,0.0,0.0,29,Line Break,Yes
+237,3.57,50.07,27,Normal,No
+170,5.31,49.56,25,Undervoltage,Yes
+14,0.0,0.0,23,Line Break,Yes
+260,17.22,49.97,40,Overload,Yes
+249,10.61,50.05,46,Overload,Yes
+179,5.49,49.39,30,Undervoltage,Yes
+115,3.73,49.83,30,Undervoltage,Yes
+240,14.01,50.07,43,Overload,Yes
+250,19.35,49.82,45,Overload,Yes
+264,6.31,50.63,44,Overvoltage,Yes
+118,2.38,49.31,29,Undervoltage,Yes
+130,2.33,49.89,28,Undervoltage,Yes
+105,4.1,49.2,30,Undervoltage,Yes
+134,5.1,49.94,31,Undervoltage,Yes
+221,4.08,49.81,31,Normal,No
+231,6.07,49.92,31,Normal,No
+127,5.11,49.48,29,Undervoltage,Yes
+279,7.95,50.25,38,Overvoltage,Yes
+5,0.0,0.0,24,Line Break,Yes
+233,6.72,49.97,28,Normal,No
+244,10.59,49.91,54,Overload,Yes
+15,0.0,0.0,28,Line Break,Yes
+247,10.83,50.09,54,Overload,Yes
+294,9.3,50.49,34,Overvoltage,Yes
+230,3.35,50.09,33,Normal,No
+288,8.2,50.88,36,Overvoltage,Yes
+236,4.15,49.87,26,Normal,No
+249,10.55,49.9,51,Overload,Yes
+235,5.05,50.02,26,Normal,No
+241,18.97,50.07,48,Overload,Yes
+229,5.41,50.14,32,Normal,No
+165,3.85,49.91,27,Undervoltage,Yes
+273,6.74,50.88,38,Overvoltage,Yes
+294,8.46,50.22,35,Overvoltage,Yes
+266,6.32,50.75,37,Overvoltage,Yes
+125,3.61,49.93,31,Undervoltage,Yes
+234,7.65,49.89,32,Normal,No
+0,0.0,0.0,26,Line Break,Yes
+221,7.53,50.14,29,Normal,No
+141,2.46,49.72,33,Undervoltage,Yes
+168,2.86,49.6,32,Undervoltage,Yes
+9,0.0,0.0,23,Line Break,Yes
+132,4.37,49.1,29,Undervoltage,Yes
+236,3.45,49.84,28,Normal,No
+273,8.05,50.64,39,Overvoltage,Yes
+266,9.9,50.86,43,Overvoltage,Yes
+8,0.0,0.0,21,Line Break,Yes
+121,4.64,49.71,30,Undervoltage,Yes
+115,2.84,49.99,25,Undervoltage,Yes
+249,14.3,49.98,45,Overload,Yes
+240,19.48,49.98,41,Overload,Yes
+17,0.0,0.0,30,Line Break,Yes
+266,6.01,50.18,39,Overvoltage,Yes
+170,2.35,49.48,28,Undervoltage,Yes
+3,0.0,0.0,29,Line Break,Yes
+222,4.83,49.87,26,Normal,No
+129,5.7,49.62,29,Undervoltage,Yes
+14,0.0,0.0,28,Line Break,Yes
+3,0.0,0.0,28,Line Break,Yes
+238,7.3,49.87,34,Normal,No
+7,0.0,0.0,22,Line Break,Yes
+0,0.0,0.0,25,Line Break,Yes
+109,2.01,49.94,29,Undervoltage,Yes
+290,5.8,50.84,44,Overvoltage,Yes
+115,4.32,49.3,33,Undervoltage,Yes
+8,0.0,0.0,26,Line Break,Yes
+15,0.0,0.0,24,Line Break,Yes
+146,5.8,49.74,25,Undervoltage,Yes
+259,16.28,50.14,45,Overload,Yes
+262,5.75,50.75,31,Overvoltage,Yes
+273,9.14,50.48,34,Overvoltage,Yes
+225,5.07,50.04,35,Normal,No
+3,0.0,0.0,25,Line Break,Yes
+239,4.49,49.91,27,Normal,No
+4,0.0,0.0,23,Line Break,Yes
+244,18.52,49.84,42,Overload,Yes
+4,0.0,0.0,25,Line Break,Yes
+227,4.5,49.93,30,Normal,No
+165,3.4,49.38,31,Undervoltage,Yes
+6,0.0,0.0,20,Line Break,Yes
+292,7.43,50.31,41,Overvoltage,Yes
+18,0.0,0.0,21,Line Break,Yes
+233,7.03,50.0,31,Normal,No
+253,19.69,49.98,52,Overload,Yes
+138,4.05,49.71,28,Undervoltage,Yes
+133,4.34,49.37,33,Undervoltage,Yes
+282,5.49,50.86,33,Overvoltage,Yes
+233,6.39,49.9,28,Normal,No
+289,7.23,50.72,45,Overvoltage,Yes
+247,13.7,49.88,46,Overload,Yes
+19,0.0,0.0,25,Line Break,Yes

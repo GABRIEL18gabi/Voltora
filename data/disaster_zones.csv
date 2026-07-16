@@ -1,0 +1,7 @@
+Location,latitude,longitude,Risk,Fault,Status
+Substation A,11.0168,76.9558,Safe,Normal,Healthy
+Transformer 1,11.0185,76.9580,Flood,Overload,Warning
+LT Pole 12,11.0202,76.9601,Flood,Line Break,Critical
+LT Pole 18,11.0220,76.9625,Cyclone,Overvoltage,Warning
+Transformer 2,11.0242,76.9650,Landslide,Undervoltage,Warning
+Substation B,11.0260,76.9680,Safe,Normal,Healthy
