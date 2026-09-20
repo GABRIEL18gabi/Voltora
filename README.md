@@ -4,6 +4,10 @@
 
 **HACKDAY 1.0 | Tech for a Better Tomorrow | 20 September 2026**
 
+## 🚀 Live Demo
+
+👉 [Launch Voltora Live App](https://voltora-vrkdnltzdg9vup5zzblpvc.streamlit.app/)
+
 Voltora is an AI-powered electrical safety and monitoring prototype designed to detect abnormal conditions in low-voltage (LT) electrical distribution systems and demonstrate automatic emergency shutdown.
 
 The system combines machine learning, virtual electrical simulation, circuit fault generation, real-time-style monitoring, alerts, analytics, reporting, and disaster intelligence into a single interactive dashboard.
