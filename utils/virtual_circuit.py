@@ -1,11 +1,11 @@
 """
-GridGuard AI - Virtual LT Circuit Simulator
+Voltora - Virtual LT Circuit Simulator
 
 Simulates a simplified LT feeder:
 Source -> LT Cable -> Load
 
 The calculated electrical values are passed to
-the existing GridGuard AI fault-detection system.
+the existing Voltora fault-detection system.
 """
 
 import math

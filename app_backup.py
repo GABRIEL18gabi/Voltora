@@ -9,7 +9,7 @@ import plotly.express as px
 # Page Configuration
 # --------------------------------------------------
 st.set_page_config(
-    page_title="GridGuard AI",
+    page_title="Voltora",
     page_icon="⚡",
     layout="wide"
 )
@@ -42,7 +42,7 @@ if not os.path.exists(history_file):
 # --------------------------------------------------
 # Title
 # --------------------------------------------------
-st.title("⚡ GridGuard AI")
+st.title("⚡ Voltora")
 st.subheader("AI-Based LT Line Fault Detection & Automatic Emergency Shutdown")
 
 st.markdown("---")
@@ -182,7 +182,7 @@ csv = history.to_csv(index=False).encode("utf-8")
 st.download_button(
     "⬇ Download Fault History",
     csv,
-    "GridGuard_History.csv",
+    "Voltora_History.csv",
     "text/csv"
 )
 

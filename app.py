@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 from datetime import datetime
 
 import joblib
@@ -6,338 +7,259 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 from PIL import Image
-
 from streamlit_autorefresh import st_autorefresh
-
-# ============================================================
-# GRIDGUARD MODULES
-# ============================================================
 
 from utils.simulation import generate_sensor_data
 from utils.virtual_circuit import simulate_circuit, get_circuit_status
 from utils.virtual_sensors import read_virtual_sensors
 from utils.circuit_builder import show_circuit_builder
-
 from utils.gauges import create_gauge
 from utils.graphs import create_live_graph
 from utils.animation import show_grid_status
 from utils.scada_animation import show_scada_grid
-
 from utils.report import generate_pdf
 from utils.history_dashboard import show_history_dashboard
-
 from utils.weather_api import get_weather_by_coordinates
 from utils.plotly_gis import show_plotly_map
-
+from utils.demo_mode import generate_demo_data
 from utils.executive_dashboard import show_executive_dashboard
 from utils.notification_center import show_notifications
-
 from utils.animated_logo import show_animated_logo
 from utils.startup_animation import startup_animation
 from utils.cinematic_startup import cinematic_startup
 
+
 # ============================================================
-# PAGE CONFIG
+# PATH CONFIGURATION
+# ============================================================
+
+BASE_DIR = Path(__file__).resolve().parent
+
+ASSETS_DIR = BASE_DIR / "assets"
+
+MODEL_FILE = BASE_DIR / "fault_model.pkl"
+
+ENCODER_FILE = BASE_DIR / "fault_encoder.pkl"
+
+HISTORY_FILE = BASE_DIR / "history.csv"
+
+
+# ============================================================
+# PAGE CONFIGURATION
 # ============================================================
 
 st.set_page_config(
-    page_title="GridGuard AI",
+    page_title="Voltora",
     page_icon="⚡",
-    layout="wide",
-    initial_sidebar_state="expanded",
+    layout="wide"
 )
 
 
 # ============================================================
-# CSS
+# HELPER FUNCTIONS
 # ============================================================
+
+def asset_path(filename):
+    """
+    Return an absolute path inside the assets directory.
+    """
+    return ASSETS_DIR / filename
+
+
+def initialize_session_state():
+    """
+    Initialize all required Streamlit session-state variables.
+    """
+
+    defaults = {
+        "fault": "Normal",
+        "confidence": 0.0,
+        "previous_fault": "Normal",
+        "alarm_triggered": False,
+
+        "asset_id": "MANUAL",
+        "line_id": "MANUAL-LINE",
+        "area_id": "MANUAL-AREA",
+
+        "voltage_history": [],
+        "current_history": [],
+        "frequency_history": [],
+        "temperature_history": [],
+
+        "last_prediction_signature": None,
+
+        "last_history_signature": None,
+
+        "model_error": None,
+    }
+
+    for key, value in defaults.items():
+
+        if key not in st.session_state:
+
+            st.session_state[key] = value
+
 
 def load_css():
-    css_file = "assets/style.css"
+    """
+    Load custom CSS if available.
+    """
 
-    if os.path.exists(css_file):
+    css_file = asset_path("style.css")
+
+    if css_file.exists():
+
         try:
-            with open(css_file, "r", encoding="utf-8") as f:
+
+            with open(
+                css_file,
+                "r",
+                encoding="utf-8"
+            ) as file:
+
                 st.markdown(
-                    f"<style>{f.read()}</style>",
-                    unsafe_allow_html=True,
+                    f"<style>{file.read()}</style>",
+                    unsafe_allow_html=True
                 )
-        except Exception as exc:
-            st.warning(f"Could not load CSS: {exc}")
+
+        except Exception as error:
+
+            st.warning(
+                f"Unable to load custom CSS: {error}"
+            )
 
 
-load_css()
-
-
-# ============================================================
-# STARTUP
-# ============================================================
-
-if "boot_screen" not in st.session_state:
-    st.session_state.boot_screen = True
-
-    try:
-        cinematic_startup()
-    except Exception:
-        pass
-
-
-if "startup_done" not in st.session_state:
-    st.session_state.startup_done = True
-
-    try:
-        startup_animation()
-    except Exception:
-        pass
-
-
-# ============================================================
-# SESSION STATE
-# ============================================================
-
-DEFAULT_SESSION = {
-    "fault": "Normal",
-    "confidence": 0.0,
-    "health": 100,
-    "shutdown": "NO",
-    "voltage": 230.0,
-    "current": 5.0,
-    "frequency": 50.0,
-    "temperature": 30.0,
-    "last_asset_id": None,
-    "last_line_id": None,
-    "last_area_id": None,
-}
-
-
-for key, value in DEFAULT_SESSION.items():
-
-    if key not in st.session_state:
-        st.session_state[key] = value
-
-
-# ============================================================
-# MODEL LOADING
-# ============================================================
-
-@st.cache_resource
 def load_ai_model():
+    """
+    Safely load the trained model and encoder.
+    """
 
-    model_path = "fault_model.pkl"
-    encoder_path = "fault_encoder.pkl"
+    model = None
+    encoder = None
 
-    if not os.path.exists(model_path):
-        raise FileNotFoundError(
-            f"{model_path} was not found in the project root."
+    if not MODEL_FILE.exists():
+
+        st.error(
+            f"❌ AI model not found:\n\n"
+            f"`{MODEL_FILE}`"
         )
 
-    if not os.path.exists(encoder_path):
-        raise FileNotFoundError(
-            f"{encoder_path} was not found in the project root."
+        return None, None
+
+    if not ENCODER_FILE.exists():
+
+        st.error(
+            f"❌ Fault encoder not found:\n\n"
+            f"`{ENCODER_FILE}`"
         )
 
-    model = joblib.load(model_path)
-    encoder = joblib.load(encoder_path)
+        return None, None
+
+    try:
+
+        model = joblib.load(
+            MODEL_FILE
+        )
+
+        encoder = joblib.load(
+            ENCODER_FILE
+        )
+
+    except Exception as error:
+
+        st.error(
+            "❌ Unable to load the AI model.\n\n"
+            f"Error: `{error}`"
+        )
+
+        return None, None
 
     return model, encoder
 
 
-try:
+def initialize_history_file():
+    """
+    Create history.csv if it does not exist.
+    """
 
-    model, encoder = load_ai_model()
+    columns = [
+        "Time",
+        "Area ID",
+        "Line ID",
+        "Asset ID",
+        "Voltage",
+        "Current",
+        "Frequency",
+        "Temperature",
+        "Fault",
+        "Confidence",
+        "Grid Health",
+        "Shutdown"
+    ]
 
-    model_error = None
-
-except Exception as exc:
-
-    model = None
-    encoder = None
-    model_error = str(exc)
-
-
-# ============================================================
-# OPTIONAL IMAGES
-# ============================================================
-
-try:
-    transformer_image = Image.open(
-        "assets/transformer.png"
-    )
-except Exception:
-    transformer_image = None
-
-
-try:
-    pole_image = Image.open(
-        "assets/pole.png"
-    )
-except Exception:
-    pole_image = None
-
-
-try:
-    house_image = Image.open(
-        "assets/house.png"
-    )
-except Exception:
-    house_image = None
-
-
-# ============================================================
-# HISTORY FILE
-# ============================================================
-
-history_file = "history.csv"
-
-HISTORY_COLUMNS = [
-    "Time",
-    "Area",
-    "Line ID",
-    "Asset ID",
-    "Voltage",
-    "Current",
-    "Frequency",
-    "Temperature",
-    "Fault",
-    "Confidence",
-    "Grid Health",
-    "Shutdown",
-]
-
-
-def initialize_history():
-
-    if not os.path.exists(history_file):
+    if not HISTORY_FILE.exists():
 
         history = pd.DataFrame(
-            columns=HISTORY_COLUMNS
+            columns=columns
         )
 
         history.to_csv(
-            history_file,
-            index=False,
+            HISTORY_FILE,
+            index=False
         )
 
+    else:
 
-initialize_history()
+        try:
 
+            history = pd.read_csv(
+                HISTORY_FILE
+            )
 
-# ============================================================
-# SIDEBAR
-# ============================================================
+            changed = False
 
-if os.path.exists("assets/logo.png"):
+            for column in columns:
 
-    try:
-        st.sidebar.image(
-            "assets/logo.png",
-            width=120,
-        )
-    except Exception:
-        pass
+                if column not in history.columns:
 
+                    if column in [
+                        "Area ID",
+                        "Line ID",
+                        "Asset ID"
+                    ]:
 
-st.sidebar.markdown(
-    "## ⚡ GridGuard AI"
-)
+                        history[column] = "Unknown"
 
+                    else:
 
-menu = st.sidebar.radio(
-    "Navigation",
-    [
-        "🏠 Dashboard",
-        "🗺️ Tamil Nadu GIS",
-        "📋 Fault History",
-        "📈 Analytics",
-        "📄 Reports",
-        "📊 Live Monitoring",
-        "ℹ️ About",
-    ],
-)
+                        history[column] = ""
 
+                    changed = True
 
-# ============================================================
-# CURRENT TIME
-# ============================================================
+            if changed:
 
-st.caption(
-    "🕒 "
-    + datetime.now().strftime(
-        "%d %B %Y | %I:%M:%S %p"
-    )
-)
+                history.to_csv(
+                    HISTORY_FILE,
+                    index=False
+                )
 
+        except Exception:
 
-# ============================================================
-# AI PREDICTION FUNCTION
-# ============================================================
+            history = pd.DataFrame(
+                columns=columns
+            )
 
-def predict_fault(
-    voltage,
-    current,
-    frequency,
-    temperature,
-):
-    """
-    Run the EXISTING GridGuard AI model.
+            history.to_csv(
+                HISTORY_FILE,
+                index=False
+            )
 
-    Important:
-    The AI receives only V/I/F/T values.
-
-    It does NOT use circuit_condition as
-    the prediction result.
-    """
-
-    if model is None or encoder is None:
-
-        raise RuntimeError(
-            model_error
-            or "AI model is unavailable."
-        )
-
-    new_data = pd.DataFrame(
-        {
-            "Voltage": [float(voltage)],
-            "Current": [float(current)],
-            "Frequency": [float(frequency)],
-            "Temperature": [float(temperature)],
-        }
-    )
-
-    prediction = model.predict(
-        new_data
-    )
-
-    fault = encoder.inverse_transform(
-        prediction
-    )[0]
-
-    confidence = 0.0
-
-    if hasattr(
-        model,
-        "predict_proba",
-    ):
-
-        probabilities = model.predict_proba(
-            new_data
-        )
-
-        confidence = (
-            float(probabilities.max())
-            * 100
-        )
-
-    return str(fault), confidence
-
-
-# ============================================================
-# GRID HEALTH
-# ============================================================
 
 def calculate_grid_health(fault):
-
-    fault = str(fault)
+    """
+    Calculate the demo grid-health value and shutdown state
+    using the same mapping as the original application.
+    """
 
     if fault == "Normal":
 
@@ -355,130 +277,253 @@ def calculate_grid_health(fault):
 
         return 50, "YES"
 
-    if fault == "Line Break":
-
-        return 20, "YES"
-
-    return 30, "YES"
+    return 20, "YES"
 
 
-# ============================================================
-# RECOMMENDATION
-# ============================================================
+def normalize_fault_name(fault):
+    """
+    Normalize fault names coming from the encoder/model/demo.
+    """
 
-def show_recommendation(fault):
+    if fault is None:
 
-    if fault == "Normal":
+        return "Normal"
 
-        st.success(
-            """
-            🟢 Grid operating normally.
+    text = str(fault).strip()
 
-            No immediate maintenance action required.
-            """
-        )
+    fault_map = {
+        "NORMAL": "Normal",
+        "Normal": "Normal",
 
-    elif fault == "Overload":
+        "OVERLOAD": "Overload",
+        "Overload": "Overload",
 
-        st.error(
-            """
-            ⚠️ Reduce connected load immediately.
+        "OVERVOLTAGE": "Overvoltage",
+        "Overvoltage": "Overvoltage",
 
-            Inspect transformer and feeder loading.
-            """
-        )
+        "UNDERVOLTAGE": "Undervoltage",
+        "Undervoltage": "Undervoltage",
 
-    elif fault == "Overvoltage":
+        "LINE BREAK": "Line Break",
+        "LINE_BREAK": "Line Break",
+        "Line Break": "Line Break",
+    }
 
-        st.warning(
-            """
-            ⚠️ Check voltage regulator.
-
-            Inspect incoming supply and transformer output.
-            """
-        )
-
-    elif fault == "Undervoltage":
-
-        st.warning(
-            """
-            ⚠️ Inspect LT feeder.
-
-            Check transformer output and feeder voltage drop.
-            """
-        )
-
-    elif fault == "Line Break":
-
-        st.error(
-            """
-            🚨 Inspect distribution line.
-
-            Locate the affected conductor section and
-            restore supply only after the line is confirmed safe.
-            """
-        )
-
-    else:
-
-        st.warning(
-            """
-            ⚠️ Inspect the affected feeder and protection system.
-            """
-        )
+    return fault_map.get(
+        text,
+        text
+    )
 
 
-# ============================================================
-# ALARM
-# ============================================================
+def predict_fault(
+    model,
+    encoder,
+    voltage,
+    current,
+    frequency,
+    temperature
+):
+    """
+    Run the trained Voltora model.
 
-def show_fault_alarm(fault):
+    IMPORTANT:
+    The feature order must match the order used when
+    fault_model.pkl was trained:
 
-    sound_file = None
+        Voltage
+        Current
+        Frequency
+        Temperature
+    """
 
-    if fault == "Overload":
-
-        sound_file = "assets/overload.mp3"
-
-    elif fault == "Overvoltage":
-
-        sound_file = "assets/overvoltage.mp3"
-
-    elif fault == "Undervoltage":
-
-        sound_file = "assets/undervoltage.mp3"
-
-    elif fault == "Line Break":
-
-        sound_file = "assets/emergency.mp3"
-
-    if not sound_file:
-        return
-
-    if not os.path.exists(sound_file):
-
-        return
+    new_data = pd.DataFrame(
+        {
+            "Voltage": [float(voltage)],
+            "Current": [float(current)],
+            "Frequency": [float(frequency)],
+            "Temperature": [float(temperature)]
+        }
+    )
 
     try:
 
-        with open(
-            sound_file,
-            "rb",
-        ) as audio_file:
+        prediction = model.predict(
+            new_data
+        )
 
-            st.audio(
-                audio_file.read(),
-                format="audio/mp3",
-                autoplay=True,
+        decoded = encoder.inverse_transform(
+            prediction
+        )
+
+        fault = normalize_fault_name(
+            decoded[0]
+        )
+
+        confidence = 0.0
+
+        if hasattr(
+            model,
+            "predict_proba"
+        ):
+
+            try:
+
+                probabilities = model.predict_proba(
+                    new_data
+                )
+
+                confidence = (
+                    float(probabilities.max())
+                    * 100
+                )
+
+            except Exception:
+
+                confidence = 0.0
+
+        return (
+            fault,
+            confidence,
+            new_data,
+            None
+        )
+
+    except Exception as error:
+
+        return (
+            "Normal",
+            0.0,
+            new_data,
+            error
+        )
+
+
+def get_alarm_file(fault):
+    """
+    Return the appropriate alarm file for a fault.
+    """
+
+    alarm_files = {
+        "Overload": "overload.mp3",
+        "Overvoltage": "overvoltage.mp3",
+        "Undervoltage": "undervoltage.mp3",
+        "Line Break": "emergency.mp3"
+    }
+
+    filename = alarm_files.get(
+        fault
+    )
+
+    if filename is None:
+
+        return None
+
+    return asset_path(
+        filename
+    )
+
+
+def handle_alarm(fault):
+    """
+    Trigger alarm when the system enters a fault condition.
+
+    Alarm is triggered when:
+    Normal -> Fault
+    OR
+    Fault A -> Fault B
+    """
+
+    previous_fault = st.session_state.get(
+        "previous_fault",
+        "Normal"
+    )
+
+    fault = normalize_fault_name(fault)
+    previous_fault = normalize_fault_name(previous_fault)
+
+    new_fault_event = (
+        fault != "Normal"
+        and fault != previous_fault
+    )
+
+    sound_file = get_alarm_file(
+        fault
+    )
+
+    if new_fault_event and sound_file:
+
+        if sound_file.exists():
+
+            try:
+
+                with open(
+                    sound_file,
+                    "rb"
+                ) as audio_file:
+
+                    st.audio(
+                        audio_file.read(),
+                        format="audio/mp3",
+                        autoplay=True
+                    )
+
+                st.session_state[
+                    "alarm_triggered"
+                ] = True
+
+            except Exception as error:
+
+                st.warning(
+                    f"⚠️ Unable to play alarm: {error}"
+                )
+
+        else:
+
+            st.warning(
+                f"⚠️ Alarm file not found: `{sound_file}`"
             )
 
-    except Exception:
-        pass
+    if fault == "Normal":
+
+        st.session_state[
+            "alarm_triggered"
+        ] = False
+
+    st.session_state[
+        "previous_fault"
+    ] = fault
 
 
-# ============================================================
-# HISTORY SAVE
-# ============================================================
+def create_history_signature(
+    area_id,
+    line_id,
+    asset_id,
+    voltage,
+    current,
+    frequency,
+    temperature,
+    fault,
+    confidence
+):
+    """
+    Create a unique signature for a prediction.
+
+    This prevents Streamlit reruns from writing the exact
+    same prediction to history repeatedly.
+    """
+
+    return (
+        str(area_id),
+        str(line_id),
+        str(asset_id),
+        round(float(voltage), 4),
+        round(float(current), 4),
+        round(float(frequency), 4),
+        round(float(temperature), 4),
+        str(fault),
+        round(float(confidence), 4)
+    )
+
 
 def save_history(
     area_id,
@@ -491,71 +536,436 @@ def save_history(
     fault,
     confidence,
     health,
-    shutdown,
+    shutdown
 ):
+    """
+    Save a prediction to history.csv only once for the
+    current unique sensor/prediction signature.
+    """
 
-    initialize_history()
+    signature = create_history_signature(
+        area_id,
+        line_id,
+        asset_id,
+        voltage,
+        current,
+        frequency,
+        temperature,
+        fault,
+        confidence
+    )
+
+    if (
+        st.session_state.get(
+            "last_history_signature"
+        )
+        == signature
+    ):
+
+        return False
 
     try:
 
         history = pd.read_csv(
-            history_file
+            HISTORY_FILE
         )
 
     except Exception:
 
-        history = pd.DataFrame(
-            columns=HISTORY_COLUMNS
-        )
+        history = pd.DataFrame()
+
+    required_columns = [
+        "Time",
+        "Area ID",
+        "Line ID",
+        "Asset ID",
+        "Voltage",
+        "Current",
+        "Frequency",
+        "Temperature",
+        "Fault",
+        "Confidence",
+        "Grid Health",
+        "Shutdown"
+    ]
+
+    for column in required_columns:
+
+        if column not in history.columns:
+
+            history[column] = ""
 
     new_record = pd.DataFrame(
-        [
-            {
-                "Time": datetime.now().strftime(
+        {
+            "Time": [
+                datetime.now().strftime(
                     "%d-%m-%Y %H:%M:%S"
-                ),
-                "Area": area_id,
-                "Line ID": line_id,
-                "Asset ID": asset_id,
-                "Voltage": round(
-                    float(voltage),
-                    2,
-                ),
-                "Current": round(
-                    float(current),
-                    2,
-                ),
-                "Frequency": round(
-                    float(frequency),
-                    2,
-                ),
-                "Temperature": round(
-                    float(temperature),
-                    2,
-                ),
-                "Fault": fault,
-                "Confidence": round(
-                    float(confidence),
-                    2,
-                ),
-                "Grid Health": health,
-                "Shutdown": shutdown,
-            }
-        ]
+                )
+            ],
+
+            "Area ID": [
+                area_id
+            ],
+
+            "Line ID": [
+                line_id
+            ],
+
+            "Asset ID": [
+                asset_id
+            ],
+
+            "Voltage": [
+                voltage
+            ],
+
+            "Current": [
+                current
+            ],
+
+            "Frequency": [
+                frequency
+            ],
+
+            "Temperature": [
+                temperature
+            ],
+
+            "Fault": [
+                fault
+            ],
+
+            "Confidence": [
+                round(
+                    confidence,
+                    2
+                )
+            ],
+
+            "Grid Health": [
+                health
+            ],
+
+            "Shutdown": [
+                shutdown
+            ]
+        }
     )
 
     history = pd.concat(
         [
             history,
-            new_record,
+            new_record
         ],
-        ignore_index=True,
+        ignore_index=True
     )
 
     history.to_csv(
-        history_file,
-        index=False,
+        HISTORY_FILE,
+        index=False
     )
+
+    st.session_state[
+        "last_history_signature"
+    ] = signature
+
+    return True
+
+
+def update_sensor_history(
+    voltage,
+    current,
+    frequency,
+    temperature
+):
+    """
+    Maintain the last 20 sensor readings.
+    """
+
+    st.session_state[
+        "voltage_history"
+    ].append(
+        float(voltage)
+    )
+
+    st.session_state[
+        "current_history"
+    ].append(
+        float(current)
+    )
+
+    st.session_state[
+        "frequency_history"
+    ].append(
+        float(frequency)
+    )
+
+    st.session_state[
+        "temperature_history"
+    ].append(
+        float(temperature)
+    )
+
+    st.session_state[
+        "voltage_history"
+    ] = st.session_state[
+        "voltage_history"
+    ][-20:]
+
+    st.session_state[
+        "current_history"
+    ] = st.session_state[
+        "current_history"
+    ][-20:]
+
+    st.session_state[
+        "frequency_history"
+    ] = st.session_state[
+        "frequency_history"
+    ][-20:]
+
+    st.session_state[
+        "temperature_history"
+    ] = st.session_state[
+        "temperature_history"
+    ][-20:]
+
+
+def show_ai_recommendation(fault):
+    """
+    Display the appropriate recommendation.
+    """
+
+    st.markdown("---")
+
+    st.subheader(
+        "💡 AI Recommendation"
+    )
+
+    if fault == "Normal":
+
+        st.success(
+            """
+Grid operating normally.
+
+No maintenance required.
+"""
+        )
+
+    elif fault == "Overload":
+
+        st.error(
+            """
+Reduce connected load immediately.
+
+Inspect transformer.
+"""
+        )
+
+    elif fault == "Overvoltage":
+
+        st.warning(
+            """
+Check voltage regulator.
+
+Inspect supply line.
+"""
+        )
+
+    elif fault == "Undervoltage":
+
+        st.warning(
+            """
+Inspect LT feeder.
+
+Check transformer output.
+"""
+        )
+
+    else:
+
+        st.error(
+            """
+Inspect distribution pole.
+
+Repair broken line.
+
+Restore supply safely.
+"""
+        )
+
+
+def show_weather():
+    """
+    Display live Chennai weather.
+    """
+
+    lat = 13.0827
+    lon = 80.2707
+
+    try:
+
+        weather = get_weather_by_coordinates(
+            lat,
+            lon
+        )
+
+    except Exception as error:
+
+        st.warning(
+            f"Weather service unavailable: {error}"
+        )
+
+        return
+
+    if weather:
+
+        st.markdown(
+            "### 🌦 Live Weather"
+        )
+
+        c1, c2, c3, c4 = st.columns(4)
+
+        with c1:
+
+            st.metric(
+                "🌡 Temperature",
+                f"{weather['temperature']} °C"
+            )
+
+        with c2:
+
+            st.metric(
+                "💧 Humidity",
+                f"{weather['humidity']} %"
+            )
+
+        with c3:
+
+            st.metric(
+                "💨 Wind",
+                f"{weather['wind']} m/s"
+            )
+
+        with c4:
+
+            st.metric(
+                "☁ Weather",
+                weather["weather"]
+            )
+
+        st.caption(
+            weather["description"]
+        )
+
+
+# ============================================================
+# INITIALIZE
+# ============================================================
+
+initialize_session_state()
+
+load_css()
+
+
+# ============================================================
+# STARTUP
+# ============================================================
+
+if "boot_screen" not in st.session_state:
+
+    cinematic_startup()
+
+    st.session_state.boot_screen = True
+
+
+st.caption(
+    "🕒 "
+    + datetime.now().strftime(
+        "%d %B %Y | %I:%M:%S %p"
+    )
+)
+
+
+if "startup_done" not in st.session_state:
+
+    st.session_state.startup_done = True
+
+    startup_animation()
+
+
+# ============================================================
+# LOAD AI MODEL
+# ============================================================
+
+model, encoder = load_ai_model()
+
+
+# ============================================================
+# LOAD IMAGES
+# ============================================================
+
+try:
+
+    transformer = Image.open(
+        asset_path("transformer.png")
+    )
+
+    pole = Image.open(
+        asset_path("pole.png")
+    )
+
+    house = Image.open(
+        asset_path("house.png")
+    )
+
+except Exception:
+
+    transformer = None
+    pole = None
+    house = None
+
+
+# ============================================================
+# SIDEBAR
+# ============================================================
+
+logo_file = asset_path(
+    "logo.png"
+)
+
+if logo_file.exists():
+
+    st.sidebar.image(
+        str(logo_file),
+        width=120
+    )
+
+
+st.sidebar.title(
+    "⚡ Voltora"
+)
+
+
+menu = st.sidebar.radio(
+    "Navigation",
+    [
+        "🏠 Dashboard",
+        "🗺️ Tamil Nadu GIS",
+        "📋 Fault History",
+        "📈 Analytics",
+        "📄 Reports",
+        "📊 Live Monitoring",
+        "ℹ️ About"
+    ]
+)
+
+
+# ============================================================
+# INITIALIZE HISTORY
+# ============================================================
+
+initialize_history_file()
 
 
 # ============================================================
@@ -564,18 +974,11 @@ def save_history(
 
 if menu == "🏠 Dashboard":
 
-    # --------------------------------------------------------
-    # HEADER
-    # --------------------------------------------------------
+    show_animated_logo()
 
-    try:
-        show_animated_logo()
-    except Exception:
-        st.title("⚡ GridGuard AI")
-
-    # --------------------------------------------------------
+    # ========================================================
     # DEMO MODE
-    # --------------------------------------------------------
+    # ========================================================
 
     demo = st.toggle(
         "🎬 Presentation Demo Mode"
@@ -585,21 +988,21 @@ if menu == "🏠 Dashboard":
 
         st_autorefresh(
             interval=1500,
-            key="demo_refresh",
+            key="demo_refresh"
         )
 
     else:
 
         st_autorefresh(
             interval=60000,
-            key="weather_refresh",
+            key="weather_refresh"
         )
 
     st.markdown("---")
 
-    # --------------------------------------------------------
+    # ========================================================
     # INPUT MODE
-    # --------------------------------------------------------
+    # ========================================================
 
     mode = st.radio(
         "Choose Input Mode",
@@ -607,59 +1010,41 @@ if menu == "🏠 Dashboard":
             "Manual Input",
             "Live Simulation",
             "⚡ Circuit Builder",
-            "Virtual LT Circuit",
+            "Virtual LT Circuit"
         ],
-        horizontal=True,
+        horizontal=True
     )
 
     # ========================================================
-    # VALUES INITIALIZATION
+    # DEFAULT ASSET INFORMATION
     # ========================================================
 
-    voltage = float(
-        st.session_state.get(
-            "voltage",
-            230.0,
-        )
-    )
-
-    current = float(
-        st.session_state.get(
-            "current",
-            5.0,
-        )
-    )
-
-    frequency = float(
-        st.session_state.get(
-            "frequency",
-            50.0,
-        )
-    )
-
-    temperature = float(
-        st.session_state.get(
-            "temperature",
-            30.0,
-        )
-    )
-
-    circuit_condition = "Normal"
-
-    area_id = st.session_state.get(
-        "last_area_id",
-        "Unknown",
+    asset_id = st.session_state.get(
+        "asset_id",
+        "MANUAL"
     )
 
     line_id = st.session_state.get(
-        "last_line_id",
-        "Unknown",
+        "line_id",
+        "MANUAL-LINE"
     )
 
-    asset_id = st.session_state.get(
-        "last_asset_id",
-        "Unknown",
+    area_id = st.session_state.get(
+        "area_id",
+        "MANUAL-AREA"
     )
+
+    # ========================================================
+    # DEFAULT VARIABLES
+    # ========================================================
+
+    voltage = 230.0
+    current = 5.0
+    frequency = 50.0
+    temperature = 30.0
+
+    demo_fault = None
+    demo_confidence = None
 
     # ========================================================
     # PRESENTATION DEMO
@@ -685,10 +1070,21 @@ if menu == "🏠 Dashboard":
             sensor["Temperature"]
         )
 
-        st.session_state["voltage"] = voltage
-        st.session_state["current"] = current
-        st.session_state["frequency"] = frequency
-        st.session_state["temperature"] = temperature
+        demo_fault = normalize_fault_name(
+            sensor["Fault"]
+        )
+
+        demo_confidence = float(
+            sensor["Confidence"]
+        )
+
+        st.session_state[
+            "fault"
+        ] = demo_fault
+
+        st.session_state[
+            "confidence"
+        ] = demo_confidence
 
         st.success(
             "🎬 Presentation Demo Mode Running"
@@ -708,14 +1104,14 @@ if menu == "🏠 Dashboard":
                 "🔌 Voltage (V)",
                 min_value=0.0,
                 value=230.0,
-                step=1.0,
+                key="manual_voltage"
             )
 
             current = st.number_input(
                 "⚡ Current (A)",
                 min_value=0.0,
                 value=5.0,
-                step=0.1,
+                key="manual_current"
             )
 
         with col2:
@@ -724,20 +1120,20 @@ if menu == "🏠 Dashboard":
                 "📡 Frequency (Hz)",
                 min_value=0.0,
                 value=50.0,
-                step=0.1,
+                key="manual_frequency"
             )
 
             temperature = st.number_input(
                 "🌡 Temperature (°C)",
                 min_value=0.0,
                 value=30.0,
-                step=0.5,
+                key="manual_temperature"
             )
 
-        st.session_state["voltage"] = voltage
-        st.session_state["current"] = current
-        st.session_state["frequency"] = frequency
-        st.session_state["temperature"] = temperature
+        st.info(
+            "Manual electrical values will be analyzed "
+            "by the existing Voltora model."
+        )
 
     # ========================================================
     # LIVE SIMULATION
@@ -763,17 +1159,28 @@ if menu == "🏠 Dashboard":
             sensor["Temperature"]
         )
 
-        st.session_state["voltage"] = voltage
-        st.session_state["current"] = current
-        st.session_state["frequency"] = frequency
-        st.session_state["temperature"] = temperature
-
         st.info(
             "⚡ Live Simulation Mode"
         )
 
+        st.session_state[
+            "voltage"
+        ] = voltage
+
+        st.session_state[
+            "current"
+        ] = current
+
+        st.session_state[
+            "frequency"
+        ] = frequency
+
+        st.session_state[
+            "temperature"
+        ] = temperature
+
     # ========================================================
-    # 3-PHASE CIRCUIT BUILDER
+    # CIRCUIT BUILDER
     # ========================================================
 
     elif mode == "⚡ Circuit Builder":
@@ -782,146 +1189,120 @@ if menu == "🏠 Dashboard":
             "## ⚡ 3-Phase LT Circuit Builder"
         )
 
-        try:
+        circuit_data = show_circuit_builder()
 
-            circuit_data = show_circuit_builder()
-
-        except Exception as exc:
-
-            st.error(
-                "Circuit Builder could not be loaded."
-            )
-
-            st.exception(exc)
-
-            circuit_data = {}
-
-        # ----------------------------------------------------
-        # Read asset information
-        # ----------------------------------------------------
-
-        area_id = circuit_data.get(
-            "area_id",
-            "Unknown",
-        )
-
-        line_id = circuit_data.get(
-            "line_id",
-            "Unknown",
-        )
-
-        asset_id = circuit_data.get(
-            "asset_id",
-            "Unknown",
-        )
-
-        st.session_state["last_area_id"] = area_id
-        st.session_state["last_line_id"] = line_id
-        st.session_state["last_asset_id"] = asset_id
-
-        # ----------------------------------------------------
-        # Check if circuit has simulation data
-        # ----------------------------------------------------
-
-        simulation_available = circuit_data.get(
+        if circuit_data.get(
             "simulation_available",
-            False,
-        )
-
-        # ----------------------------------------------------
-        # Preferred NEW circuit builder output
-        # ----------------------------------------------------
-
-        if simulation_available:
+            False
+        ):
 
             voltage = float(
                 circuit_data.get(
                     "voltage",
-                    230.0,
+                    230.0
                 )
             )
 
             current = float(
                 circuit_data.get(
                     "current",
-                    5.0,
+                    5.0
                 )
             )
 
             frequency = float(
                 circuit_data.get(
                     "sim_frequency",
-                    circuit_data.get(
-                        "frequency",
-                        50.0,
-                    ),
+                    50.0
                 )
             )
 
             temperature = float(
                 circuit_data.get(
                     "temperature",
-                    30.0,
+                    30.0
                 )
             )
 
-            circuit_condition = circuit_data.get(
-                "simulation_fault",
-                "Normal",
+            asset_id = circuit_data.get(
+                "asset_id",
+                "Unknown"
             )
 
-            st.session_state["voltage"] = voltage
-            st.session_state["current"] = current
-            st.session_state["frequency"] = frequency
-            st.session_state["temperature"] = temperature
+            line_id = circuit_data.get(
+                "line_id",
+                "Unknown"
+            )
+
+            area_id = circuit_data.get(
+                "area_id",
+                "Unknown"
+            )
+
+            st.session_state[
+                "asset_id"
+            ] = asset_id
+
+            st.session_state[
+                "line_id"
+            ] = line_id
+
+            st.session_state[
+                "area_id"
+            ] = area_id
+
+            circuit_fault = normalize_fault_name(
+                circuit_data.get(
+                    "simulation_fault",
+                    "Normal"
+                )
+            )
 
             st.markdown(
                 "### 🔌 3-Phase LT Feeder Simulation Output"
             )
 
             st.caption(
-                "Virtual circuit sensor values generated from "
-                "the selected Area / Line / Asset."
+                "Virtual circuit sensor values generated "
+                "by the selected Area / Line / Asset."
             )
 
             st.info(
-                f"""
-                📍 Area: **{area_id}**  
-                ⚡ Line: **{line_id}**  
-                🔌 Asset: **{asset_id}**
-                """
+                f"📍 Area: **{area_id}**  |  "
+                f"⚡ Line: **{line_id}**  |  "
+                f"🔌 Asset: **{asset_id}**"
             )
 
             a1, a2, a3, a4 = st.columns(4)
 
             a1.metric(
                 "📡 Voltage",
-                f"{voltage:.2f} V",
+                f"{voltage:.2f} V"
             )
 
             a2.metric(
                 "⚡ Current",
-                f"{current:.2f} A",
+                f"{current:.2f} A"
             )
 
             a3.metric(
                 "📡 Frequency",
-                f"{frequency:.2f} Hz",
+                f"{frequency:.2f} Hz"
             )
 
             a4.metric(
                 "🌡 Temperature",
-                f"{temperature:.2f} °C",
+                f"{temperature:.2f} °C"
             )
 
-            if circuit_condition == "Normal":
+            if circuit_fault == "Normal":
 
                 st.success(
                     "🟢 Virtual feeder energized — "
-                    "V/I/F/T values ready for AI monitoring."
+                    "sensor values ready for AI monitoring."
                 )
 
-            elif circuit_condition == "Line Break":
+            elif circuit_fault == "Line Break":
 
                 st.error(
                     "🔴 Virtual feeder conductor fault — "
@@ -932,12 +1313,23 @@ if menu == "🏠 Dashboard":
 
                 st.warning(
                     f"⚠️ Virtual feeder condition: "
-                    f"{circuit_condition}"
+                    f"{circuit_fault}"
                 )
 
-        # ----------------------------------------------------
-        # Compatibility fallback
-        # ----------------------------------------------------
+            st.markdown(
+                f"""
+**Virtual protection path:**
+
+11 kV Supply → 11/0.415 kV Transformer →
+R/Y/B/N LT Feeder → Consumers →
+V/I/F/T Sensors → **Voltora** →
+Virtual Relay → Automatic Emergency Shutdown
+
+**Target Line:** `{line_id}`
+
+**Target Asset:** `{asset_id}`
+"""
+            )
 
         else:
 
@@ -947,8 +1339,10 @@ if menu == "🏠 Dashboard":
                 "V/I/F/T values for AI analysis."
             )
 
+            st.stop()
+
     # ========================================================
-    # OLD VIRTUAL LT CIRCUIT
+    # VIRTUAL LT CIRCUIT
     # ========================================================
 
     elif mode == "Virtual LT Circuit":
@@ -959,7 +1353,7 @@ if menu == "🏠 Dashboard":
 
         st.info(
             "Transformer → MCB → LT Cable → "
-            "Connected Loads → Virtual Sensors → GridGuard AI"
+            "Connected Loads → Virtual Sensors → Voltora"
         )
 
         c1, c2, c3, c4 = st.columns(4)
@@ -972,7 +1366,7 @@ if menu == "🏠 Dashboard":
                 250.0,
                 230.0,
                 1.0,
-                key="vc_source_voltage",
+                key="vc_source_voltage"
             )
 
         with c2:
@@ -983,34 +1377,25 @@ if menu == "🏠 Dashboard":
                 500,
                 100,
                 10,
-                key="vc_line_length",
+                key="vc_line_length"
             )
 
         with c3:
 
             wire_area = st.selectbox(
                 "🧵 Cable Size (mm²)",
-                [
-                    6,
-                    10,
-                    16,
-                    25,
-                    35,
-                ],
+                [6, 10, 16, 25, 35],
                 index=2,
-                key="vc_wire_area",
+                key="vc_wire_area"
             )
 
         with c4:
 
             material = st.selectbox(
                 "🔩 Cable Material",
-                [
-                    "Copper",
-                    "Aluminium",
-                ],
+                ["Copper", "Aluminium"],
                 index=0,
-                key="vc_material",
+                key="vc_material"
             )
 
         st.markdown(
@@ -1024,7 +1409,7 @@ if menu == "🏠 Dashboard":
             lights = st.checkbox(
                 "💡 Lighting — 300 W",
                 True,
-                key="vc_lights",
+                key="vc_lights"
             )
 
         with l2:
@@ -1032,7 +1417,7 @@ if menu == "🏠 Dashboard":
             fans = st.checkbox(
                 "🌀 Fans — 400 W",
                 True,
-                key="vc_fans",
+                key="vc_fans"
             )
 
         with l3:
@@ -1040,7 +1425,7 @@ if menu == "🏠 Dashboard":
             refrigerator = st.checkbox(
                 "❄ Refrigerator — 450 W",
                 True,
-                key="vc_refrigerator",
+                key="vc_refrigerator"
             )
 
         with l4:
@@ -1048,7 +1433,7 @@ if menu == "🏠 Dashboard":
             heavy_load = st.checkbox(
                 "🏭 Heavy Load — 2500 W",
                 False,
-                key="vc_heavy_load",
+                key="vc_heavy_load"
             )
 
         load_power = (
@@ -1059,445 +1444,302 @@ if menu == "🏠 Dashboard":
         )
 
         if load_power == 0:
+
             load_power = 100
 
         line_break = st.toggle(
             "💥 Simulate LT Line Break",
             False,
-            key="vc_line_break",
+            key="vc_line_break"
         )
 
         if line_break:
 
-            circuit_condition = "Line Break"
+            circuit_fault = "Line Break"
 
         elif source_voltage < 215:
 
-            circuit_condition = "Undervoltage"
+            circuit_fault = "Undervoltage"
 
         elif source_voltage > 245:
 
-            circuit_condition = "Overvoltage"
+            circuit_fault = "Overvoltage"
 
         elif heavy_load:
 
-            circuit_condition = "Overload"
+            circuit_fault = "Overload"
 
         else:
 
-            circuit_condition = "Normal"
+            circuit_fault = "Normal"
 
-        try:
+        simulation = simulate_circuit(
+            source_voltage=source_voltage,
+            frequency=50.0,
+            material=material,
+            length_m=line_length,
+            area_mm2=wire_area,
+            load_power_w=load_power,
+            fault=circuit_fault,
+            temperature=30.0
+        )
 
-            simulation = simulate_circuit(
-                source_voltage=source_voltage,
-                frequency=50.0,
-                material=material,
-                length_m=line_length,
-                area_mm2=wire_area,
-                load_power_w=load_power,
-                fault=circuit_condition,
-                temperature=30.0,
-            )
+        sensors = read_virtual_sensors(
+            simulation
+        )
 
-            sensors = read_virtual_sensors(
-                simulation
-            )
+        voltage = float(
+            sensors["Voltage"]
+        )
 
-            voltage = float(
-                sensors["Voltage"]
-            )
+        current = float(
+            sensors["Current"]
+        )
 
-            current = float(
-                sensors["Current"]
-            )
+        frequency = float(
+            sensors["Frequency"]
+        )
 
-            frequency = float(
-                sensors["Frequency"]
-            )
+        temperature = float(
+            sensors["Temperature"]
+        )
 
-            temperature = float(
-                sensors["Temperature"]
-            )
-
-            st.session_state["voltage"] = voltage
-            st.session_state["current"] = current
-            st.session_state["frequency"] = frequency
-            st.session_state["temperature"] = temperature
-
-            # ------------------------------------------------
-            # Circuit visualization
-            # ------------------------------------------------
-
-            st.markdown(
-                "### 🔌 Virtual LT Electrical Protection Circuit"
-            )
-
-            st.markdown(
-                f"""
-                <div style="
-                    padding:24px;
-                    border-radius:20px;
-                    background:
-                    linear-gradient(135deg,#0b1220,#111827);
-                    border:1px solid #334155;
-                    text-align:center;
-                ">
-
-                    <div style="
-                        font-size:15px;
-                        color:#94a3b8;
-                        margin-bottom:14px;
-                    ">
-                        VIRTUAL SOFTWARE CIRCUIT —
-                        NO PHYSICAL HARDWARE
-                    </div>
-
-                    <div style="
-                        display:flex;
-                        align-items:center;
-                        justify-content:center;
-                        gap:10px;
-                        flex-wrap:wrap;
-                    ">
-
-                        <div style="
-                            padding:15px;
-                            border-radius:14px;
-                            border:2px solid #64748b;
-                            min-width:125px;
-                        ">
-                            ⚡<br>
-                            <b>AC SUPPLY</b><br>
-                            <small>
-                                {source_voltage:.1f} V / 50 Hz
-                            </small>
-                        </div>
-
-                        <div style="font-size:26px;">
-                            ━━▶
-                        </div>
-
-                        <div style="
-                            padding:15px;
-                            border-radius:14px;
-                            border:2px solid #64748b;
-                            min-width:125px;
-                        ">
-                            🔌<br>
-                            <b>MCB</b><br>
-                            <small>Protection</small>
-                        </div>
-
-                        <div style="font-size:26px;">
-                            ━━▶
-                        </div>
-
-                        <div style="
-                            padding:15px;
-                            border-radius:14px;
-                            border:2px solid #64748b;
-                            min-width:145px;
-                        ">
-                            📏<br>
-                            <b>LT LINE</b><br>
-                            <small>
-                                {line_length} m /
-                                {material}
-                            </small>
-                        </div>
-
-                        <div style="font-size:26px;">
-                            ━━▶
-                        </div>
-
-                        <div style="
-                            padding:15px;
-                            border-radius:14px;
-                            border:2px solid #64748b;
-                            min-width:135px;
-                        ">
-                            🏠<br>
-                            <b>LOAD</b><br>
-                            <small>
-                                {load_power} W
-                            </small>
-                        </div>
-
-                    </div>
-
-                    <div style="
-                        margin:18px auto 0;
-                        max-width:850px;
-                        padding:15px;
-                        border-radius:14px;
-                        border:1px dashed #38bdf8;
-                    ">
-
-                        📡 <b>VIRTUAL SENSOR LAYER</b>
-                        <br><br>
-
-                        Voltage Sensor
-                        &nbsp;│&nbsp;
-
-                        Current Sensor
-                        &nbsp;│&nbsp;
-
-                        Frequency Sensor
-                        &nbsp;│&nbsp;
-
-                        Temperature Sensor
-
-                    </div>
-
-                    <div style="
-                        margin-top:14px;
-                        font-size:14px;
-                        color:#cbd5e1;
-                    ">
-
-                        Sensor measurements →
-                        <b>GridGuard AI</b> →
-                        AI Fault Prediction →
-                        Virtual Relay →
-                        Automatic Emergency Shutdown
-
-                    </div>
-
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-
-            v1, v2, v3, v4 = st.columns(4)
-
-            v1.metric(
-                "📡 Voltage Sensor",
-                f"{voltage:.2f} V",
-            )
-
-            v2.metric(
-                "📡 Current Sensor",
-                f"{current:.2f} A",
-            )
-
-            v3.metric(
-                "📡 Frequency Sensor",
-                f"{frequency:.2f} Hz",
-            )
-
-            v4.metric(
-                "📡 Temperature Sensor",
-                f"{temperature:.2f} °C",
-            )
-
-            try:
-
-                status = get_circuit_status(
-                    simulation
-                )
-
-            except Exception:
-
-                status = circuit_condition
-
-            if circuit_condition == "Normal":
-
-                st.success(
-                    f"🟢 Circuit Status: {status}"
-                )
-
-            elif circuit_condition == "Line Break":
-
-                st.error(
-                    f"🔴 Circuit Status: {status}"
-                )
-
-            else:
-
-                st.warning(
-                    f"⚠️ Circuit Status: {status}"
-                )
-
-            if isinstance(
-                simulation,
-                dict,
-            ):
-
-                resistance = simulation.get(
-                    "Line Resistance",
-                    "N/A",
-                )
-
-                sim_load = simulation.get(
-                    "Load Power",
-                    load_power,
-                )
-
-                st.caption(
-                    f"Line Resistance: "
-                    f"{resistance} Ω | "
-                    f"Load Power: "
-                    f"{sim_load} W | "
-                    f"Cable: {material} "
-                    f"{wire_area} mm²"
-                )
-
-        except Exception as exc:
-
-            st.error(
-                "Virtual circuit simulation failed."
-            )
-
-            st.exception(exc)
-
-    # ========================================================
-    # SAVE SENSOR VALUES
-    # ========================================================
-
-    st.session_state["voltage"] = float(
-        voltage
-    )
-
-    st.session_state["current"] = float(
-        current
-    )
-
-    st.session_state["frequency"] = float(
-        frequency
-    )
-
-    st.session_state["temperature"] = float(
-        temperature
-    )
-
-    # ========================================================
-    # ASSET INFORMATION
-    # ========================================================
-
-    if mode in [
-        "⚡ Circuit Builder",
-    ]:
-
-        st.markdown("---")
+        st.markdown(
+            "### 🔌 Virtual LT Electrical Protection Circuit"
+        )
 
         st.markdown(
             f"""
-            ### 📍 Active Grid Asset
+<div style="
+padding:24px;
+border-radius:20px;
+background:linear-gradient(135deg,#0b1220,#111827);
+border:1px solid #334155;
+text-align:center;
+">
 
-            **Area:** `{area_id}`  
-            **Line:** `{line_id}`  
-            **Asset:** `{asset_id}`
-            """
+<div style="
+font-size:15px;
+color:#94a3b8;
+margin-bottom:14px;
+">
+VIRTUAL SOFTWARE CIRCUIT — NO PHYSICAL HARDWARE
+</div>
+
+<div style="
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+">
+
+<div style="
+padding:15px;
+border-radius:14px;
+border:2px solid #64748b;
+min-width:125px;
+">
+⚡<br>
+<b>AC SUPPLY</b><br>
+<small>{source_voltage:.1f} V / 50 Hz</small>
+</div>
+
+<div style="font-size:26px;">
+━━▶
+</div>
+
+<div style="
+padding:15px;
+border-radius:14px;
+border:2px solid #64748b;
+min-width:125px;
+">
+🔌<br>
+<b>MCB</b><br>
+<small>Protection</small>
+</div>
+
+<div style="font-size:26px;">
+━━▶
+</div>
+
+<div style="
+padding:15px;
+border-radius:14px;
+border:2px solid #64748b;
+min-width:145px;
+">
+📏<br>
+<b>LT LINE</b><br>
+<small>{line_length} m / {material}</small>
+</div>
+
+<div style="font-size:26px;">
+━━▶
+</div>
+
+<div style="
+padding:15px;
+border-radius:14px;
+border:2px solid #64748b;
+min-width:135px;
+">
+🏠<br>
+<b>LOAD</b><br>
+<small>{load_power} W</small>
+</div>
+
+</div>
+
+<div style="
+margin:18px auto 0;
+max-width:850px;
+padding:15px;
+border-radius:14px;
+border:1px dashed #38bdf8;
+">
+
+📡 <b>VIRTUAL SENSOR LAYER</b>
+
+<br><br>
+
+Voltage Sensor
+&nbsp;│&nbsp;
+Current Sensor
+&nbsp;│&nbsp;
+Frequency Sensor
+&nbsp;│&nbsp;
+Temperature Sensor
+
+</div>
+
+<div style="
+margin-top:14px;
+font-size:14px;
+color:#cbd5e1;
+">
+
+Sensor measurements →
+<b>Voltora</b> →
+AI Fault Prediction →
+Virtual Relay →
+Automatic Emergency Shutdown
+
+</div>
+
+</div>
+""",
+            unsafe_allow_html=True
+        )
+
+        v1, v2, v3, v4 = st.columns(4)
+
+        v1.metric(
+            "📡 Voltage Sensor",
+            f"{voltage:.2f} V"
+        )
+
+        v2.metric(
+            "📡 Current Sensor",
+            f"{current:.2f} A"
+        )
+
+        v3.metric(
+            "📡 Frequency Sensor",
+            f"{frequency:.2f} Hz"
+        )
+
+        v4.metric(
+            "📡 Temperature Sensor",
+            f"{temperature:.2f} °C"
+        )
+
+        status = get_circuit_status(
+            simulation
+        )
+
+        if circuit_fault == "Normal":
+
+            st.success(
+                f"🟢 Circuit Status: {status}"
+            )
+
+        elif circuit_fault == "Line Break":
+
+            st.error(
+                f"🔴 Circuit Status: {status}"
+            )
+
+        else:
+
+            st.warning(
+                f"⚠️ Circuit Status: {status}"
+            )
+
+        st.caption(
+            f"Line Resistance: "
+            f"{simulation['Line Resistance']} Ω | "
+            f"Load Power: "
+            f"{simulation['Load Power']} W | "
+            f"Cable: "
+            f"{material} {wire_area} mm²"
+        )
+
+        st.success(
+            "🔄 Virtual circuit output is connected "
+            "directly to Voltora."
         )
 
     # ========================================================
     # EXECUTIVE DASHBOARD
     # ========================================================
 
-    st.markdown("---")
+    fault = st.session_state.get(
+        "fault",
+        "Normal"
+    )
+
+    confidence = st.session_state.get(
+        "confidence",
+        0
+    )
 
     show_executive_dashboard(
-        st.session_state.get(
-            "fault",
-            "Normal",
-        ),
-        st.session_state.get(
-            "confidence",
-            0.0,
-        ),
+        fault,
+        confidence
     )
 
     # ========================================================
     # WEATHER
     # ========================================================
 
-    try:
-
-        lat = 13.0827
-        lon = 80.2707
-
-        weather = get_weather_by_coordinates(
-            lat,
-            lon,
-        )
-
-        if weather:
-
-            st.markdown(
-                "### 🌦 Live Weather"
-            )
-
-            c1, c2, c3, c4 = st.columns(4)
-
-            with c1:
-
-                st.metric(
-                    "🌡 Temperature",
-                    f"{weather['temperature']} °C",
-                )
-
-            with c2:
-
-                st.metric(
-                    "💧 Humidity",
-                    f"{weather['humidity']} %",
-                )
-
-            with c3:
-
-                st.metric(
-                    "💨 Wind",
-                    f"{weather['wind']} m/s",
-                )
-
-            with c4:
-
-                st.metric(
-                    "☁ Weather",
-                    weather["weather"],
-                )
-
-            st.caption(
-                weather.get(
-                    "description",
-                    "",
-                )
-            )
-
-    except Exception:
-        pass
+    show_weather()
 
     # ========================================================
     # LIVE METRICS
     # ========================================================
 
-    st.markdown("---")
-
-    st.subheader(
-        "📡 Current Virtual Sensor Values"
-    )
-
     c1, c2, c3, c4 = st.columns(4)
 
     c1.metric(
         "Voltage",
-        f"{voltage:.2f} V",
+        f"{voltage:.2f} V"
     )
 
     c2.metric(
         "Current",
-        f"{current:.2f} A",
+        f"{current:.2f} A"
     )
 
     c3.metric(
         "Frequency",
-        f"{frequency:.2f} Hz",
+        f"{frequency:.2f} Hz"
     )
 
     c4.metric(
         "Temperature",
-        f"{temperature:.2f} °C",
+        f"{temperature:.2f} °C"
     )
 
     # ========================================================
@@ -1517,9 +1759,9 @@ if menu == "🏠 Dashboard":
                 "Voltage (V)",
                 voltage,
                 0,
-                300,
+                300
             ),
-            use_container_width=True,
+            use_container_width=True
         )
 
     with g2:
@@ -1529,9 +1771,9 @@ if menu == "🏠 Dashboard":
                 "Current (A)",
                 current,
                 0,
-                50,
+                20
             ),
-            use_container_width=True,
+            use_container_width=True
         )
 
     g3, g4 = st.columns(2)
@@ -1543,9 +1785,9 @@ if menu == "🏠 Dashboard":
                 "Frequency (Hz)",
                 frequency,
                 45,
-                55,
+                55
             ),
-            use_container_width=True,
+            use_container_width=True
         )
 
     with g4:
@@ -1555,9 +1797,9 @@ if menu == "🏠 Dashboard":
                 "Temperature (°C)",
                 temperature,
                 0,
-                100,
+                100
             ),
-            use_container_width=True,
+            use_container_width=True
         )
 
     # ========================================================
@@ -1567,10 +1809,7 @@ if menu == "🏠 Dashboard":
     st.markdown("---")
 
     show_notifications(
-        st.session_state.get(
-            "fault",
-            "Normal",
-        )
+        fault
     )
 
     # ========================================================
@@ -1583,26 +1822,12 @@ if menu == "🏠 Dashboard":
         "📈 Live Sensor Trends"
     )
 
-    histories = {
-        "voltage_history": voltage,
-        "current_history": current,
-        "frequency_history": frequency,
-        "temperature_history": temperature,
-    }
-
-    for key, value in histories.items():
-
-        if key not in st.session_state:
-
-            st.session_state[key] = []
-
-        st.session_state[key].append(
-            value
-        )
-
-        st.session_state[key] = (
-            st.session_state[key][-20:]
-        )
+    update_sensor_history(
+        voltage,
+        current,
+        frequency,
+        temperature
+    )
 
     g1, g2 = st.columns(2)
 
@@ -1614,9 +1839,9 @@ if menu == "🏠 Dashboard":
                     "voltage_history"
                 ],
                 "Voltage Trend",
-                "Voltage (V)",
+                "Voltage (V)"
             ),
-            use_container_width=True,
+            use_container_width=True
         )
 
     with g2:
@@ -1627,9 +1852,9 @@ if menu == "🏠 Dashboard":
                     "current_history"
                 ],
                 "Current Trend",
-                "Current (A)",
+                "Current (A)"
             ),
-            use_container_width=True,
+            use_container_width=True
         )
 
     g3, g4 = st.columns(2)
@@ -1642,9 +1867,9 @@ if menu == "🏠 Dashboard":
                     "frequency_history"
                 ],
                 "Frequency Trend",
-                "Frequency (Hz)",
+                "Frequency (Hz)"
             ),
-            use_container_width=True,
+            use_container_width=True
         )
 
     with g4:
@@ -1655,218 +1880,193 @@ if menu == "🏠 Dashboard":
                     "temperature_history"
                 ],
                 "Temperature Trend",
-                "Temperature (°C)",
+                "Temperature (°C)"
             ),
-            use_container_width=True,
+            use_container_width=True
         )
 
     # ========================================================
-    # AI PREDICTION
+    # AI FAULT PREDICTION
     # ========================================================
 
     st.markdown("---")
 
     st.subheader(
-        "🧠 GridGuard AI Fault Detection"
+        "🧠 Voltora Fault Detection"
     )
 
-    st.caption(
-        "The AI prediction uses the generated V/I/F/T "
-        "sensor values. The selected circuit condition "
-        "is not used as the prediction result."
-    )
+    # ========================================================
+    # DEMO MODE
+    # ========================================================
 
-    if model is None:
+    if demo and demo_fault is not None:
 
-        st.error(
-            "AI model is not available."
+        fault = demo_fault
+
+        confidence = demo_confidence
+
+        st.session_state[
+            "fault"
+        ] = fault
+
+        st.session_state[
+            "confidence"
+        ] = confidence
+
+        st.info(
+            "🎬 Demo Mode: displaying the generated "
+            "presentation scenario."
         )
 
-        st.code(
-            model_error or
-            "Unknown model loading error."
-        )
-
-        fault = "Normal"
-        confidence = 0.0
+    # ========================================================
+    # REAL AI MODEL
+    # ========================================================
 
     else:
 
-        try:
+        if model is None or encoder is None:
 
-            fault, confidence = predict_fault(
+            st.error(
+                "❌ AI prediction cannot run because "
+                "the model or encoder could not be loaded."
+            )
+
+            st.stop()
+
+        fault, confidence, new_data, prediction_error = (
+            predict_fault(
+                model,
+                encoder,
                 voltage,
                 current,
                 frequency,
-                temperature,
+                temperature
             )
+        )
 
-            st.session_state[
-                "fault"
-            ] = fault
-
-            st.session_state[
-                "confidence"
-            ] = confidence
-
-        except Exception as exc:
+        if prediction_error is not None:
 
             st.error(
-                "AI prediction failed."
+                "❌ AI prediction failed.\n\n"
+                f"Error: `{prediction_error}`"
             )
 
-            st.exception(exc)
+            st.stop()
 
-            fault = st.session_state.get(
-                "fault",
-                "Normal",
-            )
+        st.session_state[
+            "fault"
+        ] = fault
 
-            confidence = st.session_state.get(
-                "confidence",
-                0.0,
-            )
+        st.session_state[
+            "confidence"
+        ] = confidence
 
     # ========================================================
-    # GRID HEALTH + SHUTDOWN
+    # AI RESULT
     # ========================================================
 
-    health, shutdown = calculate_grid_health(
-        fault
+    st.success(
+        f"⚡ Detected Fault: {fault}"
     )
 
-    st.session_state[
-        "health"
-    ] = health
-
-    st.session_state[
-        "shutdown"
-    ] = shutdown
-
-    # ========================================================
-    # PREDICTION DISPLAY
-    # ========================================================
-
-    if fault == "Normal":
-
-        st.success(
-            f"⚡ Detected Fault: {fault}"
-        )
-
-    else:
-
-        st.error(
-            f"⚠️ Detected Fault: {fault}"
-        )
-
     st.info(
-        f"🎯 AI Confidence: "
-        f"{confidence:.2f}%"
+        f"🎯 Confidence: {confidence:.2f}%"
     )
 
     # ========================================================
     # ALARM
     # ========================================================
 
-    show_fault_alarm(
+    handle_alarm(
         fault
     )
+
+    # ========================================================
+    # GRID HEALTH + PROTECTION
+    # ========================================================
+
+    health, shutdown = calculate_grid_health(
+        fault
+    )
+
+    # ========================================================
+    # SAVE HISTORY
+    # ========================================================
+
+    record_saved = save_history(
+        area_id=area_id,
+        line_id=line_id,
+        asset_id=asset_id,
+        voltage=voltage,
+        current=current,
+        frequency=frequency,
+        temperature=temperature,
+        fault=fault,
+        confidence=confidence,
+        health=health,
+        shutdown=shutdown
+    )
+
+    if record_saved:
+
+        st.success(
+            "Prediction recorded in Voltora history."
+        )
 
     # ========================================================
     # RESULT METRICS
     # ========================================================
 
-    st.markdown(
-        "### 🚨 Grid Protection Status"
-    )
-
     c1, c2, c3, c4 = st.columns(4)
 
     c1.metric(
         "⚠ Fault",
-        fault,
+        fault
     )
 
     c2.metric(
         "📊 Confidence",
-        f"{confidence:.2f}%",
+        f"{confidence:.2f}%"
     )
 
     c3.metric(
         "💚 Grid Health",
-        f"{health}%",
+        f"{health}%"
     )
 
     c4.metric(
         "🚨 Shutdown",
-        shutdown,
+        shutdown
     )
 
     # ========================================================
-    # LINE-SPECIFIC SHUTDOWN
+    # EMERGENCY SHUTDOWN
     # ========================================================
 
     if shutdown == "YES":
 
         st.error(
             f"""
-            🚨 AUTOMATIC EMERGENCY SHUTDOWN ACTIVATED
+🚨 Automatic Emergency Shutdown Activated
 
-            Area: {area_id}
+Target Area: {area_id}
 
-            Line: {line_id}
+Target Line: {line_id}
 
-            Asset: {asset_id}
+Target Asset: {asset_id}
 
-            Detected Fault: {fault}
-
-            The virtual protection logic has isolated
-            the affected grid section in the software model.
-            """
+Detected Fault: {fault}
+"""
         )
 
     else:
 
         st.success(
-            f"""
-            🟢 GRID OPERATING NORMALLY
-
-            Line: {line_id}
-
-            Asset: {asset_id}
-
-            No emergency shutdown required.
-            """
+            "🟢 Grid Operating Normally"
         )
 
     # ========================================================
-    # SAVE HISTORY
-    # ========================================================
-
-    try:
-
-        save_history(
-            area_id=area_id,
-            line_id=line_id,
-            asset_id=asset_id,
-            voltage=voltage,
-            current=current,
-            frequency=frequency,
-            temperature=temperature,
-            fault=fault,
-            confidence=confidence,
-            health=health,
-            shutdown=shutdown,
-        )
-
-    except Exception as exc:
-
-        st.warning(
-            f"History could not be saved: {exc}"
-        )
-
-    # ========================================================
-    # SCADA
+    # SCADA SMART GRID
     # ========================================================
 
     st.markdown("---")
@@ -1875,29 +2075,15 @@ if menu == "🏠 Dashboard":
         "⚡ SCADA Smart Grid"
     )
 
-    try:
-
-        show_scada_grid(
-            fault
-        )
-
-    except Exception as exc:
-
-        st.warning(
-            f"SCADA visualization unavailable: {exc}"
-        )
+    show_scada_grid(
+        fault
+    )
 
     # ========================================================
     # AI RECOMMENDATION
     # ========================================================
 
-    st.markdown("---")
-
-    st.subheader(
-        "💡 AI Recommendation"
-    )
-
-    show_recommendation(
+    show_ai_recommendation(
         fault
     )
 
@@ -1906,10 +2092,6 @@ if menu == "🏠 Dashboard":
     # ========================================================
 
     st.markdown("---")
-
-    st.subheader(
-        "📄 Prediction Report"
-    )
 
     try:
 
@@ -1921,53 +2103,49 @@ if menu == "🏠 Dashboard":
             fault=fault,
             confidence=confidence,
             health=health,
-            shutdown=shutdown,
+            shutdown=shutdown
         )
 
         if pdf and os.path.exists(pdf):
 
             with open(
                 pdf,
-                "rb",
+                "rb"
             ) as file:
 
                 st.download_button(
                     label="📄 Download PDF Report",
                     data=file.read(),
-                    file_name=os.path.basename(
-                        pdf
-                    ),
+                    file_name=Path(pdf).name,
                     mime="application/pdf",
-                    use_container_width=True,
+                    use_container_width=True
                 )
 
-    except Exception as exc:
+        else:
+
+            st.warning(
+                "PDF report could not be generated."
+            )
+
+    except Exception as error:
 
         st.warning(
-            f"PDF report could not be generated: {exc}"
+            f"⚠️ PDF generation unavailable: {error}"
         )
 
     # ========================================================
-    # SMART GRID STATUS
+    # SMART GRID VISUALIZATION
     # ========================================================
 
     st.markdown("---")
 
-    try:
-
-        show_grid_status(
-            fault
-        )
-
-    except Exception as exc:
-
-        st.warning(
-            f"Grid visualization unavailable: {exc}"
-        )
+    show_grid_status(
+        fault
+    )
 
 
 # ============================================================
-# FAULT HISTORY
+# FAULT HISTORY PAGE
 # ============================================================
 
 elif menu == "📋 Fault History":
@@ -1976,19 +2154,21 @@ elif menu == "📋 Fault History":
         "📋 Fault History"
     )
 
-    initialize_history()
+    initialize_history_file()
 
     try:
 
         history = pd.read_csv(
-            history_file
+            HISTORY_FILE
         )
 
-    except Exception:
+    except Exception as error:
 
-        history = pd.DataFrame(
-            columns=HISTORY_COLUMNS
+        st.error(
+            f"Unable to read history: {error}"
         )
+
+        history = pd.DataFrame()
 
     if history.empty:
 
@@ -2000,8 +2180,7 @@ elif menu == "📋 Fault History":
 
         st.dataframe(
             history,
-            use_container_width=True,
-            hide_index=True,
+            use_container_width=True
         )
 
         csv = history.to_csv(
@@ -2013,13 +2192,13 @@ elif menu == "📋 Fault History":
         st.download_button(
             "⬇ Download History",
             csv,
-            "GridGuard_History.csv",
-            "text/csv",
+            "Voltora_History.csv",
+            "text/csv"
         )
 
 
 # ============================================================
-# ANALYTICS
+# ANALYTICS PAGE
 # ============================================================
 
 elif menu == "📈 Analytics":
@@ -2028,23 +2207,19 @@ elif menu == "📈 Analytics":
         "📈 Grid Analytics"
     )
 
-    initialize_history()
+    show_history_dashboard(
+        str(HISTORY_FILE)
+    )
 
     try:
 
-        show_history_dashboard(
-            history_file
+        history = pd.read_csv(
+            HISTORY_FILE
         )
 
-    except Exception as exc:
+    except Exception:
 
-        st.warning(
-            f"History dashboard unavailable: {exc}"
-        )
-
-    history = pd.read_csv(
-        history_file
-    )
+        history = pd.DataFrame()
 
     if history.empty:
 
@@ -2054,74 +2229,98 @@ elif menu == "📈 Analytics":
 
     else:
 
+        # ----------------------------------------------------
+        # VOLTAGE
+        # ----------------------------------------------------
+
         st.subheader(
             "Voltage Trend"
         )
 
-        fig1 = px.line(
-            history,
-            x="Time",
-            y="Voltage",
-            markers=True,
-            title="Voltage vs Time",
-        )
+        if "Voltage" in history.columns:
 
-        st.plotly_chart(
-            fig1,
-            use_container_width=True,
-        )
+            fig1 = px.line(
+                history,
+                x="Time",
+                y="Voltage",
+                markers=True,
+                title="Voltage vs Time"
+            )
+
+            st.plotly_chart(
+                fig1,
+                use_container_width=True
+            )
+
+        # ----------------------------------------------------
+        # CURRENT
+        # ----------------------------------------------------
 
         st.subheader(
             "Current Trend"
         )
 
-        fig2 = px.line(
-            history,
-            x="Time",
-            y="Current",
-            markers=True,
-            title="Current vs Time",
-        )
+        if "Current" in history.columns:
 
-        st.plotly_chart(
-            fig2,
-            use_container_width=True,
-        )
+            fig2 = px.line(
+                history,
+                x="Time",
+                y="Current",
+                markers=True,
+                title="Current vs Time"
+            )
+
+            st.plotly_chart(
+                fig2,
+                use_container_width=True
+            )
+
+        # ----------------------------------------------------
+        # TEMPERATURE
+        # ----------------------------------------------------
 
         st.subheader(
             "Temperature Trend"
         )
 
-        fig3 = px.line(
-            history,
-            x="Time",
-            y="Temperature",
-            markers=True,
-            title="Temperature vs Time",
-        )
+        if "Temperature" in history.columns:
 
-        st.plotly_chart(
-            fig3,
-            use_container_width=True,
-        )
+            fig3 = px.line(
+                history,
+                x="Time",
+                y="Temperature",
+                markers=True,
+                title="Temperature vs Time"
+            )
+
+            st.plotly_chart(
+                fig3,
+                use_container_width=True
+            )
+
+        # ----------------------------------------------------
+        # FAULT DISTRIBUTION
+        # ----------------------------------------------------
 
         st.subheader(
             "Fault Distribution"
         )
 
-        fig4 = px.pie(
-            history,
-            names="Fault",
-            title="Detected Faults",
-        )
+        if "Fault" in history.columns:
 
-        st.plotly_chart(
-            fig4,
-            use_container_width=True,
-        )
+            fig4 = px.pie(
+                history,
+                names="Fault",
+                title="Detected Faults"
+            )
+
+            st.plotly_chart(
+                fig4,
+                use_container_width=True
+            )
 
         # ----------------------------------------------------
-        # Statistics
+        # PROJECT STATISTICS
         # ----------------------------------------------------
 
         st.markdown("---")
@@ -2134,22 +2333,50 @@ elif menu == "📈 Analytics":
 
         c1.metric(
             "Predictions",
-            len(history),
+            len(history)
         )
 
-        c2.metric(
-            "Fault Types",
-            history["Fault"].nunique(),
-        )
+        if "Fault" in history.columns:
+
+            c2.metric(
+                "Fault Types",
+                history["Fault"].nunique()
+            )
+
+        else:
+
+            c2.metric(
+                "Fault Types",
+                0
+            )
+
+        if "Grid Health" in history.columns:
+
+            health_values = pd.to_numeric(
+                history["Grid Health"],
+                errors="coerce"
+            )
+
+            average_health = health_values.mean()
+
+            if pd.isna(
+                average_health
+            ):
+
+                average_health = 0
+
+        else:
+
+            average_health = 0
 
         c3.metric(
             "Average Grid Health",
-            f"{history['Grid Health'].mean():.1f}%",
+            f"{average_health:.1f}%"
         )
 
 
 # ============================================================
-# REPORTS
+# REPORTS PAGE
 # ============================================================
 
 elif menu == "📄 Reports":
@@ -2158,11 +2385,15 @@ elif menu == "📄 Reports":
         "📄 Reports"
     )
 
-    initialize_history()
+    try:
 
-    history = pd.read_csv(
-        history_file
-    )
+        history = pd.read_csv(
+            HISTORY_FILE
+        )
+
+    except Exception:
+
+        history = pd.DataFrame()
 
     if history.empty:
 
@@ -2179,52 +2410,66 @@ elif menu == "📄 Reports":
         latest = history.iloc[-1]
 
         st.write(
-            f"**Time:** {latest['Time']}"
+            "### Prediction Summary"
         )
 
         st.write(
-            f"**Area:** {latest.get('Area', 'Unknown')}"
+            f"**Time:** {latest.get('Time', 'Unknown')}"
         )
 
         st.write(
-            f"**Line ID:** {latest.get('Line ID', 'Unknown')}"
+            f"**Area ID:** "
+            f"{latest.get('Area ID', 'Unknown')}"
         )
 
         st.write(
-            f"**Asset ID:** {latest.get('Asset ID', 'Unknown')}"
+            f"**Line ID:** "
+            f"{latest.get('Line ID', 'Unknown')}"
         )
 
         st.write(
-            f"**Voltage:** {latest['Voltage']} V"
+            f"**Asset ID:** "
+            f"{latest.get('Asset ID', 'Unknown')}"
         )
 
         st.write(
-            f"**Current:** {latest['Current']} A"
+            f"**Voltage:** "
+            f"{latest.get('Voltage', 'Unknown')} V"
         )
 
         st.write(
-            f"**Frequency:** {latest['Frequency']} Hz"
+            f"**Current:** "
+            f"{latest.get('Current', 'Unknown')} A"
         )
 
         st.write(
-            f"**Temperature:** {latest['Temperature']} °C"
+            f"**Frequency:** "
+            f"{latest.get('Frequency', 'Unknown')} Hz"
         )
 
         st.write(
-            f"**Fault:** {latest['Fault']}"
+            f"**Temperature:** "
+            f"{latest.get('Temperature', 'Unknown')} °C"
         )
 
         st.write(
-            f"**Confidence:** {latest['Confidence']} %"
+            f"**Fault:** "
+            f"{latest.get('Fault', 'Unknown')}"
+        )
+
+        st.write(
+            f"**Confidence:** "
+            f"{latest.get('Confidence', 'Unknown')} %"
         )
 
         st.write(
             f"**Grid Health:** "
-            f"{latest['Grid Health']} %"
+            f"{latest.get('Grid Health', 'Unknown')} %"
         )
 
         st.write(
-            f"**Shutdown:** {latest['Shutdown']}"
+            f"**Shutdown:** "
+            f"{latest.get('Shutdown', 'Unknown')}"
         )
 
         csv = history.to_csv(
@@ -2236,8 +2481,8 @@ elif menu == "📄 Reports":
         st.download_button(
             "⬇ Download Complete Report",
             csv,
-            "GridGuard_Report.csv",
-            "text/csv",
+            "Voltora_Report.csv",
+            "text/csv"
         )
 
 
@@ -2251,11 +2496,15 @@ elif menu == "📊 Live Monitoring":
         "📊 Live Grid Monitoring"
     )
 
-    initialize_history()
+    try:
 
-    history = pd.read_csv(
-        history_file
-    )
+        history = pd.read_csv(
+            HISTORY_FILE
+        )
+
+    except Exception:
+
+        history = pd.DataFrame()
 
     if history.empty:
 
@@ -2271,22 +2520,22 @@ elif menu == "📊 Live Monitoring":
 
         c1.metric(
             "🔌 Voltage",
-            f"{latest['Voltage']} V",
+            f"{latest.get('Voltage', 0)} V"
         )
 
         c2.metric(
             "⚡ Current",
-            f"{latest['Current']} A",
+            f"{latest.get('Current', 0)} A"
         )
 
         c3.metric(
             "🌡 Temperature",
-            f"{latest['Temperature']} °C",
+            f"{latest.get('Temperature', 0)} °C"
         )
 
         c4.metric(
             "💚 Grid Health",
-            f"{latest['Grid Health']} %",
+            f"{latest.get('Grid Health', 0)} %"
         )
 
         st.markdown("---")
@@ -2295,48 +2544,32 @@ elif menu == "📊 Live Monitoring":
             "Latest Fault"
         )
 
-        if latest["Shutdown"] == "YES":
+        if str(
+            latest.get(
+                "Shutdown",
+                "NO"
+            )
+        ) == "YES":
 
             st.error(
                 f"""
-                Fault: {latest['Fault']}
+Fault : {latest.get('Fault', 'Unknown')}
 
-                Line: {latest.get('Line ID', 'Unknown')}
+Emergency Shutdown Activated
 
-                Asset: {latest.get('Asset ID', 'Unknown')}
+Area : {latest.get('Area ID', 'Unknown')}
 
-                Emergency Shutdown Activated
-                """
+Line : {latest.get('Line ID', 'Unknown')}
+
+Asset : {latest.get('Asset ID', 'Unknown')}
+"""
             )
 
         else:
 
             st.success(
-                "🟢 Grid Operating Normally"
+                "Grid Operating Normally"
             )
-
-
-# ============================================================
-# TAMIL NADU GIS
-# ============================================================
-
-elif menu == "🗺️ Tamil Nadu GIS":
-
-    st.title(
-        "🗺️ Tamil Nadu Grid GIS"
-    )
-
-    try:
-
-        show_plotly_map()
-
-    except Exception as exc:
-
-        st.error(
-            "GIS map could not be loaded."
-        )
-
-        st.exception(exc)
 
 
 # ============================================================
@@ -2346,67 +2579,78 @@ elif menu == "🗺️ Tamil Nadu GIS":
 elif menu == "ℹ️ About":
 
     st.title(
-        "ℹ️ About GridGuard AI"
+        "ℹ️ About Voltora"
     )
 
     st.markdown(
         """
-# ⚡ GridGuard AI
+# ⚡ Voltora 
 
-GridGuard AI is an Artificial Intelligence based
-Low Tension (LT) power distribution fault detection
-and virtual protection system.
+Voltora is an Artificial Intelligence based Low Tension (LT)
+power distribution fault detection system.
 
-## 🧠 AI Fault Detection
+The application predicts:
 
-The system predicts:
-
-- Normal
 - Overload
 - Overvoltage
 - Undervoltage
 - Line Break
+- Normal
 
-using the existing machine-learning model:
-
-`fault_model.pkl`
-
-The model receives:
-
-- Voltage
-- Current
-- Frequency
-- Temperature
-
-from the virtual sensor layer.
+using Machine Learning.
 
 ---
 
-## ⚡ Virtual Electrical Architecture
+## Technologies Used
 
-```text
-Grid Area
-    ↓
-Line
-    ↓
-Asset
-    ↓
-11 kV Supply
-    ↓
-Transformer
-    ↓
-R / Y / B / N LT Feeder
-    ↓
-Consumers
-    ↓
-Virtual V/I/F/T Sensors
-    ↓
-GridGuard AI
-    ↓
-Fault + Confidence
-    ↓
-Grid Health
-    ↓
-Virtual Relay
-    ↓
-Automatic Emergency Shutdown""")
+- Python
+- Streamlit
+- Scikit-Learn
+- Pandas
+- Plotly
+- Joblib
+
+---
+
+## Features
+
+✅ AI Fault Prediction
+
+✅ Emergency Shutdown
+
+✅ Smart Grid Visualization
+
+✅ Fault History
+
+✅ Analytics Dashboard
+
+✅ Reports
+
+✅ Live Monitoring
+
+---
+
+Developed as an AI & ML Project.
+"""
+    )
+
+
+# ============================================================
+# TAMIL NADU GIS
+# ============================================================
+
+elif menu == "🗺️ Tamil Nadu GIS":
+
+    st.title(
+        "🗺️ Tamil Nadu GIS"
+    )
+
+    try:
+
+        show_plotly_map()
+
+    except Exception as error:
+
+        st.error(
+            f"Unable to load Tamil Nadu GIS map: {error}"
+        )

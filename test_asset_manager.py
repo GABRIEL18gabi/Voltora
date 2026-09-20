@@ -6,7 +6,7 @@ from utils.asset_manager import (
     get_all_lines
 )
 
-print("\n=== GRIDGUARD ASSET TEST ===")
+print("\n=== VOLTORA ASSET TEST ===")
 
 print("\nAreas:")
 print(get_all_areas())

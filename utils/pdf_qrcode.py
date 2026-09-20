@@ -5,7 +5,7 @@ from reportlab.platypus import Spacer
 
 def create_qr(
     elements,
-    url="https://gridguard-ai.streamlit.app"
+    url="https://Voltora.streamlit.app"
 ):
     qr_code = qr.QrCodeWidget(url)
 

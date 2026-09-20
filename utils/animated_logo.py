@@ -76,7 +76,7 @@ margin-top:10px;
 src="data:image/png;base64,{data}">
 
 <div class="title">
-GRIDGUARD AI
+VOLTORA 
 </div>
 
 <div class="subtitle">
